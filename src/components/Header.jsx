@@ -112,22 +112,22 @@ function Header() {
 
             <li className="header__nav-item">
               <NavLink
-                to="/contact"
+                to="/blog"
                 className={({ isActive }) =>
                   `header__nav-link${isActive ? " header__nav-link--active" : ""}`
                 }
                 onClick={closeMenu}
               >
-                Contact
+                Blog
               </NavLink>
             </li>
           </ul>
 
           {/* CTA Button */}
           <div className="header__cta">
-            <Link to="/get-quote" className="header__cta-link" onClick={closeMenu}>
+            <Link to="/contact" className="header__cta-link" onClick={closeMenu}>
               <button className="header__cta-btn" type="button">
-                Get a Quote
+                Contuct Us
               </button>
             </Link>
           </div>
