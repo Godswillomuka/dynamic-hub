@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './Portfolio.css';
 
-// Service Images
+// Import your images
 import designImg from '../assets/service-design.png';
 import vehicleImg from '../assets/service-vehicle.png';
 import apparelImg from '../assets/service-apparel.png';
@@ -13,8 +12,6 @@ import brandingImg from '../assets/service-branding.png';
 import largeFormatImg from '../assets/service-largeformat.png';
 import packagingImg from '../assets/service-packaging.png';
 import promoImg from '../assets/service-promo.png';
-
-// Product Images
 import businessCard from '../assets/bussinescard.png';
 import flyer from '../assets/flyer.png';
 import tshirts from '../assets/t-shirts.png';
@@ -38,222 +35,27 @@ const categories = [
 ];
 
 const portfolioItems = [
-  // Graphic Design
-  {
-    id: 1,
-    title: 'Corporate Logo Design',
-    category: 'graphic-design',
-    categoryLabel: 'Graphic Design',
-    description: 'Modern logo and brand identity for a tech startup',
-    image: designImg,
-    client: 'TechStart Kenya',
-    year: '2025'
-  },
-  {
-    id: 2,
-    title: 'Marketing Collateral Suite',
-    category: 'graphic-design',
-    categoryLabel: 'Graphic Design',
-    description: 'Complete marketing materials including brochures and flyers',
-    image: promoImg,
-    client: 'GreenLeaf Co.',
-    year: '2025'
-  },
-  // Branding
-  {
-    id: 3,
-    title: 'Vehicle Fleet Branding',
-    category: 'branding',
-    categoryLabel: 'Branding',
-    description: 'Full wrap design for delivery fleet of 15 vehicles',
-    image: vehicleImg,
-    client: 'Swift Logistics',
-    year: '2025'
-  },
-  {
-    id: 4,
-    title: 'Corporate Identity System',
-    category: 'branding',
-    categoryLabel: 'Branding',
-    description: 'Complete brand guidelines and stationery design',
-    image: identityImg,
-    client: 'Nairobi Finance',
-    year: '2024'
-  },
-  {
-    id: 5,
-    title: 'Brand Strategy & Identity',
-    category: 'branding',
-    categoryLabel: 'Branding',
-    description: 'Strategic rebranding for established retail chain',
-    image: brandingImg,
-    client: 'StyleHub Retail',
-    year: '2025'
-  },
-  // Merchandise
-  {
-    id: 6,
-    title: 'Custom Apparel Collection',
-    category: 'merchandise',
-    categoryLabel: 'Merchandise',
-    description: 'Branded t-shirts and caps for corporate event',
-    image: apparelImg,
-    client: 'InnovateKE',
-    year: '2025'
-  },
-  {
-    id: 7,
-    title: 'Premium Business Cards',
-    category: 'merchandise',
-    categoryLabel: 'Merchandise',
-    description: 'Luxury foil-stamped business cards on premium stock',
-    image: businessCard,
-    client: 'Executive Partners',
-    year: '2025'
-  },
-  {
-    id: 8,
-    title: 'Branded Drinkware',
-    category: 'merchandise',
-    categoryLabel: 'Merchandise',
-    description: 'Custom mugs and tumblers for promotional campaign',
-    image: customMugs,
-    client: 'Cafe Mocha',
-    year: '2024'
-  },
-  {
-    id: 9,
-    title: 'Event Merchandise Pack',
-    category: 'merchandise',
-    categoryLabel: 'Merchandise',
-    description: 'Complete merchandise package for annual conference',
-    image: bagImg,
-    client: 'Tech Summit 2025',
-    year: '2025'
-  },
-  {
-    id: 10,
-    title: 'Promotional Caps Collection',
-    category: 'merchandise',
-    categoryLabel: 'Merchandise',
-    description: 'Embroidered caps for staff and promotional events',
-    image: capImg,
-    client: 'BuildRight Kenya',
-    year: '2024'
-  },
-  // Printing
-  {
-    id: 11,
-    title: 'Event Flyers & Posters',
-    category: 'printing',
-    categoryLabel: 'Printing',
-    description: 'High-impact flyers for music festival campaign',
-    image: flyer,
-    client: 'Nairobi Beats',
-    year: '2025'
-  },
-  {
-    id: 12,
-    title: 'Product Packaging Design',
-    category: 'printing',
-    categoryLabel: 'Printing',
-    description: 'Custom packaging for organic skincare line',
-    image: packagingImg,
-    client: 'PureGlow Naturals',
-    year: '2025'
-  },
-  {
-    id: 13,
-    title: 'Large Format Signage',
-    category: 'printing',
-    categoryLabel: 'Printing',
-    description: 'Billboards and storefront signage for retail chain',
-    image: largeFormatImg,
-    client: 'MegaMart',
-    year: '2024'
-  },
-  {
-    id: 14,
-    title: 'Custom Stickers & Labels',
-    category: 'printing',
-    categoryLabel: 'Printing',
-    description: 'Die-cut stickers for product packaging',
-    image: stickerImg,
-    client: 'Artisan Crafts',
-    year: '2025'
-  },
-  {
-    id: 15,
-    title: 'Branded Notebooks',
-    category: 'printing',
-    categoryLabel: 'Printing',
-    description: 'Premium notebooks for corporate gifting',
-    image: notebookImg,
-    client: 'Law Associates',
-    year: '2024'
-  },
-  {
-    id: 16,
-    title: 'Custom Lanyards',
-    category: 'printing',
-    categoryLabel: 'Printing',
-    description: 'Event lanyards with custom badge holders',
-    image: lanyardImg,
-    client: 'DevConf 2025',
-    year: '2025'
-  },
-  {
-    id: 17,
-    title: 'Desk Calendars',
-    category: 'printing',
-    categoryLabel: 'Printing',
-    description: 'Branded desk calendars for client appreciation',
-    image: deskcalender,
-    client: 'Insurance Plus',
-    year: '2024'
-  },
-  {
-    id: 18,
-    title: 'Gift Vouchers',
-    category: 'printing',
-    categoryLabel: 'Printing',
-    description: 'Premium gift vouchers for retail loyalty program',
-    image: giftvoucher,
-    client: 'ShopEasy',
-    year: '2025'
-  },
-  {
-    id: 19,
-    title: 'Promotional Pens',
-    category: 'printing',
-    categoryLabel: 'Printing',
-    description: 'Custom engraved pens for corporate events',
-    image: penImg,
-    client: 'BankFirst',
-    year: '2024'
-  },
-  // Digital
-  {
-    id: 20,
-    title: 'E-commerce Website',
-    category: 'digital',
-    categoryLabel: 'Digital',
-    description: 'Full-stack e-commerce platform with payment integration',
-    image: codingImg,
-    client: 'FashionHub KE',
-    year: '2025'
-  },
+  { id: 1, title: 'Corporate Logo Design', category: 'graphic-design', categoryLabel: 'Graphic Design', description: 'Modern logo and brand identity for a tech startup.', image: designImg, client: 'TechStart Kenya', year: '2025' },
+  { id: 2, title: 'Marketing Collateral', category: 'graphic-design', categoryLabel: 'Graphic Design', description: 'Complete marketing materials including brochures.', image: promoImg, client: 'GreenLeaf Co.', year: '2025' },
+  { id: 3, title: 'Vehicle Fleet Branding', category: 'branding', categoryLabel: 'Branding', description: 'Full wrap design for a delivery fleet of 15 vehicles.', image: vehicleImg, client: 'Swift Logistics', year: '2025' },
+  { id: 4, title: 'Corporate Identity System', category: 'branding', categoryLabel: 'Branding', description: 'Complete brand guidelines and stationery design.', image: identityImg, client: 'Nairobi Finance', year: '2024' },
+  { id: 5, title: 'Brand Strategy & Identity', category: 'branding', categoryLabel: 'Branding', description: 'Strategic rebranding for an established retail chain.', image: brandingImg, client: 'StyleHub Retail', year: '2025' },
+  { id: 6, title: 'Custom Apparel Collection', category: 'merchandise', categoryLabel: 'Merchandise', description: 'Branded t-shirts and caps for a corporate event.', image: apparelImg, client: 'InnovateKE', year: '2025' },
+  { id: 7, title: 'Premium Business Cards', category: 'merchandise', categoryLabel: 'Merchandise', description: 'Luxury foil-stamped business cards on premium stock.', image: businessCard, client: 'Executive Partners', year: '2025' },
+  { id: 8, title: 'Branded Drinkware', category: 'merchandise', categoryLabel: 'Merchandise', description: 'Custom mugs and tumblers for a promotional campaign.', image: customMugs, client: 'Cafe Mocha', year: '2024' },
+  { id: 9, title: 'Event Merchandise Pack', category: 'merchandise', categoryLabel: 'Merchandise', description: 'Complete merchandise package for an annual conference.', image: bagImg, client: 'Tech Summit 2025', year: '2025' },
+  { id: 10, title: 'Promotional Caps', category: 'merchandise', categoryLabel: 'Merchandise', description: 'Embroidered caps for staff and promotional events.', image: capImg, client: 'BuildRight Kenya', year: '2024' },
+  { id: 11, title: 'Event Flyers & Posters', category: 'printing', categoryLabel: 'Printing', description: 'High-impact flyers for a music festival campaign.', image: flyer, client: 'Nairobi Beats', year: '2025' },
+  { id: 12, title: 'Product Packaging Design', category: 'printing', categoryLabel: 'Printing', description: 'Custom packaging for an organic skincare line.', image: packagingImg, client: 'PureGlow Naturals', year: '2025' },
+  { id: 13, title: 'Large Format Signage', category: 'printing', categoryLabel: 'Printing', description: 'Billboards and storefront signage for a retail chain.', image: largeFormatImg, client: 'MegaMart', year: '2024' },
+  { id: 14, title: 'Custom Stickers & Labels', category: 'printing', categoryLabel: 'Printing', description: 'Die-cut stickers for product packaging.', image: stickerImg, client: 'Artisan Crafts', year: '2025' },
+  { id: 15, title: 'Branded Notebooks', category: 'printing', categoryLabel: 'Printing', description: 'Premium notebooks for corporate gifting.', image: notebookImg, client: 'Law Associates', year: '2024' },
+  { id: 16, title: 'Custom Lanyards', category: 'printing', categoryLabel: 'Printing', description: 'Event lanyards with custom badge holders.', image: lanyardImg, client: 'DevConf 2025', year: '2025' },
+  { id: 17, title: 'Desk Calendars', category: 'printing', categoryLabel: 'Printing', description: 'Branded desk calendars for client appreciation.', image: deskcalender, client: 'Insurance Plus', year: '2024' },
+  { id: 18, title: 'Gift Vouchers', category: 'printing', categoryLabel: 'Printing', description: 'Premium gift vouchers for a retail loyalty program.', image: giftvoucher, client: 'ShopEasy', year: '2025' },
+  { id: 19, title: 'Promotional Pens', category: 'printing', categoryLabel: 'Printing', description: 'Custom engraved pens for corporate events.', image: penImg, client: 'BankFirst', year: '2024' },
+  { id: 20, title: 'E-commerce Website', category: 'digital', categoryLabel: 'Digital', description: 'Full-stack e-commerce platform with payment integration.', image: codingImg, client: 'FashionHub KE', year: '2025' },
 ];
-
-const fadeInUp = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-};
-
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  show: { opacity: 1, transition: { staggerChildren: 0.08 } },
-};
 
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -265,39 +67,19 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio-page">
-      {/* Hero Banner - Classic Design */}
+      {/* Dark Navy Hero */}
       <section className="portfolio-hero">
-        <div className="portfolio-hero-bg">
-          <img src={designImg} alt="" className="portfolio-hero-image" />
-        </div>
         <div className="portfolio-hero-overlay"></div>
-        
-        {/* Decorative Elements */}
-        <div className="portfolio-hero-decor portfolio-hero-decor-1"></div>
-        <div className="portfolio-hero-decor portfolio-hero-decor-2"></div>
-        
         <div className="container">
-          <motion.div
-            className="portfolio-hero-content"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="portfolio-hero-badge">
-              <span className="badge-dot"></span>
-              <span>Our Creative Work</span>
-            </div>
-            
+          <div className="portfolio-hero-content">
+            <span className="portfolio-eyebrow">Selected Works</span>
             <h1 className="portfolio-hero-title">
-              Crafting Visual<br />
-              <span className="highlight">Experiences</span> That Matter
+              Our Portfolio
             </h1>
-            
             <p className="portfolio-hero-subtitle">
-              From brand identities to custom merchandise, every project reflects our commitment 
-              to quality, creativity, and client satisfaction.
+              A curated collection of our recent projects. From brand identities to custom merchandise, 
+              every piece reflects our commitment to quality and precision.
             </p>
-            
             <div className="portfolio-hero-stats">
               <div className="portfolio-stat">
                 <span className="portfolio-stat-value">500+</span>
@@ -314,7 +96,7 @@ const Portfolio = () => {
                 <span className="portfolio-stat-label">Years Experience</span>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -329,37 +111,25 @@ const Portfolio = () => {
                 onClick={() => setActiveCategory(category.id)}
               >
                 {category.label}
-                <span className="filter-count">
-                  {category.id === 'all' 
-                    ? portfolioItems.length 
-                    : portfolioItems.filter(item => item.category === category.id).length}
-                </span>
               </button>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Portfolio Grid */}
+      {/* Portfolio Grid with Card Overlays */}
       <section className="portfolio-grid-section">
         <div className="container">
-          <motion.div
-            className="portfolio-grid"
-            variants={staggerContainer}
-            initial="hidden"
-            animate="show"
-            key={activeCategory}
-          >
+          <div className="portfolio-grid">
             {filteredItems.map((item) => (
-              <motion.div
-                className="portfolio-card"
+              <div 
+                className="portfolio-card" 
                 key={item.id}
-                variants={fadeInUp}
                 onMouseEnter={() => setHoveredItem(item.id)}
                 onMouseLeave={() => setHoveredItem(null)}
               >
                 <div className="portfolio-card-image">
-                  <img src={item.image} alt={item.title} />
+                  <img src={item.image} alt={item.title} loading="lazy" />
                 </div>
                 
                 <div className={`portfolio-card-overlay ${hoveredItem === item.id ? 'visible' : ''}`}>
@@ -381,38 +151,21 @@ const Portfolio = () => {
 
                     <Link to="/contact" className="portfolio-card-link">
                       Inquire About This Project
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                       </svg>
                     </Link>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
 
           {filteredItems.length === 0 && (
             <div className="portfolio-empty">
               <p>No projects found in this category.</p>
             </div>
           )}
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="portfolio-cta">
-        <div className="container">
-          <div className="portfolio-cta-content">
-            <h2>Have a Project in Mind?</h2>
-            <p>
-              Let's create something amazing together. Get in touch to discuss your next project 
-              and see how we can bring your vision to life.
-            </p>
-            <div className="portfolio-cta-buttons">
-              <Link to="/get-quote" className="btn btn-primary">Start Your Project</Link>
-              <Link to="/contact" className="btn btn-secondary">Contact Us</Link>
-            </div>
-          </div>
         </div>
       </section>
     </div>

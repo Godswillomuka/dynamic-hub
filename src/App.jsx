@@ -6,6 +6,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import About from "./pages/About";
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           {/* Define your routes here */}
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
