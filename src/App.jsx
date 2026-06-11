@@ -4,6 +4,7 @@ import WhatsApp from "./components/WhatsApp";
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           {/* Define your routes here */}
           <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </main>
       <Footer />
