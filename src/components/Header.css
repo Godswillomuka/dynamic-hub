@@ -4,14 +4,14 @@
 /* ===== CSS Variables ===== */
 :root {
   --header-height: 76px;
-  --header-bg: #051a30;
-  --header-bg-scrolled: rgba(5, 26, 48, 0.97);
+  --header-bg: #ffffff;
+  --header-bg-scrolled: rgba(255, 255, 255, 0.98);
   --header-accent: #009f6f;
   --header-accent-hover: #00c98a;
-  --header-text: #ffffff;
-  --header-muted: rgba(255, 255, 255, 0.65);
-  --header-border: rgba(255, 255, 255, 0.08);
-  --header-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  --header-text: #1a1a1a;
+  --header-muted: rgba(26, 26, 26, 0.65);
+  --header-border: rgba(0, 159, 111, 0.1);
+  --header-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   --tr: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   --radius: 8px;
   --container-max: 1200px;
@@ -28,14 +28,14 @@
 
 /* ===== Body Offset ===== */
 body {
-  padding-top: var(--header-height);
+  padding-top: calc(var(--header-height) + 42px);
   transition: padding-top 0.28s ease;
 }
 
 /* ===== Header Base ===== */
 .header {
   position: fixed;
-  top: 0;
+  top: 42px;
   left: 0;
   right: 0;
   z-index: 1000;
@@ -62,7 +62,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  max-width: var(--container-max);
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
   width: 100%;
@@ -222,29 +222,27 @@ body {
 }
 
 .header__cta-btn {
-  background: var(--header-accent);
-  color: #ffffff;
-  padding: 10px 24px;
+  background: transparent;
+  color: var(--header-accent);
+  padding: 8px 18px;
   border-radius: var(--radius);
   font-weight: 600;
-  font-size: 14px;
-  border: none;
+  font-size: 13px;
+  border: 1.5px solid var(--header-accent);
   cursor: pointer;
   transition: var(--tr);
   letter-spacing: 0.3px;
   white-space: nowrap;
-  box-shadow: 0 3px 12px rgba(0, 159, 111, 0.22);
 }
 
 .header__cta-btn:hover {
-  background: var(--header-accent-hover);
-  transform: translateY(-1px);
-  box-shadow: 0 5px 18px rgba(0, 159, 111, 0.36);
+  background: var(--header-accent);
+  color: #ffffff;
+  border-color: var(--header-accent-hover);
 }
 
 .header__cta-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(0, 159, 111, 0.2);
+  opacity: 0.9;
 }
 
 /* ===== Mobile Overlay ===== */

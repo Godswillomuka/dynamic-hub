@@ -64,8 +64,8 @@ function Header() {
 
         {/* Stacked Logo */}
         <Link to="/" className="header__logo" onClick={closeMenu} aria-label="Home">
-          <span className="header__logo-main header__logo-accent">
-            DYNAMIC
+          <span className="header__logo-main">
+            <span className="header__logo-accent">DYNAMIC</span>
           </span>
           <span className="header__logo-sub">freelance hub</span>
         </Link>
