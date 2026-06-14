@@ -27,6 +27,11 @@ import lanyardImg from '../assets/product-lanyard.png';
 import deskcalender from '../assets/deskcalender.png';
 import giftvoucher from '../assets/giftvoucher.png';
 
+// Import missing images for services
+import officeBrandingImg from '../assets/service-identity.png'; // Using existing identity image for office branding
+import promoItemsImg from '../assets/service-promo.png'; // Using promo image
+import webServicesImg from '../assets/service-coding.png'; // Using coding image for web services
+
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
@@ -95,12 +100,42 @@ const HeroClock = () => {
 };
 
 const services = [
-  { title: "Creative Graphic Design", desc: "Professional logos, brand identities, and marketing graphics designed to attract attention and engage your audience.", img: designImg, link: "/services" },
-  { title: "Vehicle & Fleet Branding", desc: "Full and partial vehicle wraps that transform your fleet into powerful mobile advertisements.", img: vehicleImg, link: "/services" },
-  { title: "Custom Merchandise & Apparel", desc: "Branded apparel and promotional merchandise that increase visibility and strengthen your brand.", img: apparelImg, link: "/services" },
-  { title: "Business Identity & Stationery", desc: "Professional business stationery that builds credibility and ensures consistent brand communication.", img: identityImg, link: "/services" },
-  { title: "Signage & Large Format Displays", desc: "Eye-catching banners, signage, and display solutions designed to maximize visibility.", img: largeFormatImg, link: "/services" },
-  { title: "Product Packaging & Labels", desc: "Creative packaging and label solutions that enhance product appeal and strengthen brand identity.", img: packagingImg, link: "/services" },
+  { 
+    title: "Graphic Design", 
+    desc: "Professional logo design, brand identity, packaging design, and marketing materials that capture your brand's essence and engage your audience.", 
+    img: designImg, 
+    link: "services/logo-design" 
+  },
+  { 
+    title: "Large Format Printing", 
+    desc: "High-quality banners, billboards, shop signage, window graphics, wall murals, and exhibition stands for maximum visibility and impact.", 
+    img: largeFormatImg, 
+    link: "services/pvc-flex-banners" 
+  },
+  { 
+    title: "Vehicle Graphics", 
+    desc: "Full and partial vehicle wraps, delivery van branding, motorcycle branding, and reflective stickers that turn your fleet into mobile billboards.", 
+    img: vehicleImg, 
+    link: "services/full-vehicle-wraps" 
+  },
+  { 
+    title: "Office & Corporate Branding", 
+    desc: "Office signage, wayfinding, staff ID cards, company profiles, and corporate communication materials that professionalize your workspace.", 
+    img: officeBrandingImg, 
+    link: "services/office-signage" 
+  },
+  { 
+    title: "Promotional Items", 
+    desc: "Branded umbrellas, t-shirts, hoodies, caps, corporate gifts, tote bags, mugs, and notebooks that keep your brand top-of-mind.", 
+    img: promoItemsImg, 
+    link: "services/branded-umbrellas" 
+  },
+  { 
+    title: "Web Services", 
+    desc: "Custom website design, web applications, UI/UX design, SEO, and software development that establish your digital presence.", 
+    img: webServicesImg, 
+    link: "services/web-applications" 
+  },
 ];
 
 const products = [

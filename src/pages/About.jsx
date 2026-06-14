@@ -105,7 +105,7 @@ const About = () => {
               />
             </div>
             <div className="story-content">
-              <span className="section-eyebrow">Our Story</span>
+              {/* <span className="section-eyebrow">Our Story</span> */}
               <h2 className="section-title">Who We Are</h2>
               <p className="section-text">
                 Dynamic Freelance Hub was founded with a simple mission: to provide businesses with accessible, high-quality printing and branding solutions. 
