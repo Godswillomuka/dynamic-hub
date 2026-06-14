@@ -82,7 +82,7 @@ const About = () => {
         <div className="about-hero-overlay"></div>
         <div className="container">
           <div className="about-hero-content">
-            <span className="about-eyebrow">About Us</span>
+            {/* <span className="about-eyebrow">About Us</span> */}
             <h1 className="about-hero-title">
               Crafting Brands,<br />Building Legacies
             </h1>

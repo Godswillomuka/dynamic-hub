@@ -38,7 +38,7 @@ export default function Contact() {
         <div className="contact-hero-overlay"></div>
         <div className="container">
           <div className="contact-hero-content">
-            <span className="contact-eyebrow">Get In Touch</span>
+            {/* <span className="contact-eyebrow">Get In Touch</span> */}
             <h1 className="contact-hero-title">
               Let's Start a Conversation
             </h1>
@@ -227,7 +227,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <a href="https://maps.google.com/?q=Nairobi,Kenya" target="_blank" rel="noopener noreferrer" className="directions-btn">
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Dynamics+Freelancehub,+New+Al+Noor+Building,+Kenneth+Matiba+Rd,+Nairobi&travelmode=driving" target="_blank" rel="noopener noreferrer" className="directions-btn">
                 Get Directions
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
               </a>

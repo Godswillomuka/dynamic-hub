@@ -128,7 +128,7 @@ const Blog = () => {
         <div className="blog-hero-overlay"></div>
         <div className="container">
           <div className="blog-hero-content">
-            <span className="blog-eyebrow">Our Blog</span>
+            {/* <span className="blog-eyebrow">Our Blog</span> */}
             <h1 className="blog-hero-title">
               Insights & Ideas
             </h1>

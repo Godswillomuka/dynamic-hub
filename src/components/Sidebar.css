@@ -1,26 +1,23 @@
-/* src/components/Sidebar.css */
-
-/* --- Base Sidebar Logic --- */
+/* Base Sidebar */
 .sidebar {
   position: fixed;
   background: linear-gradient(135deg, rgb(5, 21, 39) 0%, rgb(7, 25, 69) 100%);
   color: white;
-  z-index: 2000; /* Increased to stay above standard page elements */
+  z-index: 2000;
   display: flex;
   flex-direction: column;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 10px 40px rgba(0,0,0,0.4);
   overflow-y: auto;
-  scrollbar-width: thin; 
+  scrollbar-width: thin;
   scrollbar-color: rgba(255,255,255,0.2) transparent;
-  
 }
 
-/* --- Desktop Layout --- */
+/* Desktop Layout */
 @media (min-width: 993px) {
   .sidebar {
-    top: 110px; 
-    right: calc((100vw - 1200px) / 2 + 20px); 
+    top: 110px;
+    right: calc((100vw - 1400px) / 2 + 20px);
     width: 320px;
     height: calc(100vh - 150px);
     border-radius: 20px;
@@ -38,13 +35,13 @@
   }
 
   .sidebar-toggle {
-    top: 110px; 
-    right: calc((100vw - 1200px) / 2 + 20px);
+    top: 110px;
+    right: calc((100vw - 1400px) / 2 + 20px);
     bottom: auto;
   }
 }
 
-/* --- Mobile Layout --- */
+/* Mobile Layout */
 @media (max-width: 992px) {
   .sidebar {
     top: 0;
@@ -61,20 +58,13 @@
   }
   
   .sidebar-toggle {
-    top: 120px; /* Adjusted to be visible below typical mobile headers */
+    top: 120px;
     right: 20px;
     bottom: auto;
   }
 }
 
-/* --- THE FIX: Hide button when ANY mobile menu/header is open --- */
-/* This assumes your header adds a class to the body, or use your Sidebar logic */
-body.sidebar-open .sidebar-toggle,
-body.nav-open .sidebar-toggle { 
-  display: none !important; 
-}
-
-/* --- Content Styling --- */
+/* Content Styling */
 .sidebar-title {
   font-size: 1.4rem;
   font-weight: 800;
@@ -106,8 +96,13 @@ body.nav-open .sidebar-toggle {
   transition: 0.3s;
 }
 
-.menu-item:hover { background: rgba(255, 255, 255, 0.12); }
-.menu-item.active { background: #009f6f; }
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.menu-item.active {
+  background: #009f6f;
+}
 
 .submenu {
   max-height: 0;
@@ -117,7 +112,11 @@ body.nav-open .sidebar-toggle {
   flex-direction: column;
 }
 
-.submenu.open { max-height: 1000px; margin-bottom: 15px; margin-top: 5px; }
+.submenu.open {
+  max-height: 1000px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
 
 .submenu a {
   padding: 10px 15px;
@@ -126,11 +125,22 @@ body.nav-open .sidebar-toggle {
   font-size: 0.85rem;
   border-left: 2px solid rgba(255,255,255,0.1);
   display: block;
+  transition: all 0.2s ease;
 }
 
-.submenu a.active { color: #009f6f; border-left-color: #009f6f; }
+.submenu a:hover {
+  color: #009f6f;
+  border-left-color: #009f6f;
+  padding-left: 20px;
+}
 
-/* --- Controls --- */
+.submenu a.active {
+  color: #009f6f;
+  border-left-color: #009f6f;
+  font-weight: 600;
+}
+
+/* Controls */
 .sidebar-toggle {
   position: fixed;
   background: #009f6f;
@@ -140,11 +150,18 @@ body.nav-open .sidebar-toggle {
   border-radius: 50px;
   font-weight: 700;
   box-shadow: 0 8px 20px rgba(0, 159, 111, 0.4);
-  z-index: 999; /* Lowered slightly so Header can sit on top */
+  z-index: 999;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+  background: #007a55;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 159, 111, 0.5);
 }
 
 .sidebar-overlay {
@@ -170,4 +187,34 @@ body.nav-open .sidebar-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.close-sidebar:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+/* Hide toggle when sidebar is open or nav is open */
+body.sidebar-open .sidebar-toggle,
+body.nav-open .sidebar-toggle {
+  display: none !important;
+}
+
+/* Custom Scrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.3);
 }

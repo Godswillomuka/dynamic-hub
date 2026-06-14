@@ -72,7 +72,7 @@ const Portfolio = () => {
         <div className="portfolio-hero-overlay"></div>
         <div className="container">
           <div className="portfolio-hero-content">
-            <span className="portfolio-eyebrow">Selected Works</span>
+            {/* <span className="portfolio-eyebrow">Selected Works</span> */}
             <h1 className="portfolio-hero-title">
               Our Portfolio
             </h1>

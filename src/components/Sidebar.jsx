@@ -1,13 +1,11 @@
-
-
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./Sidebar.css";
 
 const generateSlug = (text) => {
   return text
     .toLowerCase()
-    .replace(/&/g, "")
+    .replace(/&/g, "and")
     .replace(/[^a-z0-9\s]/g, "")
     .trim()
     .replace(/\s+/g, "-")
@@ -16,40 +14,74 @@ const generateSlug = (text) => {
 
 const sidebarData = [
   {
-    title: "Creative Graphic Design",
-    links: ["Logo Design", "Brand Identity Design"],
+    title: "Graphic Design",
+    links: [
+      "Logo Design",
+      "Brochure Design",
+      "Flyer Design",
+      "Label Design",
+      "Business Card Design",
+      "Menu Design"
+    ],
   },
   {
-    title: "Vehicle & Fleet Branding",
-    links: ["Full Vehicle Wraps", "Partial Vehicle Wraps", "Roadshow Trucks Branding", "Delivery Van Branding", "Motorcycle Branding", "Racing & Safari Rally Cars", "Reflective Vehicle Stickers"],
+    title: "Large Format Printing",
+    links: [
+      "PVC Flex Banners",
+      "Roll Up Banners",
+      "Backdrop Banners",
+      "Tear-drop Banners",
+      "Billboards",
+      "Shop Signage",
+      "Window Graphics",
+      "Wall Murals",
+      "Exhibition Stands"
+    ],
   },
   {
-    title: "Custom Merchandise & Apparel",
-    links: ["T-Shirts Printing", "Hoodies Printing", "Caps Branding", "Corporate Gifts", "Promotional Products", "Tote Bags Printing", "Mugs & Water Bottles Printing"],
+    title: "Vehicle Graphics",
+    links: [
+      "Full Vehicle Wraps",
+      "Partial Vehicle Wraps",
+      "Delivery Van Branding",
+      "Motorcycle Branding",
+      "Reflective Vehicle Stickers"
+    ],
   },
   {
-    title: "Business Identity & Stationery",
-    links: ["Business Cards", "Letterheads", "Envelopes", "Presentation Folders", "Company Profiles", "Staff ID Cards"],
+    title: "Office & Corporate Branding",
+    links: [
+      "Office Signage",
+      "Staff ID Cards",
+      "Company Profiles",
+      "Corporate Communication Materials"
+    ],
   },
   {
-    title: "Signage & Large Format Displays",
-    links: ["PVC Flex Banners", "Roll-Up Banners", "Pop-Up Banners", "Backdrops", "Billboards", "Shop Signage", "Window Graphics", "Wall Murals", "Floor Graphics", "Exhibition Stands"],
+    title: "Promotional Items",
+    links: [
+      "Branded Umbrellas",
+      "T-Shirts Printing",
+      "Hoodies Printing",
+      "Caps Branding",
+      "Corporate Gifts",
+      "Promotional Products",
+      "Tote Bags Printing",
+      "Mugs & Water Bottles Printing",
+      "Notebooks & Diaries"
+    ],
   },
   {
-    title: "Product Packaging & Labels",
-    links: ["Packaging Design", "Product Labels", "Custom Boxes", "Stickers & Decals","Shelf Display Packaging"],
-  },
-  {
-    title: "Marketing & Promotional Print",
-    links: ["Flyers & Brochures", "Posters", "Calendars", "Menus", "Receipt Books", "Notebooks & Diaries", "Promotional Booklets"],
-  },
-  {
-    title: "Corporate Branding & Strategy",
-    links: ["Brand Strategy Consulting", "Corporate Identity Design", "Brand Guidelines", "Wayfinding Signage", "Office Branding", "Safety Signage", "Corporate Communication Materials"],
-  },
-  {
-    title: "Web Design & Software Engineering",
-    links: ["Website Design & Development", "Website UI Layout", "Website Maintenance", "Search Engine Optimization", "Digital Marketing Collateral", "Web Applications", "Responsive Website Design"],
+    title: "Web Services",
+    links: [
+      "Website Design & Development",
+      "Web Applications",
+      "Responsive Website Design",
+      "Website Maintenance",
+      "UI/UX Design",
+      "Search Engine Optimization (SEO)",
+      "Custom Software Development"
+    ],
   },
 ];
 
@@ -59,12 +91,10 @@ export default function Sidebar() {
   const location = useLocation();
   const sidebarRef = useRef(null);
 
-  // Close when navigating
   useEffect(() => {
     setSidebarOpen(false);
   }, [location]);
 
-  // Handle outside clicks
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (sidebarOpen && sidebarRef.current && !sidebarRef.current.contains(event.target)) {
@@ -111,7 +141,6 @@ export default function Sidebar() {
         </nav>
       </aside>
 
-      {/* Floating Toggle Button at the TOP */}
       {!sidebarOpen && (
         <button className="sidebar-toggle" onClick={() => setSidebarOpen(true)}>
           <span style={{ fontSize: '1.2rem' }}>☰</span>

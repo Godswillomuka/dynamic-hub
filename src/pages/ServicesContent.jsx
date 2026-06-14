@@ -1,2123 +1,1842 @@
-import heroImg from "../assets/services/logo-design/hero.jpg";
-import logoImg from "../assets/services/logo-design/about1.jpg";
-import logoImg2 from "../assets/services/logo-design/about2.jpg";
-import logoImg3 from "../assets/services/logo-design/about3.jpg";
+// serviceContent.js
 
-import heroImg2 from "../assets/services/brand-identity/hero.jpg";
-import brandImg from "../assets/services/brand-identity/about1.jpg";
-import brandImg2 from "../assets/services/brand-identity/about2.jpg";
-import brandImg3 from "../assets/services/brand-identity/about3.jpg";
-
-import heroImg3 from "../assets/services/event-posters/hero.jpg";
-import eventPosterImg from "../assets/services/event-posters/about.png";
-import eventPosterImg2 from "../assets/services/event-posters/about2.png";
-import eventPosterImg3 from "../assets/services/event-posters/about3.png";
-
-import heroImg4 from "../assets/services/vehicle-wraps/hero.jpg";
-import vehicleWrapsImg from "../assets/services/vehicle-wraps/about.jpg";
-import vehicleWrapsImg2 from "../assets/services/vehicle-wraps/about2.jpg";
-import vehicleWrapsImg3 from "../assets/services/vehicle-wraps/about3.jpg";
-
-import geometric from "../assets/icons/geometric.png";
-import analysis from "../assets/icons/analysis.png";
-import accessibility from "../assets/icons/accessibility.png";
-import files from "../assets/icons/files.png";
-import crossMedia from "../assets/icons/cross-media.png";
-import visualSystem from "../assets/icons/visual-system.png";
-import consistency from "../assets/icons/consistency.png";
-import colorPsychology from "../assets/icons/color-psychology.png";
-import flexibility from "../assets/icons/flexibility.png";
-import documentation from "../assets/icons/documentation.png";
-
-
-
-export const ServicesContent = {
-  // ==================== CREATIVE GRAPHIC DESIGN (7 services) ====================
+export const serviceContent = {
+  // ==================== GRAPHIC DESIGN ====================
   "logo-design": {
     title: "Logo Design",
-    heroIntro: "Your logo is your brand's signature—we engineer visual marks that encode your identity, values, and market position into a singular, memorable symbol that performs across all mediums.",
-    heroImage: heroImg,
-    about: [
-      { text: "We approach logo design as systematic visual engineering, not arbitrary aesthetics. Each mark is constructed using geometric precision, optical correction, and strategic semantic layering.", image: logoImg },
-      { text: "Our process combines competitive market analysis with mathematical design principles (golden ratio, grid systems, optical weight distribution) to create logos that feel intuitively correct.", image: logoImg2 },
-      { text: "Every logo undergoes scalability stress-testing—from 16px favicons to 10-foot signage—ensuring perfect legibility and impact at any resolution or application context.", image: logoImg3 }
+    category: "Graphic Design",
+    metaDescription: "Professional logo design services in Kenya. We create memorable, versatile logos that capture your brand's essence.",
+    heroImage: "/images/services/logo-design/hero.jpg",
+    heroAlt: "Professional logo design samples",
+    sections: [
+      {
+        type: "text",
+        title: "What Makes a Great Logo?",
+        content: "A great logo is simple, memorable, timeless, versatile, and appropriate. It works across all mediums — from a tiny favicon on a website to a massive billboard. At Azuri, we don't just design pretty icons; we create visual marks that communicate your brand's values, resonate with your target audience, and stand the test of time. Every logo we deliver is strategic, not just artistic.",
+        image: "/images/services/logo-design/process.jpg",
+        imageAlt: "Logo design process sketch",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "What You Get",
+        items: [
+          "Initial consultation & brand discovery session",
+          "3-5 initial concept directions to choose from",
+          "Multiple rounds of revisions on your chosen concept",
+          "Final files in AI, EPS, PNG, JPG, SVG formats",
+          "Full color, black, and white variations",
+          "Brand guidelines page for logo usage rules",
+          "Source files delivered for future edits"
+        ],
+        image: "/images/services/logo-design/deliverables.jpg",
+        imageAlt: "Logo design deliverables package",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Our Design Process",
+        content: "We begin with a deep dive into your brand — your values, target audience, competitors, and vision. Our designers then sketch multiple concepts before moving to digital execution. After presenting initial concepts, we refine your chosen direction through collaborative revisions. The result is a logo you'll love for years to come.",
+        image: "/images/services/logo-design/sketches.jpg",
+        imageAlt: "Logo design sketch variations",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Architectural Design Process", description: "Logos built on geometric frameworks and systematic grid structures, not subjective design choices.", icon: geometric },
-      { title: "Competitive DNA Analysis", description: "Strategic positioning based on visual audits of your industry landscape and competitor analysis.", icon: analysis },
-      { title: "Universal Accessibility", description: "Color contrast optimization and legibility compliance across all user abilities and viewing conditions.", icon: accessibility },
-      { title: "Future-Proof File Architecture", description: "Comprehensive delivery: vector masters, responsive variants, animation specs, and cross-platform implementations.", icon: files },
-      { title: "Cross-Media Validation", description: "Stress-tested across 24+ application scenarios including print, digital, embroidery, etching, and environmental signage.", icon: crossMedia }
-    ],
-    process: [
-      { step: 1, title: "Brand Deconstruction & Audit", text: "Competitive visual analysis, semantic differential mapping, and brand attribute workshops to establish strategic design parameters."},
-      { step: 2, title: "Geometric Architecture", text: "Engineering visual frameworks using mathematical relationships, grid systems, and proportional harmony principles."},
-      { step: 3, title: "Multi-Variant Prototyping", text: "Developing parallel logo ecosystems including primary marks, responsive variants, monograms, and contextual adaptations."},
-      { step: 4, title: "Technical Implementation", text: "Delivering comprehensive file systems with vector masters, pixel-optimized raster sets, and cross-platform implementation guides."}
+    faq: [
+      { question: "Do you offer logo redesigns?", answer: "Yes! We can refresh your existing logo while maintaining brand equity. The process is similar but starts with an audit of your current logo." },
+      { question: "Will I own the copyright?", answer: "Absolutely. Full ownership rights are transferred to you upon final payment. We keep no rights to your logo." },
+      { question: "What if I don't like any concepts?", answer: "We work closely with you throughout. If none of the initial concepts work, we'll create additional options until we find the perfect fit." }
     ]
   },
 
-  "brand-identity-design": {
-    title: "Brand Identity Design",
-    heroIntro: "Transform your business into a cohesive visual system. We architect comprehensive brand identities that communicate consistently across every touchpoint, from stationery to digital ecosystems.",
-    heroImage: heroImg2,
-    about: [
-      { text: "Brand identity is more than a logo—it's a visual language system comprising typography, color, imagery, and composition rules that work in harmony.", image: brandImg },
-      { text: "We develop adaptive identity systems that maintain consistency while allowing flexibility for different contexts, audiences, and communication needs.", image: brandImg2 },
-      { text: "Our approach integrates psychological color theory, typographic hierarchies, and visual rhythm to create identities that resonate emotionally while communicating clearly.", image: brandImg3 }
+  "brochure-design": {
+    title: "Brochure Design",
+    category: "Graphic Design",
+    metaDescription: "Professional brochure design for businesses in Kenya. Tri-fold, bi-fold, and custom brochures that convert readers into customers.",
+    heroImage: "/images/services/brochure/hero.jpg",
+    heroAlt: "Professional brochure design samples",
+    sections: [
+      {
+        type: "text",
+        title: "Brochures That Tell Your Story",
+        content: "A well-designed brochure is a powerful marketing tool that educates, persuades, and converts. Whether you need a simple bi-fold for a product launch or a detailed multi-page catalog, we create brochures that capture attention and drive action. Every brochure we design is print-ready with proper bleeds, folds, and color management.",
+        image: "/images/services/brochure/folded.jpg",
+        imageAlt: "Folded brochure mockup",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Brochure Types We Design",
+        items: [
+          "Bi-Fold Brochures (2 panels)",
+          "Tri-Fold Brochures (3 panels)",
+          "Gate Fold Brochures",
+          "Z-Fold Brochures",
+          "Multi-page Booklets (up to 48 pages)",
+          "Product Catalogs",
+          "Service Menus",
+          "Real Estate Brochures"
+        ],
+        image: "/images/services/brochure/types.jpg",
+        imageAlt: "Different brochure fold types",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Print-Ready Delivery",
+        content: "We don't just send you a PDF. Our designers prepare files with proper bleeds (3mm on all sides), crop marks, fold marks, and CMYK color conversion. We coordinate with our printing department (or your preferred printer) to ensure the final product matches exactly what you approved on screen.",
+        image: "/images/services/brochure/print-ready.jpg",
+        imageAlt: "Print-ready brochure file with crop marks",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Systematic Visual Language", description: "Cohesive design systems with clear rules for typography, color, spacing, and imagery application.", icon: visualSystem },
-      { title: "Cross-Channel Consistency", description: "Identities engineered to perform equally across print, digital, environmental, and experiential touchpoints.", icon: consistency },
-      { title: "Strategic Color Psychology", description: "Color palettes scientifically selected for emotional impact, cultural relevance, and competitive differentiation.", icon: colorPsychology },
-      { title: "Future-Forward Flexibility", description: "Design systems built to evolve with your brand while maintaining core visual recognition.", icon: flexibility },
-      { title: "Comprehensive Documentation", description: "Detailed brand guidelines covering usage rules, dos/don'ts, implementation examples, and digital asset management.", icon: documentation }
-    ],
-    process: [
-      { step: 1, title: "Brand Foundation Analysis", text: "Audit existing assets, define brand archetypes, and establish visual positioning strategy." },
-      { step: 2, title: "Visual Language Development", text: "Create typographic systems, color palettes, photographic styles, and graphic element libraries."  },
-      { step: 3, title: "Application Prototyping", text: "Test identity across core applications (digital, print, environmental) and refine based on performance."},
-      { step: 4, title: "System Documentation", text: "Develop comprehensive brand guidelines with implementation rules, templates, and asset management systems." }
+    faq: [
+      { question: "Do you provide brochure copywriting?", answer: "We focus on design, but we can recommend trusted copywriters. We also work with your provided content." },
+      { question: "Can you print the brochures too?", answer: "Yes! We offer full printing services. Contact us for pricing on quantities." }
     ]
   },
 
-    "event-posters": {
-    title: "Event Posters",
-    heroIntro: "Capture attention and drive attendance with posters that command notice. We design event graphics that stop people in their tracks and communicate essential information with immediate impact.",
-    heroImage: heroImg3,
-    about: [
-      { text: "Event posters must work hard in competitive environments. We design for maximum visibility, immediate comprehension, and strong calls-to-action.", image: eventPosterImg },
-      { text: "Our approach considers viewing distance, environmental context, and audience movement patterns to ensure posters are effective in their specific locations.", image: eventPosterImg2 },
-      { text: "We create versatile poster systems that maintain brand consistency across different event types, sizes, and promotional needs.", image: eventPosterImg3 }
+  "flyer-design": {
+    title: "Flyer Design",
+    category: "Graphic Design",
+    metaDescription: "Eye-catching flyer design services for events, promotions, and businesses in Kenya. Fast turnaround, print-ready files.",
+    heroImage: "/images/services/flyer/hero.jpg",
+    heroAlt: "Professional flyer design examples",
+    sections: [
+      {
+        type: "text",
+        title: "Flyers That Get Noticed",
+        content: "In a world of digital noise, a well-designed physical flyer still gets attention. Whether you're promoting a club night, a church event, a real estate open house, or a retail sale, our flyers are designed to stop people in their tracks and deliver your message instantly.",
+        image: "/images/services/flyer/stack.jpg",
+        imageAlt: "Stack of printed flyers",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Flyer Formats We Design",
+        items: [
+          "A5 Flyers (148 x 210mm) - Perfect for handouts",
+          "A6 Flyers (105 x 148mm) - Great for inserts",
+          "DL Flyers (99 x 210mm) - Ideal for menus",
+          "A4 Flyers (210 x 297mm) - Best for detailed info",
+          "Square Flyers (210 x 210mm) - Modern look",
+          "Custom sizes available"
+        ],
+        image: "/images/services/flyer/sizes.jpg",
+        imageAlt: "Different flyer size comparisons",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Digital vs. Print-Ready",
+        content: "We deliver both versions: print-ready CMYK PDFs with bleeds for physical printing, and RGB optimized JPG/PNG files for social media, email marketing, or WhatsApp sharing. Your flyer works everywhere.",
+        image: "/images/services/flyer/digital-print.jpg",
+        imageAlt: "Flyer shown on phone and as physical print",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Environmental Context Design", description: "Posters engineered for specific locations, viewing distances, and lighting conditions.", icon: visualSystem },
-      { title: "Hierarchy & Scannability", description: "Information structured for instant comprehension even from a distance or while in motion.", icon: consistency },
-      { title: "Production Material Expertise", description: "Knowledge of different papers, finishes, and printing techniques to achieve desired visual impact.", icon: colorPsychology },
-      { title: "Multi-Format Systems", description: "Create coordinated poster families for different sizes, locations, and promotional phases.", icon: flexibility },
-      { title: "Call-to-Action Optimization", description: "Designs that drive specific actions—registration, attendance, social sharing, or inquiries.", icon: documentation }
-    ],
-    process: [
-      { step: 1, title: "Context & Audience Analysis", text: "Understand posting locations, viewing conditions, target audience demographics, and movement patterns." },
-      { step: 2, title: "Information Priority Mapping", text: "Establish visual hierarchy based on what information must be communicated at different viewing distances." },
-      { step: 3, title: "Attention-Commanding Design", text: "Create compositions that stand out in competitive visual environments while maintaining brand integrity." },
-      { step: 4, title: "Production Specification", text: "Select appropriate materials, finishes, and printing methods for desired impact and durability."}
-    ],
-   
+    faq: [
+      { question: "Can I provide my own design?", answer: "Yes, but we recommend letting us design it. If you have an existing design, we can prepare it for print or enhance it." }
+    ]
   },
 
-  
-
-  // ==================== VEHICLE & FLEET BRANDING (7 services) ====================
-  "full-vehicle-wraps": {
-    title: "Full Vehicle Wraps",
-    heroIntro: "Transform vehicles into mobile billboards with precision-engineered full wraps. We design and install complete vehicle graphics that maximize brand visibility while ensuring durability and professional finish.",
-    heroImage: heroImg4,
-    about: [
-      { text: "Full vehicle wraps are complex projects requiring precise design, material selection, and installation expertise. We handle every aspect from concept to road-ready completion.", image: vehicleWrapsImg },
-      { text: "Our designs consider vehicle curvature, panel breaks, and viewing angles to create graphics that work harmoniously with the vehicle's form.", image: vehicleWrapsImg2 },
-      { text: "We use premium vinyl materials and installation techniques that ensure longevity, weather resistance, and professional appearance.", image: vehicleWrapsImg3 }
+  "label-design": {
+    title: "Label Design",
+    category: "Graphic Design",
+    metaDescription: "Custom label design for bottles, jars, and products. Professional label design services in Kenya.",
+    heroImage: "/images/services/label/hero.jpg",
+    heroAlt: "Product label design examples",
+    sections: [
+      {
+        type: "text",
+        title: "Labels That Tell Your Story",
+        content: "On crowded shelves, your label is your silent salesperson. Whether you're launching a new hot sauce, organic honey, coffee brand, or skincare line, we design labels that communicate quality and capture attention. We consider shape, material, adhesion, and printing method for every project.",
+        image: "/images/services/label/bottles.jpg",
+        imageAlt: "Labeled product bottles",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Industries We Serve",
+        items: [
+          "Beverages (water, juice, soda, alcohol)",
+          "Food products (honey, spices, sauces)",
+          "Cosmetics and skincare",
+          "Cleaning products",
+          "Essential oils and aromatherapy",
+          "Pharmaceutical supplements",
+          "Candle and soap labels"
+        ],
+        image: "/images/services/label/industries.jpg",
+        imageAlt: "Labels for different industries",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Regulatory Compliance",
+        content: "We stay updated on KEBS and other regulatory labeling requirements. Our labels include proper space for batch numbers, expiry dates, nutritional information, and legal disclaimers where required — while keeping the design beautiful.",
+        image: "/images/services/label/compliance.jpg",
+        imageAlt: "Label showing compliance elements",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Precision Fit & Finish", description: "Wraps engineered to vehicle-specific contours with perfect alignment at panel edges and complex curves.", icon: visualSystem },
-      { title: "Premium Material Selection", description: "High-quality vinyls with UV protection, scratch resistance, and guaranteed longevity.", icon: consistency },
-      { title: "Installation Expertise", description: "Certified installers with experience handling complex vehicles, curves, and challenging surfaces.", icon: colorPsychology },
-      { title: "Design for Motion", description: "Graphics optimized for viewing from multiple angles and while vehicle is in motion.", icon: flexibility },
-      { title: "Removal Protection", description: "Materials and techniques that protect original paint and allow clean removal when needed.", icon: documentation }
-    ],
-    process: [
-      { step: 1, title: "Vehicle Measurement & Template", text: "Create precise digital templates or physical measurements of the specific vehicle." },
-      { step: 2, title: "Curvature-Aware Design", text: "Design graphics that work with vehicle contours, panel breaks, and viewing perspectives." },
-      { step: 3, title: "Material & Print Specification", text: "Select appropriate vinyl grades, laminate protection, and printing methods for durability." },
-      { step: 4, title: "Professional Installation", text: "Expert application with proper surface prep, alignment techniques, and finishing details." }
-    ],
+    faq: [
+      { question: "Do you design for specific bottle shapes?", answer: "Yes! Send us photos/dimensions of your bottle and we'll create labels that fit perfectly, including curved surface considerations." }
+    ]
   },
 
-  "partial-vehicle-wraps": {
-    title: "Partial Vehicle Wraps",
-    heroIntro: "Strategic vehicle branding with targeted impact. Partial wraps deliver professional brand presence with cost efficiency, focusing graphics on high-visibility areas for maximum recognition.",
-    heroImage: "/assets/services/partial-vehicle-wraps/hero.jpg",
-    about: [
-      { text: "Partial wraps offer smart branding solutions that balance visibility with budget considerations. We identify the most effective vehicle areas for brand placement.", image: "/assets/services/partial-vehicle-wraps/about1.jpg" },
-      { text: "Our designs integrate seamlessly with vehicle paint, creating cohesive looks that appear intentional and professionally executed.", image: "/assets/services/partial-vehicle-wraps/about2.jpg" },
-      { text: "We specialize in creative partial wrap concepts that achieve maximum visual impact through strategic placement and smart design.", image: "/assets/services/partial-vehicle-wraps/about3.jpg" }
+  "business-card-design": {
+    title: "Business Card Design",
+    category: "Graphic Design",
+    metaDescription: "Professional business card design that makes a lasting first impression. Premium designs for Kenyan professionals.",
+    heroImage: "/images/services/business-card/hero.jpg",
+    heroAlt: "Premium business card designs",
+    sections: [
+      {
+        type: "text",
+        title: "First Impressions Matter",
+        content: "Your business card is often the first physical artifact someone takes away from meeting you. It should reflect your professionalism and attention to detail. We design business cards that people keep — not ones that go straight into the trash.",
+        image: "/images/services/business-card/premium.jpg",
+        imageAlt: "Premium business card mockups",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Design Options",
+        items: [
+          "Standard (85 x 55mm) design",
+          "Square business cards",
+          "Rounded corner cards",
+          "Vertical orientation cards",
+          "Double-sided designs",
+          "Spot UV/foiling effects (design only)",
+          "Minimalist to elaborate styles"
+        ],
+        image: "/images/services/business-card/styles.jpg",
+        imageAlt: "Various business card styles",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Print-Ready Delivery",
+        content: "We deliver files set up exactly for printing — with proper bleeds, safe zones, and color profiles. We coordinate with our printing department for premium finishes like matte lamination, spot UV, or raised ink if you choose to print with us.",
+        image: "/images/services/business-card/print-ready.jpg",
+        imageAlt: "Business card print-ready file",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Strategic Placement Analysis", description: "Identify highest-visibility areas and most effective graphic placement for each vehicle type.", icon: "/assets/icons/placement.svg" },
-      { title: "Paint Integration", description: "Designs that work harmoniously with existing vehicle colors and finishes.", icon: "/assets/icons/paint.svg" },
-      { title: "Cost-Effective Solutions", description: "Maximize brand impact while optimizing material usage and installation time.", icon: "/assets/icons/cost-effective.svg" },
-      { title: "Flexible Design Options", description: "Create impactful designs that work within partial coverage constraints.", icon: "/assets/icons/flexibility.svg" },
-      { title: "Easy Future Updates", description: "Partial designs that can be easily updated or expanded as branding needs evolve.", icon: "/assets/icons/updates.svg" }
-    ],
-    process: [
-      { step: 1, title: "Visibility & Impact Assessment", text: "Analyze vehicle to identify highest-impact areas for partial graphic placement.", image: "/assets/services/partial-vehicle-wraps/process1.jpg" },
-      { step: 2, title: "Design Integration Strategy", text: "Create designs that complement vehicle shape, paint color, and existing features.", image: "/assets/services/partial-vehicle-wraps/process2.jpg" },
-      { step: 3, title: "Material Optimization", text: "Select vinyls and printing approaches that balance durability with cost efficiency.", image: "/assets/services/partial-vehicle-wraps/process3.jpg" },
-      { step: 4, title: "Precision Installation", text: "Expert application focusing on perfect alignment with vehicle features and clean edges.", image: "/assets/services/partial-vehicle-wraps/process4.jpg" }
-    ],
-    gallery: {
-      title: "Partial Vehicle Wraps Portfolio",
-      images: [
-        { src: "/assets/services/partial-vehicle-wraps/portfolio1.jpg", alt: "Partial wrap on vehicle doors", caption: "Door Graphics" },
-        { src: "/assets/services/partial-vehicle-wraps/portfolio2.jpg", alt: "Side panel partial wrap", caption: "Side Panel Branding" },
-        { src: "/assets/services/partial-vehicle-wraps/portfolio3.jpg", alt: "Rear window partial wrap", caption: "Rear Window Graphics" },
-        { src: "/assets/services/partial-vehicle-wraps/portfolio4.jpg", alt: "Strategic partial wrap placement", caption: "Strategic Placement" }
-      ]
-    }
+    faq: [
+      { question: "Can I get both print and digital versions?", answer: "Yes! We provide print-ready files plus digital PNG files optimized for LinkedIn, email signatures, and WhatsApp sharing." }
+    ]
   },
 
-  "roadshow-trucks-branding": {
-    title: "Roadshow Trucks Branding",
-    heroIntro: "Mobile experience centers that captivate audiences. We transform trucks into immersive brand environments that create memorable experiences at events, tours, and promotional stops.",
-    heroImage: "/assets/services/roadshow-trucks/hero.jpg",
-    about: [
-      { text: "Roadshow trucks are more than transportation—they're experiential marketing platforms. We design comprehensive branding that includes exterior graphics, interior experiences, and functional elements.", image: "/assets/services/roadshow-trucks/about1.jpg" },
-      { text: "Our approach considers both stationary impact and traveling visibility, creating designs that work effectively in both contexts.", image: "/assets/services/roadshow-trucks/about2.jpg" },
-      { text: "We integrate practical considerations like access points, awning systems, lighting, and interactive elements into cohesive brand experiences.", image: "/assets/services/roadshow-trucks/about3.jpg" }
+  "menu-design": {
+    title: "Menu Design",
+    category: "Graphic Design",
+    metaDescription: "Professional menu design for restaurants, cafes, and hotels in Kenya. Menus that increase sales and enhance dining experience.",
+    heroImage: "/images/services/menu/hero.jpg",
+    heroAlt: "Restaurant menu design examples",
+    sections: [
+      {
+        type: "text",
+        title: "Menus That Sell More",
+        content: "Your menu is your most important sales tool. Strategic design can guide customers to your most profitable items, suggest pairings, and create a pleasant ordering experience. We design menus that balance readability, branding, and psychology.",
+        image: "/images/services/menu/restaurant.jpg",
+        imageAlt: "Restaurant menu on table",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Menu Types We Design",
+        items: [
+          "Single-page restaurant menus",
+          "Multi-page food menus",
+          "Drink and cocktail menus",
+          "Children's menus",
+          "Breakfast/lunch/dinner menus",
+          "Takeaway menus",
+          "Digital/QR code menus",
+          "Buffet and catering menus",
+          "Hotel room service menus"
+        ],
+        image: "/images/services/menu/types.jpg",
+        imageAlt: "Different menu types",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Food Photography Integration",
+        content: "We can work with your food photos or recommend a photographer. For menu design, we know how to place images strategically — not just randomly — to guide the eye and increase appetite appeal.",
+        image: "/images/services/menu/food-photo.jpg",
+        imageAlt: "Menu with food photography",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Experiential Design", description: "Create immersive brand environments rather than just surface graphics.", icon: "/assets/icons/experiential.svg" },
-      { title: "Multi-Functional Integration", description: "Design for practical needs—access points, awning systems, lighting, and interactive features.", icon: "/assets/icons/multi-functional.svg" },
-      { title: "Travel Durability", description: "Materials and installation methods that withstand highway speeds, weather, and frequent setup/breakdown.", icon: "/assets/icons/durability.svg" },
-      { title: "Night Visibility", description: "Design for both day and night impact with strategic lighting integration and reflective elements.", icon: "/assets/icons/night-visibility.svg" },
-      { title: "Modular Systems", description: "Branding that can adapt for different campaign phases, event types, or sponsorship integrations.", icon: "/assets/icons/modular.svg" }
-    ],
-    process: [
-      { step: 1, title: "Experience Mapping", text: "Define audience journey from approach to interaction to departure, identifying key touchpoints.", image: "/assets/services/roadshow-trucks/process1.jpg" },
-      { step: 2, title: "Functional Integration", text: "Design graphics that work with truck functions—doors, awnings, lighting, and interactive elements.", image: "/assets/services/roadshow-trucks/process2.jpg" },
-      { step: 3, title: "Durability Engineering", text: "Select materials and installation methods for highway travel and frequent event use.", image: "/assets/services/roadshow-trucks/process3.jpg" },
-      { step: 4, title: "Lighting & Experience Design", text: "Integrate lighting for night visibility and create engaging interior/exterior experiences.", image: "/assets/services/roadshow-trucks/process4.jpg" }
-    ],
-    gallery: {
-      title: "Roadshow Trucks Portfolio",
-      images: [
-        { src: "/assets/services/roadshow-trucks/portfolio1.jpg", alt: "Roadshow truck at event", caption: "Event Setup" },
-        { src: "/assets/services/roadshow-trucks/portfolio2.jpg", alt: "Truck with interactive displays", caption: "Interactive Experience" },
-        { src: "/assets/services/roadshow-trucks/portfolio3.jpg", alt: "Night view of roadshow truck", caption: "Night Visibility" },
-        { src: "/assets/services/roadshow-trucks/portfolio4.jpg", alt: "Roadshow truck in motion", caption: "Travel Visibility" }
-      ]
-    }
+    faq: [
+      { question: "Do you offer menu printing too?", answer: "Yes! We print menus on various materials — from standard paper to laminated, waterproof, and even reusable plastic menus." }
+    ]
   },
 
-  "delivery-van-branding": {
-    title: "Delivery Van Branding",
-    heroIntro: "Turn delivery vehicles into profit-generating brand ambassadors. We create effective van graphics that build brand recognition throughout delivery routes and service areas.",
-    heroImage: "/assets/services/delivery-van/hero.jpg",
-    about: [
-      { text: "Delivery vans are constantly visible in residential and commercial areas, making them valuable mobile advertising assets.", image: "/assets/services/delivery-van/about1.jpg" },
-      { text: "We design for the delivery context—considering common viewing situations, traffic patterns, and customer interactions.", image: "/assets/services/delivery-van/about2.jpg" },
-      { text: "Our designs balance brand visibility with practical considerations like driver visibility, safety markings, and fleet numbering.", image: "/assets/services/delivery-van/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Route-Based Design", description: "Graphics optimized for typical delivery contexts—residential streets, commercial loading zones, and highway travel.", icon: "/assets/icons/route.svg" },
-      { title: "Customer Interaction Focus", description: "Design elements that enhance the delivery experience and reinforce brand at point of service.", icon: "/assets/icons/customer-interaction.svg" },
-      { title: "Safety Integration", description: "Maintain required safety markings and ensure driver visibility is not compromised.", icon: "/assets/icons/safety.svg" },
-      { title: "Fleet Numbering Systems", description: "Create cohesive numbering/identification systems for easy fleet management.", icon: "/assets/icons/numbering.svg" },
-      { title: "Durability for Daily Use", description: "Materials that withstand frequent door operation, loading/unloading, and urban driving conditions.", icon: "/assets/icons/daily-use.svg" }
-    ],
-    process: [
-      { step: 1, title: "Route & Context Analysis", text: "Study typical delivery patterns, customer interactions, and viewing contexts.", image: "/assets/services/delivery-van/process1.jpg" },
-      { step: 2, title: "Practical Design Integration", text: "Balance brand visibility with operational needs—door access, loading areas, safety requirements.", image: "/assets/services/delivery-van/process2.jpg" },
-      { step: 3, title: "Fleet System Development", text: "Create consistent branding system that accommodates individual vehicle identification.", image: "/assets/services/delivery-van/process3.jpg" },
-      { step: 4, title: "Commercial-Grade Installation", text: "Apply durable materials with reinforced edges at high-wear areas.", image: "/assets/services/delivery-van/process4.jpg" }
-    ],
-    gallery: {
-      title: "Delivery Van Branding Portfolio",
-      images: [
-        { src: "/assets/services/delivery-van/portfolio1.jpg", alt: "Food delivery van branding", caption: "Food Delivery" },
-        { src: "/assets/services/delivery-van/portfolio2.jpg", alt: "Courier service van graphics", caption: "Courier Service" },
-        { src: "/assets/services/delivery-van/portfolio3.jpg", alt: "Fleet of branded delivery vans", caption: "Fleet Consistency" },
-        { src: "/assets/services/delivery-van/portfolio4.jpg", alt: "Parcel delivery van with clear branding", caption: "Parcel Delivery" }
-      ]
-    }
-  },
-
-  "motorcycle-branding": {
-    title: "Motorcycle Branding",
-    heroIntro: "Dynamic branding for high-visibility vehicles. We create motorcycle graphics that maximize impact on compact, curved surfaces while withstanding riding conditions and elements.",
-    heroImage: "/assets/services/motorcycle/hero.jpg",
-    about: [
-      { text: "Motorcycles present unique branding challenges with complex curves, moving parts, and exposure to harsh conditions.", image: "/assets/services/motorcycle/about1.jpg" },
-      { text: "We design graphics that work with motorcycle anatomy—fairings, tanks, fenders—creating cohesive looks that enhance rather than clash with bike aesthetics.", image: "/assets/services/motorcycle/about2.jpg" },
-      { text: "Our materials and installation techniques account for vibration, wind force, temperature changes, and cleaning/maintenance requirements.", image: "/assets/services/motorcycle/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Curve Expertise", description: "Experience designing for complex motorcycle contours and compound curves.", icon: "/assets/icons/curves.svg" },
-      { title: "Riding Condition Durability", description: "Materials and adhesives tested for vibration, wind force, and weather exposure.", icon: "/assets/icons/riding-conditions.svg" },
-      { title: "Aesthetic Enhancement", description: "Designs that complement motorcycle lines and enhance rather than detract from bike appearance.", icon: "/assets/icons/aesthetic.svg" },
-      { title: "Rider Safety Consideration", description: "Ensure graphics don't interfere with controls, visibility, or reflectivity requirements.", icon: "/assets/icons/rider-safety.svg" },
-      { title: "Racing & Event Experience", description: "Understanding of motorsport requirements, sponsor placements, and event visibility needs.", icon: "/assets/icons/racing.svg" }
-    ],
-    process: [
-      { step: 1, title: "Motorcycle Anatomy Analysis", text: "Study specific bike model curves, panel breaks, and surface characteristics.", image: "/assets/services/motorcycle/process1.jpg" },
-      { step: 2, title: "Condition-Tested Design", text: "Create designs that account for vibration, wind exposure, and cleaning requirements.", image: "/assets/services/motorcycle/process2.jpg" },
-      { step: 3, title: "Precision Template Creation", text: "Develop exact templates for each motorcycle model and year.", image: "/assets/services/motorcycle/process3.jpg" },
-      { step: 4, title: "Specialized Installation", text: "Apply with techniques that handle complex curves and ensure long-term adhesion.", image: "/assets/services/motorcycle/process4.jpg" }
-    ],
-    gallery: {
-      title: "Motorcycle Branding Portfolio",
-      images: [
-        { src: "/assets/services/motorcycle/portfolio1.jpg", alt: "Sport bike with custom graphics", caption: "Sport Bike Graphics" },
-        { src: "/assets/services/motorcycle/portfolio2.jpg", alt: "Touring motorcycle branding", caption: "Touring Bike" },
-        { src: "/assets/services/motorcycle/portfolio3.jpg", alt: "Racing motorcycle livery", caption: "Racing Livery" },
-        { src: "/assets/services/motorcycle/portfolio4.jpg", alt: "Custom motorcycle paint and graphics", caption: "Custom Paintwork" }
-      ]
-    }
-  },
-
-  "racing-safari-rally-cars": {
-    title: "Racing & Safari Rally Cars",
-    heroIntro: "High-performance branding for extreme conditions. We create race car liveries that withstand punishing environments while maximizing sponsor visibility and team identity.",
-    heroImage: "/assets/services/racing-cars/hero.jpg",
-    about: [
-      { text: "Race car graphics must perform under extreme conditions—high speeds, weather, debris, and frequent cleaning/maintenance.", image: "/assets/services/racing-cars/about1.jpg" },
-      { text: "We design for specific racing contexts—circuit visibility, television coverage angles, photography opportunities, and fan viewing areas.", image: "/assets/services/racing-cars/about2.jpg" },
-      { text: "Our materials and techniques are proven in motorsport environments, ensuring graphics stay intact through race conditions.", image: "/assets/services/racing-cars/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Extreme Condition Testing", description: "Materials proven in racing environments—heat, vibration, cleaning chemicals, and impact resistance.", icon: "/assets/icons/extreme.svg" },
-      { title: "Broadcast Optimization", description: "Design for television coverage, photography angles, and media visibility.", icon: "/assets/icons/broadcast.svg" },
-      { title: "Sponsor Integration", description: "Strategic sponsor placement that maximizes visibility while maintaining design coherence.", icon: "/assets/icons/sponsor.svg" },
-      { title: "Team Identity Development", description: "Create distinctive liveries that establish strong team recognition across seasons.", icon: "/assets/icons/team-identity.svg" },
-      { title: "Event & Series Compliance", description: "Understanding of series-specific requirements, number placements, and safety markings.", icon: "/assets/icons/compliance.svg" }
-    ],
-    process: [
-      { step: 1, title: "Racing Context Analysis", text: "Study specific race series requirements, broadcast angles, and viewing conditions.", image: "/assets/services/racing-cars/process1.jpg" },
-      { step: 2, title: "Extreme Material Selection", text: "Select vinyls, laminates, and adhesives tested for racing conditions.", image: "/assets/services/racing-cars/process2.jpg" },
-      { step: 3, title: "Visibility Optimization", text: "Design for specific race contexts—speed, distance viewing, and media coverage.", image: "/assets/services/racing-cars/process3.jpg" },
-      { step: 4, title: "Competition Installation", text: "Apply with racing-specific techniques for durability through event conditions.", image: "/assets/services/racing-cars/process4.jpg" }
-    ],
-    gallery: {
-      title: "Racing Cars Portfolio",
-      images: [
-        { src: "/assets/services/racing-cars/portfolio1.jpg", alt: "Circuit racing car with sponsor logos", caption: "Circuit Racing" },
-        { src: "/assets/services/racing-cars/portfolio2.jpg", alt: "Safari rally car with durable graphics", caption: "Safari Rally" },
-        { src: "/assets/services/racing-cars/portfolio3.jpg", alt: "Drag racing car branding", caption: "Drag Racing" },
-        { src: "/assets/services/racing-cars/portfolio4.jpg", alt: "Team fleet with coordinated liveries", caption: "Team Fleet" }
-      ]
-    }
-  },
-
-  "reflective-vehicle-stickers": {
-    title: "Reflective Vehicle Stickers",
-    heroIntro: "24/7 visibility with safety-enhanced branding. We design and produce reflective graphics that ensure your vehicles are seen day and night, combining brand promotion with safety compliance.",
-    heroImage: "/assets/services/reflective-stickers/hero.jpg",
-    about: [
-      { text: "Reflective stickers serve dual purposes—brand visibility and safety enhancement. We balance aesthetic requirements with reflectivity performance.", image: "/assets/services/reflective-stickers/about1.jpg" },
-      { text: "Our designs work effectively in both reflective and non-reflective states, ensuring brand integrity regardless of lighting conditions.", image: "/assets/services/reflective-stickers/about2.jpg" },
-      { text: "We specialize in custom reflective solutions that meet specific safety requirements while maintaining brand identity.", image: "/assets/services/reflective-stickers/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Dual-Purpose Design", description: "Graphics that work effectively both in daylight and when reflecting at night.", icon: "/assets/icons/dual-purpose.svg" },
-      { title: "Safety Compliance", description: "Meet regulatory requirements for commercial vehicle visibility and safety markings.", icon: "/assets/icons/safety-compliance.svg" },
-      { title: "Performance-Grade Materials", description: "Engineered films with certified reflectivity ratings and durability specifications.", icon: "/assets/icons/performance-grade.svg" },
-      { title: "Custom Reflectivity Solutions", description: "Create graphics with varying reflectivity zones for different visibility needs.", icon: "/assets/icons/custom-reflectivity.svg" },
-      { title: "Long-Term Performance", description: "Materials resistant to weathering, cleaning, and UV degradation while maintaining reflectivity.", icon: "/assets/icons/long-term.svg" }
-    ],
-    process: [
-      { step: 1, title: "Visibility Requirement Analysis", text: "Assess safety needs, regulatory requirements, and brand visibility goals.", image: "/assets/services/reflective-stickers/process1.jpg" },
-      { step: 2, title: "Reflectivity Integration", text: "Design graphics that work effectively in both reflective and non-reflective states.", image: "/assets/services/reflective-stickers/process2.jpg" },
-      { step: 3, title: "Material Specification", text: "Select appropriate reflectivity grades and film types for specific applications.", image: "/assets/services/reflective-stickers/process3.jpg" },
-      { step: 4, title: "Performance Testing", text: "Verify reflectivity performance and durability before final application.", image: "/assets/services/reflective-stickers/process4.jpg" }
-    ],
-    gallery: {
-      title: "Reflective Stickers Portfolio",
-      images: [
-        { src: "/assets/services/reflective-stickers/portfolio1.jpg", alt: "Reflective logo on commercial vehicle", caption: "Commercial Vehicle" },
-        { src: "/assets/services/reflective-stickers/portfolio2.jpg", alt: "Safety markings with reflective properties", caption: "Safety Markings" },
-        { src: "/assets/services/reflective-stickers/portfolio3.jpg", alt: "Night view of reflective graphics", caption: "Night Visibility" },
-        { src: "/assets/services/reflective-stickers/portfolio4.jpg", alt: "Custom reflective patterns and designs", caption: "Custom Patterns" }
-      ]
-    }
-  },
-
-  // ==================== CUSTOM MERCHANDISE & APPAREL (7 services) ====================
-  "t-shirts-printing": {
-    title: "T-Shirts Printing",
-    heroIntro: "Wearable branding that people love to wear. We produce high-quality custom t-shirts using advanced printing techniques that ensure durability, comfort, and visual impact.",
-    heroImage: "/assets/services/t-shirts/hero.jpg",
-    about: [
-      { text: "T-shirts are walking advertisements when done right. We balance design impact with print durability and garment comfort.", image: "/assets/services/t-shirts/about1.jpg" },
-      { text: "We match printing techniques to specific needs—digital for complex designs, screen printing for vibrant colors, DTG for detail, and transfers for small runs.", image: "/assets/services/t-shirts/about2.jpg" },
-      { text: "Our expertise includes fabric selection, print placement, and technique matching to ensure shirts look great and last through wears and washes.", image: "/assets/services/t-shirts/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Technique Matching", description: "Select optimal printing method for each design—screen, DTG, sublimation, or transfer based on artwork and quantity.", icon: "/assets/icons/technique.svg" },
-      { title: "Fabric Expertise", description: "Knowledge of different cotton blends, performance fabrics, and their interaction with various printing methods.", icon: "/assets/icons/fabric.svg" },
-      { title: "Durability Testing", description: "Prints engineered to withstand commercial washing while maintaining color vibrancy and detail.", icon: "/assets/icons/durability.svg" },
-      { title: "Comfort Optimization", description: "Design placement and technique selection that maintains garment breathability and comfort.", icon: "/assets/icons/comfort.svg" },
-      { title: "Brand Integration", description: "Create merchandise that extends brand identity while being desirable as standalone apparel.", icon: "/assets/icons/brand-apparel.svg" }
-    ],
-    process: [
-      { step: 1, title: "Purpose & Context Analysis", text: "Define shirt purpose (event, merchandise, uniform), target audience, and usage context.", image: "/assets/services/t-shirts/process1.jpg" },
-      { step: 2, title: "Garment & Technique Selection", text: "Choose appropriate fabrics, printing methods, and shirt styles for project requirements.", image: "/assets/services/t-shirts/process2.jpg" },
-      { step: 3, title: "Print-Ready Design Preparation", text: "Optimize artwork for chosen printing method, considering color separation, registration, and fabric characteristics.", image: "/assets/services/t-shirts/process3.jpg" },
-      { step: 4, title: "Quality Production", text: "Execute printing with attention to registration, curing, and quality control at every stage.", image: "/assets/services/t-shirts/process4.jpg" }
-    ],
-    gallery: {
-      title: "T-Shirts Printing Portfolio",
-      images: [
-        { src: "/assets/services/t-shirts/portfolio1.jpg", alt: "Screen printed t-shirts with vibrant colors", caption: "Screen Printing" },
-        { src: "/assets/services/t-shirts/portfolio2.jpg", alt: "DTG printed t-shirts with detailed artwork", caption: "Direct-to-Garment" },
-        { src: "/assets/services/t-shirts/portfolio3.jpg", alt: "Sublimated t-shirts with full-color designs", caption: "Sublimation" },
-        { src: "/assets/services/t-shirts/portfolio4.jpg", alt: "Event t-shirts for large groups", caption: "Event Merchandise" }
-      ]
-    }
-  },
-
-  "hoodies-printing": {
-    title: "Hoodies Printing",
-    heroIntro: "Premium custom hoodies that combine comfort with professional branding. We produce high-quality hooded sweatshirts that become cherished brand ambassadors through superior materials and printing excellence.",
-    heroImage: "/assets/services/hoodies/hero.jpg",
-    about: [
-      { text: "Hoodies represent premium merchandise opportunities. We focus on quality fabrics, comfortable fits, and printing techniques that work with heavier materials.", image: "/assets/services/hoodies/about1.jpg" },
-      { text: "Our hoodie selection includes various weights, blends, and styles suitable for different climates, audiences, and usage contexts.", image: "/assets/services/hoodies/about2.jpg" },
-      { text: "We specialize in printing techniques optimized for fleece fabrics, ensuring vibrant colors and durability through washing and wear.", image: "/assets/services/hoodies/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Premium Fabric Selection", description: "High-quality cotton blends, fleece weights, and fabric finishes for comfort and durability.", icon: "/assets/icons/premium-fabric.svg" },
-      { title: "Fleece-Specific Printing", description: "Techniques optimized for textured fabrics that maintain design integrity on fleece surfaces.", icon: "/assets/icons/fleece.svg" },
-      { title: "Construction Quality", description: "Attention to stitching, drawstrings, pocket construction, and overall garment durability.", icon: "/assets/icons/construction.svg" },
-      { title: "Seasonal Adaptation", description: "Recommend appropriate weights and styles for different climates and seasonal needs.", icon: "/assets/icons/seasonal.svg" },
-      { title: "Brand Elevation", description: "Create merchandise that enhances brand perception through quality and design excellence.", icon: "/assets/icons/elevation.svg" }
-    ],
-    process: [
-      { step: 1, title: "Usage Context Analysis", text: "Determine hoodie purpose (uniform, merchandise, event giveaway), target audience, and wearing conditions.", image: "/assets/services/hoodies/process1.jpg" },
-      { step: 2, title: "Fabric & Style Selection", text: "Choose appropriate fleece weight, fabric blend, hoodie style, and construction features.", image: "/assets/services/hoodies/process2.jpg" },
-      { step: 3, title: "Print Technique Matching", text: "Select optimal printing method for fleece fabric and design requirements.", image: "/assets/services/hoodies/process3.jpg" },
-      { step: 4, title: "Production & Finishing", text: "Execute printing with proper curing for fleece and conduct quality checks on construction details.", image: "/assets/services/hoodies/process4.jpg" }
-    ],
-    gallery: {
-      title: "Hoodies Printing Portfolio",
-      images: [
-        { src: "/assets/services/hoodies/portfolio1.jpg", alt: "Pullover hoodies with front print", caption: "Pullover Hoodies" },
-        { src: "/assets/services/hoodies/portfolio2.jpg", alt: "Zip-up hoodies with side graphics", caption: "Zip-Up Hoodies" },
-        { src: "/assets/services/hoodies/portfolio3.jpg", alt: "Premium heavyweight hoodies", caption: "Heavyweight Quality" },
-        { src: "/assets/services/hoodies/portfolio4.jpg", alt: "Fleece-lined hoodies for cold weather", caption: "Cold Weather Gear" }
-      ]
-    }
-  },
-
-  "caps-branding": {
-    title: "Caps Branding",
-    heroIntro: "Head-turning custom caps that build brand recognition at eye level. We produce professional headwear with precise embroidery and printing that withstands daily wear and maintains crisp branding.",
-    heroImage: "/assets/services/caps/hero.jpg",
-    about: [
-      { text: "Caps present unique branding challenges with curved surfaces, structured panels, and visibility considerations.", image: "/assets/services/caps/about1.jpg" },
-      { text: "We specialize in embroidery techniques for caps, ensuring thread density, stitch direction, and backing materials work with cap construction.", image: "/assets/services/caps/about2.jpg" },
-      { text: "Our expertise includes various cap styles, materials, and closure systems to match different brand personalities and audience preferences.", image: "/assets/services/caps/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Embroidery Precision", description: "High-density embroidery with proper stitch direction and thread tension for crisp, durable logos.", icon: "/assets/icons/embroidery.svg" },
-      { title: "Curve Adaptation", description: "Designs adapted for cap curvature and structured panels to maintain visual integrity.", icon: "/assets/icons/cap-curve.svg" },
-      { title: "Material Expertise", description: "Knowledge of different cap fabrics, sweatbands, closures, and construction methods.", icon: "/assets/icons/cap-materials.svg" },
-      { title: "Visibility Optimization", description: "Placement and sizing considerations for maximum visibility and brand impact.", icon: "/assets/icons/visibility.svg" },
-      { title: "Wear Testing", description: "Ensure branding withstands handling, cleaning, and environmental exposure typical for headwear.", icon: "/assets/icons/wear-test.svg" }
-    ],
-    process: [
-      { step: 1, title: "Cap Style & Context Analysis", text: "Determine appropriate cap style for brand, audience, and usage context.", image: "/assets/services/caps/process1.jpg" },
-      { step: 2, title: "Design Adaptation", text: "Adapt artwork for embroidery requirements, cap curvature, and visibility considerations.", image: "/assets/services/caps/process2.jpg" },
-      { step: 3, title: "Embroidery File Preparation", text: "Create digitized embroidery files with proper stitch types, densities, and underlays.", image: "/assets/services/caps/process3.jpg" },
-      { step: 4, title: "Production & Quality Control", text: "Execute embroidery with tension testing, thread matching, and construction quality checks.", image: "/assets/services/caps/process4.jpg" }
-    ],
-    gallery: {
-      title: "Caps Branding Portfolio",
-      images: [
-        { src: "/assets/services/caps/portfolio1.jpg", alt: "Baseball caps with embroidered logos", caption: "Baseball Caps" },
-        { src: "/assets/services/caps/portfolio2.jpg", alt: "Snapback caps with front embroidery", caption: "Snapback Caps" },
-        { src: "/assets/services/caps/portfolio3.jpg", alt: "Dad hats with subtle branding", caption: "Dad Hats" },
-        { src: "/assets/services/caps/portfolio4.jpg", alt: "Trucker caps with mesh backing", caption: "Trucker Caps" }
-      ]
-    }
-  },
-
-  "corporate-gifts": {
-    title: "Corporate Gifts",
-    heroIntro: "Strategic corporate gifting that strengthens relationships and reinforces brand loyalty. We curate and brand premium gift items that create lasting impressions and meaningful connections.",
-    heroImage: "/assets/services/corporate-gifts/hero.jpg",
-    about: [
-      { text: "Corporate gifts are relationship-building tools that should reflect brand values while providing genuine utility and appeal.", image: "/assets/services/corporate-gifts/about1.jpg" },
-      { text: "We curate gift items based on recipient profiles, occasion, budget, and brand alignment to ensure relevance and appreciation.", image: "/assets/services/corporate-gifts/about2.jpg" },
-      { text: "Our branding approach considers item materials, surfaces, and usage contexts to apply logos and messages effectively and tastefully.", image: "/assets/services/corporate-gifts/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Strategic Gift Curation", description: "Select items aligned with brand values, recipient interests, and relationship-building objectives.", icon: "/assets/icons/curation.svg" },
-      { title: "Brand Application Excellence", description: "Tasteful branding that enhances rather than overwhelms gift items.", icon: "/assets/icons/tasteful-branding.svg" },
-      { title: "Quality Assurance", description: "Source premium items with attention to materials, craftsmanship, and perceived value.", icon: "/assets/icons/quality-assurance.svg" },
-      { title: "Packaging Integration", description: "Complete gift presentation including branded packaging, personalization, and presentation elements.", icon: "/assets/icons/packaging.svg" },
-      { title: "Ethical Sourcing", description: "Consider sustainability, ethical production, and corporate responsibility in gift selection.", icon: "/assets/icons/ethical.svg" }
-    ],
-    process: [
-      { step: 1, title: "Gifting Strategy Development", text: "Define objectives, recipient profiles, budget parameters, and brand alignment criteria.", image: "/assets/services/corporate-gifts/process1.jpg" },
-      { step: 2, title: "Item Curation & Sourcing", text: "Research and select appropriate items based on strategy, quality, and branding feasibility.", image: "/assets/services/corporate-gifts/process2.jpg" },
-      { step: 3, title: "Brand Integration Design", text: "Develop tasteful branding approaches suitable for selected items and surfaces.", image: "/assets/services/corporate-gifts/process3.jpg" },
-      { step: 4, title: "Complete Gift Assembly", text: "Coordinate branding, packaging, personalization, and delivery for turnkey gifting solutions.", image: "/assets/services/corporate-gifts/process4.jpg" }
-    ],
-    gallery: {
-      title: "Corporate Gifts Portfolio",
-      images: [
-        { src: "/assets/services/corporate-gifts/portfolio1.jpg", alt: "Executive gift sets with premium packaging", caption: "Executive Gifts" },
-        { src: "/assets/services/corporate-gifts/portfolio2.jpg", alt: "Branded tech accessories as gifts", caption: "Tech Accessories" },
-        { src: "/assets/services/corporate-gifts/portfolio3.jpg", alt: "Customized drinkware gift sets", caption: "Drinkware Sets" },
-        { src: "/assets/services/corporate-gifts/portfolio4.jpg", alt: "Eco-friendly corporate gifts", caption: "Sustainable Gifts" }
-      ]
-    }
-  },
-
-  "promotional-products": {
-    title: "Promotional Products",
-    heroIntro: "Effective promotional items that extend brand reach and drive engagement. We produce practical, desirable products that keep your brand visible in daily life while delivering tangible utility.",
-    heroImage: "/assets/services/promotional-products/hero.jpg",
-    about: [
-      { text: "Promotional products succeed when they're useful, well-made, and appropriately branded. We focus on items that recipients will actually use and appreciate.", image: "/assets/services/promotional-products/about1.jpg" },
-      { text: "Our approach combines product usefulness with branding effectiveness, ensuring items serve as constant brand reminders rather than disposable giveaways.", image: "/assets/services/promotional-products/about2.jpg" },
-      { text: "We specialize in cost-effective bulk solutions that maintain quality and branding impact while fitting promotional budgets.", image: "/assets/services/promotional-products/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Utility-Focused Selection", description: "Choose items based on genuine usefulness, quality, and likelihood of repeated use.", icon: "/assets/icons/utility.svg" },
-      { title: "Cost-Effective Production", description: "Bulk solutions that maintain quality while optimizing for promotional budgets.", icon: "/assets/icons/bulk.svg" },
-      { title: "Brand Visibility Strategy", description: "Select items and placement that maximize brand exposure in relevant contexts.", icon: "/assets/icons/visibility-strategy.svg" },
-      { title: "Quality Control", description: "Ensure production quality meets expectations for both item durability and branding execution.", icon: "/assets/icons/quality-control.svg" },
-      { title: "Campaign Integration", description: "Coordinate with broader marketing campaigns for cohesive promotional impact.", icon: "/assets/icons/campaign.svg" }
-    ],
-    process: [
-      { step: 1, title: "Promotional Objective Analysis", text: "Define campaign goals, target audience, distribution methods, and desired brand exposure.", image: "/assets/services/promotional-products/process1.jpg" },
-      { step: 2, title: "Product Selection & Sourcing", text: "Identify appropriate items based on utility, cost, branding potential, and audience appeal.", image: "/assets/services/promotional-products/process2.jpg" },
-      { step: 3, title: "Brand Application Planning", text: "Design effective branding that works with selected items and production methods.", image: "/assets/services/promotional-products/process3.jpg" },
-      { step: 4, title: "Bulk Production Management", text: "Coordinate manufacturing, quality checks, and logistics for efficient bulk delivery.", image: "/assets/services/promotional-products/process4.jpg" }
-    ],
-    gallery: {
-      title: "Promotional Products Portfolio",
-      images: [
-        { src: "/assets/services/promotional-products/portfolio1.jpg", alt: "Branded pens and writing instruments", caption: "Writing Instruments" },
-        { src: "/assets/services/promotional-products/portfolio2.jpg", alt: "USB drives with custom branding", caption: "Tech Giveaways" },
-        { src: "/assets/services/promotional-products/portfolio3.jpg", alt: "Branded stationery sets", caption: "Stationery Items" },
-        { src: "/assets/services/promotional-products/portfolio4.jpg", alt: "Eco-friendly promotional products", caption: "Sustainable Promo Items" }
-      ]
-    }
-  },
-
-  "tote-bags-printing": {
-    title: "Tote Bags Printing",
-    heroIntro: "Sustainable brand ambassadors that combine utility with environmental consciousness. We produce custom tote bags that promote your brand while reducing plastic waste through durable, reusable solutions.",
-    heroImage: "/assets/services/tote-bags/hero.jpg",
-    about: [
-      { text: "Tote bags serve dual purposes as practical items and statements of brand values, particularly around sustainability.", image: "/assets/services/tote-bags/about1.jpg" },
-      { text: "We work with various bag materials—cotton, canvas, recycled fabrics, non-woven poly—matching materials to brand positioning and usage needs.", image: "/assets/services/tote-bags/about2.jpg" },
-      { text: "Our printing techniques are optimized for bag fabrics, ensuring durability through carrying weight, folding, and washing.", image: "/assets/services/tote-bags/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Material Sustainability", description: "Offer eco-friendly options including organic cotton, recycled materials, and biodegradable fabrics.", icon: "/assets/icons/sustainability.svg" },
-      { title: "Durability Engineering", description: "Select fabrics and construction methods suitable for intended carrying weights and usage frequency.", icon: "/assets/icons/bag-durability.svg" },
-      { title: "Print Longevity", description: "Techniques that withstand folding, washing, and abrasion while maintaining color vibrancy.", icon: "/assets/icons/print-longevity.svg" },
-      { title: "Design Adaptability", description: "Create effective designs that work with bag dimensions, handles, and practical usage considerations.", icon: "/assets/icons/adaptability.svg" },
-      { title: "Brand Values Alignment", description: "Match bag materials and messaging to brand sustainability commitments and corporate values.", icon: "/assets/icons/values.svg" }
-    ],
-    process: [
-      { step: 1, title: "Usage & Values Analysis", text: "Determine bag purpose, carrying requirements, brand values alignment, and target audience preferences.", image: "/assets/services/tote-bags/process1.jpg" },
-      { step: 2, title: "Material & Construction Selection", text: "Choose appropriate fabrics, weights, handle types, and construction methods.", image: "/assets/services/tote-bags/process2.jpg" },
-      { step: 3, title: "Print Technique Matching", text: "Select optimal printing method for chosen fabric and design requirements.", image: "/assets/services/tote-bags/process3.jpg" },
-      { step: 4, title: "Production & Quality Testing", text: "Produce with attention to construction strength, print durability, and functional testing.", image: "/assets/services/tote-bags/process4.jpg" }
-    ],
-    gallery: {
-      title: "Tote Bags Portfolio",
-      images: [
-        { src: "/assets/services/tote-bags/portfolio1.jpg", alt: "Canvas tote bags with screen printing", caption: "Canvas Totes" },
-        { src: "/assets/services/tote-bags/portfolio2.jpg", alt: "Recycled material tote bags", caption: "Recycled Material" },
-        { src: "/assets/services/tote-bags/portfolio3.jpg", alt: "Non-woven polypropylene tote bags", caption: "Non-Woven Poly" },
-        { src: "/assets/services/tote-bags/portfolio4.jpg", alt: "Organic cotton tote bags", caption: "Organic Cotton" }
-      ]
-    }
-  },
-
-  "mugs-water-bottles-printing": {
-    title: "Mugs & Water Bottles Printing",
-    heroIntro: "Daily-use items that keep your brand top of mind. We produce custom drinkware with durable printing that withstands daily use, washing, and temperature changes while maintaining brand visibility.",
-    heroImage: "/assets/services/drinkware/hero.jpg",
-    about: [
-      { text: "Drinkware offers constant brand exposure through daily routines. We focus on items people actually use regularly in visible contexts.", image: "/assets/services/drinkware/about1.jpg" },
-      { text: "Our expertise includes various printing techniques suitable for different materials—ceramic, stainless steel, plastic, glass—and usage conditions.", image: "/assets/services/drinkware/about2.jpg" },
-      { text: "We ensure printing durability for items that undergo frequent washing, temperature changes, and handling.", image: "/assets/services/drinkware/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Usage Frequency Maximization", description: "Select items that integrate naturally into daily routines for repeated brand exposure.", icon: "/assets/icons/frequency.svg" },
-      { title: "Material-Specific Printing", description: "Techniques optimized for different surfaces—ceramic, stainless steel, plastic, glass.", icon: "/assets/icons/material-specific.svg" },
-      { title: "Durability Assurance", description: "Printing methods tested for dishwasher safety, temperature resistance, and handling durability.", icon: "/assets/icons/dishwasher-safe.svg" },
-      { title: "Ergonomic Considerations", description: "Ensure branding doesn't interfere with comfortable handling and practical use.", icon: "/assets/icons/ergonomic.svg" },
-      { title: "Office & Home Integration", description: "Items suitable for both workplace and home use, maximizing visibility across contexts.", icon: "/assets/icons/integration.svg" }
-    ],
-    process: [
-      { step: 1, title: "Usage Context Analysis", text: "Determine primary use contexts—office, home, travel—and user demographics.", image: "/assets/services/drinkware/process1.jpg" },
-      { step: 2, title: "Item & Material Selection", text: "Choose appropriate drinkware types, materials, and sizes for intended use.", image: "/assets/services/drinkware/process2.jpg" },
-      { step: 3, title: "Print Technique Specification", text: "Select printing method suitable for material, usage conditions, and design requirements.", image: "/assets/services/drinkware/process3.jpg" },
-      { step: 4, title: "Durability Testing", text: "Verify printing withstands intended use conditions including washing and temperature changes.", image: "/assets/services/drinkware/process4.jpg" }
-    ],
-    gallery: {
-      title: "Drinkware Portfolio",
-      images: [
-        { src: "/assets/services/drinkware/portfolio1.jpg", alt: "Ceramic mugs with full-wrap printing", caption: "Ceramic Mugs" },
-        { src: "/assets/services/drinkware/portfolio2.jpg", alt: "Stainless steel water bottles", caption: "Stainless Bottles" },
-        { src: "/assets/services/drinkware/portfolio3.jpg", alt: "Travel mugs with spill-proof lids", caption: "Travel Mugs" },
-        { src: "/assets/services/drinkware/portfolio4.jpg", alt: "Glassware with etched branding", caption: "Etched Glassware" }
-      ]
-    }
-  },
-
-  // ==================== BUSINESS IDENTITY & STATIONERY (7 services) ====================
-  "business-cards": {
-    title: "Business Cards",
-    heroIntro: "First impressions materialized. We design and produce business cards that communicate professionalism, brand quality, and attention to detail in a compact format.",
-    heroImage: "/assets/services/business-cards/hero.jpg",
-    about: [
-      { text: "Business cards are tactile brand experiences. We consider paper stock, finishing techniques, and design details that create memorable impressions.", image: "/assets/services/business-cards/about1.jpg" },
-      { text: "Our approach balances aesthetic appeal with functional information hierarchy, ensuring cards are both beautiful and practical.", image: "/assets/services/business-cards/about2.jpg" },
-      { text: "We specialize in creative solutions that make cards stand out while maintaining professional appropriateness for different industries.", image: "/assets/services/business-cards/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Material Expertise", description: "Knowledge of paper stocks, weights, finishes, and specialty materials for different brand expressions.", icon: "/assets/icons/paper-expertise.svg" },
-      { title: "Finishing Techniques", description: "Experience with spot UV, foil stamping, embossing, die-cutting, and other premium enhancements.", icon: "/assets/icons/finishing.svg" },
-      { title: "Information Hierarchy", description: "Design that organizes contact details with clarity while creating visual impact.", icon: "/assets/icons/info-hierarchy.svg" },
-      { title: "Brand Consistency", description: "Cards that perfectly extend brand identity from logo to typography to color application.", icon: "/assets/icons/card-consistency.svg" },
-      { title: "Production Precision", description: "Attention to registration, cutting accuracy, and finishing quality for professional results.", icon: "/assets/icons/production-precision.svg" }
-    ],
-    process: [
-      { step: 1, title: "Brand & Role Analysis", text: "Understand professional context, industry norms, and desired brand impression.", image: "/assets/services/business-cards/process1.jpg" },
-      { step: 2, title: "Material & Finish Selection", text: "Choose appropriate paper, weight, and enhancement techniques for brand positioning.", image: "/assets/services/business-cards/process2.jpg" },
-      { step: 3, title: "Information Architecture", text: "Design clear hierarchy and layout for essential contact information.", image: "/assets/services/business-cards/process3.jpg" },
-      { step: 4, title: "Precision Production", text: "Execute with attention to registration, finishing quality, and consistency across print run.", image: "/assets/services/business-cards/process4.jpg" }
-    ],
-    gallery: {
-      title: "Business Cards Portfolio",
-      images: [
-        { src: "/assets/services/business-cards/portfolio1.jpg", alt: "Premium business cards with foil stamping", caption: "Foil Stamped" },
-        { src: "/assets/services/business-cards/portfolio2.jpg", alt: "Die-cut business cards with unique shapes", caption: "Die-Cut Designs" },
-        { src: "/assets/services/business-cards/portfolio3.jpg", alt: "Embossed business cards with texture", caption: "Embossed Texture" },
-        { src: "/assets/services/business-cards/portfolio4.jpg", alt: "Spot UV business cards with gloss effects", caption: "Spot UV Effects" }
-      ]
-    }
-  },
-
-  "letterheads": {
-    title: "Letterheads",
-    heroIntro: "Professional correspondence elevated. We design custom letterheads that establish credibility, reinforce brand identity, and create polished foundations for business communications.",
-    heroImage: "/assets/services/letterheads/hero.jpg",
-    about: [
-      { text: "Letterheads set the tone for official communications. We design systems that work across different correspondence types while maintaining brand consistency.", image: "/assets/services/letterheads/about1.jpg" },
-      { text: "Our approach considers both print and digital applications, ensuring letterheads work effectively in traditional mail and electronic correspondence.", image: "/assets/services/letterheads/about2.jpg" },
-      { text: "We create flexible systems that accommodate various content lengths, attachment methods, and reproduction scenarios.", image: "/assets/services/letterheads/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Correspondence System Design", description: "Create coordinated systems for letters, memos, proposals, and official documents.", icon: "/assets/icons/correspondence.svg" },
-      { title: "Print-Digital Consistency", description: "Designs that work equally well for printed letters and digital PDF correspondence.", icon: "/assets/icons/print-digital.svg" },
-      { title: "Practical Functionality", description: "Layouts that accommodate different content lengths, signature placement, and attachment methods.", icon: "/assets/icons/functionality.svg" },
-      { title: "Brand Extension", description: "Seamless visual connection to other stationery items and brand materials.", icon: "/assets/icons/extension.svg" },
-      { title: "Production Quality", description: "Attention to paper selection, printing consistency, and professional presentation.", icon: "/assets/icons/quality.svg" }
-    ],
-    process: [
-      { step: 1, title: "Communication Analysis", text: "Understand correspondence types, content requirements, and distribution methods.", image: "/assets/services/letterheads/process1.jpg" },
-      { step: 2, title: "System Architecture", text: "Design flexible layout system for different document types and content lengths.", image: "/assets/services/letterheads/process2.jpg" },
-      { step: 3, title: "Brand Integration", text: "Incorporate brand elements with appropriate prominence for formal communications.", image: "/assets/services/letterheads/process3.jpg" },
-      { step: 4, title: "Template Development", text: "Create both print templates and digital versions for consistent application.", image: "/assets/services/letterheads/process4.jpg" }
-    ],
-    gallery: {
-      title: "Letterheads Portfolio",
-      images: [
-        { src: "/assets/services/letterheads/portfolio1.jpg", alt: "Executive letterhead with premium paper", caption: "Executive Stationery" },
-        { src: "/assets/services/letterheads/portfolio2.jpg", alt: "Corporate letterhead with logo watermark", caption: "Corporate Branding" },
-        { src: "/assets/services/letterheads/portfolio3.jpg", alt: "Legal letterhead with formal design", caption: "Legal Stationery" },
-        { src: "/assets/services/letterheads/portfolio4.jpg", alt: "Digital letterhead template", caption: "Digital Templates" }
-      ]
-    }
-  },
-
-  "envelopes": {
-    title: "Envelopes",
-    heroIntro: "Complete the stationery experience with branded envelopes that create anticipation. We design and produce custom envelopes that protect contents while extending brand identity to mailings.",
-    heroImage: "/assets/services/envelopes/hero.jpg",
-    about: [
-      { text: "Envelopes are the first touchpoint in physical correspondence. We design for both aesthetic impact and practical mailing requirements.", image: "/assets/services/envelopes/about1.jpg" },
-      { text: "Our approach considers postal regulations, mailing efficiency, and protection needs while maintaining brand presence.", image: "/assets/services/envelopes/about2.jpg" },
-      { text: "We specialize in envelope solutions that work with various paper weights, contents, and mailing methods.", image: "/assets/services/envelopes/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Postal Compliance", description: "Designs that meet postal service requirements for addressing, barcode clearance, and processing.", icon: "/assets/icons/postal.svg" },
-      { title: "Brand Continuity", description: "Envelopes that visually connect to enclosed materials and overall stationery system.", icon: "/assets/icons/continuity.svg" },
-      { title: "Material Matching", description: "Select papers and finishes that complement enclosed materials and stationery items.", icon: "/assets/icons/material-matching.svg" },
-      { title: "Security Features", description: "Options for security tinting, tamper evidence, and content protection.", icon: "/assets/icons/security.svg" },
-      { title: "Mailing Efficiency", description: "Designs optimized for efficient addressing, sealing, and postal processing.", icon: "/assets/icons/mailing.svg" }
-    ],
-    process: [
-      { step: 1, title: "Mailing Requirements Analysis", text: "Understand typical contents, mailing methods, postal requirements, and volume needs.", image: "/assets/services/envelopes/process1.jpg" },
-      { step: 2, title: "Envelope Specification", text: "Determine appropriate size, window placement, paper weight, and closure method.", image: "/assets/services/envelopes/process2.jpg" },
-      { step: 3, title: "Brand Integration Design", text: "Create designs that work with envelope format while meeting postal regulations.", image: "/assets/services/envelopes/process3.jpg" },
-      { step: 4, title: "Production & Testing", text: "Produce samples for mailing tests and ensure compatibility with postal equipment.", image: "/assets/services/envelopes/process4.jpg" }
-    ],
-    gallery: {
-      title: "Envelopes Portfolio",
-      images: [
-        { src: "/assets/services/envelopes/portfolio1.jpg", alt: "Window envelopes for invoices", caption: "Window Envelopes" },
-        { src: "/assets/services/envelopes/portfolio2.jpg", alt: "Security tinted envelopes", caption: "Security Envelopes" },
-        { src: "/assets/services/envelopes/portfolio3.jpg", alt: "Luxury envelopes with foil stamping", caption: "Luxury Envelopes" },
-        { src: "/assets/services/envelopes/portfolio4.jpg", alt: "Self-seal business envelopes", caption: "Business Envelopes" }
-      ]
-    }
-  },
-
-  "presentation-folders": {
-    title: "Presentation Folders",
-    heroIntro: "Professional document packaging that makes lasting impressions. We design custom presentation folders that organize, protect, and elevate your business materials with sophistication and brand integrity.",
-    heroImage: "/assets/services/presentation-folders/hero.jpg",
-    about: [
-      { text: "Presentation folders are packaging solutions for important documents. We design for both aesthetic appeal and functional organization.", image: "/assets/services/presentation-folders/about1.jpg" },
-      { text: "Our approach considers document types, quantity variations, and presentation contexts to create optimal folder solutions.", image: "/assets/services/presentation-folders/about2.jpg" },
-      { text: "We specialize in folder construction, pocket configurations, and finishing techniques that enhance both utility and perception.", image: "/assets/services/presentation-folders/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Document Organization", description: "Design pocket configurations and interior layouts that organize materials logically.", icon: "/assets/icons/organization.svg" },
-      { title: "Professional Perception", description: "Folders that convey quality, organization, and attention to detail.", icon: "/assets/icons/perception.svg" },
-      { title: "Material Durability", description: "Select papers and construction methods suitable for repeated use and document protection.", icon: "/assets/icons/folder-durability.svg" },
-      { title: "Brand Experience", description: "Create cohesive unboxing and presentation experiences that reinforce brand values.", icon: "/assets/icons/experience.svg" },
-      { title: "Custom Configuration", description: "Tailor pockets, fasteners, and features to specific document types and quantities.", icon: "/assets/icons/custom-config.svg" }
-    ],
-    process: [
-      { step: 1, title: "Document Analysis", text: "Understand typical contents, quantities, presentation contexts, and handling requirements.", image: "/assets/services/presentation-folders/process1.jpg" },
-      { step: 2, title: "Configuration Design", text: "Design pocket layout, fastener options, and organizational features.", image: "/assets/services/presentation-folders/process2.jpg" },
-      { step: 3, title: "Material & Construction Selection", text: "Choose appropriate papers, weights, and construction methods for durability.", image: "/assets/services/presentation-folders/process3.jpg" },
-      { step: 4, title: "Brand Integration", text: "Incorporate branding with appropriate prominence while maintaining professional appearance.", image: "/assets/services/presentation-folders/process4.jpg" }
-    ],
-    gallery: {
-      title: "Presentation Folders Portfolio",
-      images: [
-        { src: "/assets/services/presentation-folders/portfolio1.jpg", alt: "Two-pocket presentation folders", caption: "Standard Folders" },
-        { src: "/assets/services/presentation-folders/portfolio2.jpg", alt: "Multi-pocket expandable folders", caption: "Expandable Folders" },
-        { src: "/assets/services/presentation-folders/portfolio3.jpg", alt: "Premium folders with embossing", caption: "Premium Folders" },
-        { src: "/assets/services/presentation-folders/portfolio4.jpg", alt: "Custom shaped presentation folders", caption: "Custom Shapes" }
-      ]
-    }
-  },
-
-  "company-profiles": {
-    title: "Company Profiles",
-    heroIntro: "Strategic corporate storytelling through designed documents. We create compelling company profiles that communicate your story, capabilities, and value proposition with visual impact and narrative clarity.",
-    heroImage: "/assets/services/company-profiles/hero.jpg",
-    about: [
-      { text: "Company profiles are strategic communication tools that should balance information density with visual engagement.", image: "/assets/services/company-profiles/about1.jpg" },
-      { text: "We design profiles that work for different audiences—investors, clients, partners, employees—with appropriate tone and content emphasis.", image: "/assets/services/company-profiles/about2.jpg" },
-      { text: "Our approach integrates written content, photography, infographics, and brand elements into cohesive narrative documents.", image: "/assets/services/company-profiles/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Audience-Specific Design", description: "Tailor content emphasis, tone, and visual style to primary audience needs and interests.", icon: "/assets/icons/audience-specific.svg" },
-      { title: "Information Architecture", description: "Structure complex information into clear, scannable layouts that guide readers through key messages.", icon: "/assets/icons/info-architecture.svg" },
-      { title: "Visual Storytelling", description: "Use photography, graphics, and typography to create emotional connections and memorable presentations.", icon: "/assets/icons/visual-storytelling.svg" },
-      { title: "Brand Narrative", description: "Develop visual and written narratives that communicate company story and value proposition effectively.", icon: "/assets/icons/narrative.svg" },
-      { title: "Multi-Format Optimization", description: "Create versions optimized for print, digital viewing, and presentation contexts.", icon: "/assets/icons/multi-format-opt.svg" }
-    ],
-    process: [
-      { step: 1, title: "Audience & Objective Analysis", text: "Define primary audiences, communication objectives, and key messages.", image: "/assets/services/company-profiles/process1.jpg" },
-      { step: 2, title: "Content Strategy", text: "Structure information hierarchy, narrative flow, and visual-verbal balance.", image: "/assets/services/company-profiles/process2.jpg" },
-      { step: 3, title: "Visual Design System", text: "Create layout system, typographic hierarchy, and visual storytelling approach.", image: "/assets/services/company-profiles/process3.jpg" },
-      { step: 4, title: "Production & Distribution", text: "Produce final documents optimized for intended distribution and viewing methods.", image: "/assets/services/company-profiles/process4.jpg" }
-    ],
-    gallery: {
-      title: "Company Profiles Portfolio",
-      images: [
-        { src: "/assets/services/company-profiles/portfolio1.jpg", alt: "Corporate profile with executive summary", caption: "Corporate Overview" },
-        { src: "/assets/services/company-profiles/portfolio2.jpg", alt: "Investor pitch deck design", caption: "Investor Presentation" },
-        { src: "/assets/services/company-profiles/portfolio3.jpg", alt: "Capability statement design", caption: "Capability Statement" },
-        { src: "/assets/services/company-profiles/portfolio4.jpg", alt: "Annual report with financial data", caption: "Annual Report" }
-      ]
-    }
-  },
-
-  "staff-id-cards": {
-    title: "Staff ID Cards",
-    heroIntro: "Professional identification systems that combine security, functionality, and brand representation. We design and produce staff ID cards that identify, authorize, and unify your team with consistent branding.",
-    heroImage: "/assets/services/id-cards/hero.jpg",
-    about: [
-      { text: "ID cards serve multiple functions—identification, security access, brand representation, and team unity. We design systems that address all these needs.", image: "/assets/services/id-cards/about1.jpg" },
-      { text: "Our approach considers security requirements, durability needs, and brand consistency across organizational levels.", image: "/assets/services/id-cards/about2.jpg" },
-      { text: "We specialize in card systems that integrate with existing security infrastructure while maintaining visual professionalism.", image: "/assets/services/id-cards/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Security Integration", description: "Design cards compatible with various security technologies—magnetic stripes, RFID, smart chips, barcodes.", icon: "/assets/icons/security-integration.svg" },
-      { title: "Durability Engineering", description: "Select materials and lamination methods for daily use, handling, and environmental exposure.", icon: "/assets/icons/card-durability.svg" },
-      { title: "Hierarchical Design", description: "Create visual systems that differentiate staff levels, departments, or access levels while maintaining brand unity.", icon: "/assets/icons/hierarchical.svg" },
-      { title: "Production Efficiency", description: "Systems for efficient photo capture, data integration, and batch production.", icon: "/assets/icons/efficiency.svg" },
-      { title: "Brand Consistency", description: "Cards that extend corporate identity while serving functional identification purposes.", icon: "/assets/icons/id-consistency.svg" }
-    ],
-    process: [
-      { step: 1, title: "Security & Function Analysis", text: "Understand security requirements, access technologies, and organizational structure.", image: "/assets/services/id-cards/process1.jpg" },
-      { step: 2, title: "Card System Design", text: "Create design system that accommodates different staff categories and security features.", image: "/assets/services/id-cards/process2.jpg" },
-      { step: 3, title: "Production Specification", text: "Select appropriate card materials, printing methods, and lamination for durability.", image: "/assets/services/id-cards/process3.jpg" },
-      { step: 4, title: "Implementation System", text: "Develop efficient processes for photo capture, data management, and card issuance.", image: "/assets/services/id-cards/process4.jpg" }
-    ],
-    gallery: {
-      title: "ID Cards Portfolio",
-      images: [
-        { src: "/assets/services/id-cards/portfolio1.jpg", alt: "Corporate ID cards with photo", caption: "Corporate IDs" },
-        { src: "/assets/services/id-cards/portfolio2.jpg", alt: "Event badges with QR codes", caption: "Event Badges" },
-        { src: "/assets/services/id-cards/portfolio3.jpg", alt: "Security access cards with chips", caption: "Access Cards" },
-        { src: "/assets/services/id-cards/portfolio4.jpg", alt: "Visitor passes with temporary design", caption: "Visitor Passes" }
-      ]
-    }
-  },
-
-  "business-stationery-sets": {
-    title: "Business Stationery Sets",
-    heroIntro: "Complete corporate identity packages that ensure brand consistency across all written communications. We design coordinated stationery systems that project professionalism and attention to detail.",
-    heroImage: "/assets/services/stationery-sets/hero.jpg",
-    about: [
-      { text: "Stationery sets establish visual consistency across different communication formats. We design systems where each item complements others while serving its specific function.", image: "/assets/services/stationery-sets/about1.jpg" },
-      { text: "Our approach considers the complete user journey—from writing notes to sending correspondence to filing documents.", image: "/assets/services/stationery-sets/about2.jpg" },
-      { text: "We specialize in creating scalable systems that can grow with organizational needs while maintaining design integrity.", image: "/assets/services/stationery-sets/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "System Cohesion", description: "Create visually unified sets where each item complements others while serving specific functions.", icon: "/assets/icons/cohesion.svg" },
-      { title: "Functional Integration", description: "Design items that work together in practical communication workflows.", icon: "/assets/icons/functional-integration.svg" },
-      { title: "Scalable Systems", description: "Create foundation designs that can accommodate future additions or variations.", icon: "/assets/icons/scalable.svg" },
-      { title: "Quality Consistency", description: "Ensure production quality matches across different items, papers, and printing methods.", icon: "/assets/icons/quality-consistency.svg" },
-      { title: "Brand Application", description: "Extend brand identity consistently across diverse stationery items and formats.", icon: "/assets/icons/brand-application.svg" }
-    ],
-    process: [
-      { step: 1, title: "Communication Workflow Analysis", text: "Understand how different stationery items are used together in daily business activities.", image: "/assets/services/stationery-sets/process1.jpg" },
-      { step: 2, title: "System Architecture", text: "Design visual and functional relationships between different stationery components.", image: "/assets/services/stationery-sets/process2.jpg" },
-      { step: 3, title: "Item Specification", text: "Select appropriate papers, sizes, and production methods for each component.", image: "/assets/services/stationery-sets/process3.jpg" },
-      { step: 4, title: "Coordinated Production", text: "Manage production to ensure visual and quality consistency across all items.", image: "/assets/services/stationery-sets/process4.jpg" }
-    ],
-    gallery: {
-      title: "Stationery Sets Portfolio",
-      images: [
-        { src: "/assets/services/stationery-sets/portfolio1.jpg", alt: "Complete corporate stationery set", caption: "Corporate Set" },
-        { src: "/assets/services/stationery-sets/portfolio2.jpg", alt: "Executive stationery with premium finishes", caption: "Executive Set" },
-        { src: "/assets/services/stationery-sets/portfolio3.jpg", alt: "Legal stationery set with formal design", caption: "Legal Set" },
-        { src: "/assets/services/stationery-sets/portfolio4.jpg", alt: "Creative agency stationery set", caption: "Creative Agency Set" }
-      ]
-    }
-  },
-
-  // ==================== SIGNAGE & LARGE FORMAT DISPLAYS (10 services) ====================
+  // ==================== LARGE FORMAT PRINTING ====================
   "pvc-flex-banners": {
     title: "PVC Flex Banners",
-    heroIntro: "Durable outdoor advertising solutions that withstand elements while delivering high-impact messaging. We produce PVC flex banners engineered for longevity, visibility, and weather resistance in any environment.",
-    heroImage: "/assets/services/flex-banners/hero.jpg",
-    about: [
-      { text: "PVC flex banners are workhorses of outdoor advertising. We focus on material quality, printing durability, and installation methods for long-term performance.", image: "/assets/services/flex-banners/about1.jpg" },
-      { text: "Our banners are engineered for specific environmental conditions—sun exposure, wind loads, temperature ranges, and installation contexts.", image: "/assets/services/flex-banners/about2.jpg" },
-      { text: "We specialize in banner systems that can be reused, relocated, or stored while maintaining visual quality and structural integrity.", image: "/assets/services/flex-banners/about3.jpg" }
+    category: "Large Format Printing",
+    metaDescription: "High-quality PVC flex banner printing in Nairobi. Weather-resistant, durable banners for outdoor advertising.",
+    heroImage: "/images/services/pvc-banner/hero.jpg",
+    heroAlt: "Large PVC flex banner installation",
+    sections: [
+      {
+        type: "text",
+        title: "Durable Outdoor Banners",
+        content: "Our PVC flex banners are manufactured using premium 320gsm flexible vinyl with UV-resistant inks that won't fade quickly. Perfect for outdoor advertising, construction sites, events, retail promotions, and political campaigns. We offer multiple finishing options for easy installation.",
+        image: "/images/services/pvc-banner/outdoor.jpg",
+        imageAlt: "Outdoor PVC banner on building",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Specifications",
+        items: [
+          "Material: 320gsm PVC Flex",
+          "Finish: Matte or Glossy",
+          "UV Resistant (2+ years outdoor life)",
+          "Waterproof and Tear-resistant",
+          "Print resolution: 720dpi high quality",
+          "Maximum width: 3.2 meters (seamless)"
+        ],
+        image: "/images/services/pvc-banner/material.jpg",
+        imageAlt: "PVC flex material closeup",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Finishing Options",
+        content: "We offer hems on all edges, eyelet/grommet installation every 2 feet for rope or zip-tie mounting, pole pockets (sleeves) for banner stands, and Velcro strips for temporary installations. All finishing is done in-house for quality control.",
+        image: "/images/services/pvc-banner/finishing.jpg",
+        imageAlt: "Banner with eyelets and hem",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Weather Resistance", description: "Materials and printing methods tested for UV resistance, water repellency, and temperature stability.", icon: "/assets/icons/weather.svg" },
-      { title: "Installation Engineering", description: "Design reinforcement, grommet placement, and hardware solutions for secure, long-term installation.", icon: "/assets/icons/engineering.svg" },
-      { title: "Durability Testing", description: "Banners tested for tear resistance, color fastness, and material degradation in environmental conditions.", icon: "/assets/icons/testing.svg" },
-      { title: "Visibility Optimization", description: "Design for maximum readability at intended viewing distances and environmental contexts.", icon: "/assets/icons/visibility-opt.svg" },
-      { title: "Reusability Features", description: "Create banners designed for multiple installations, storage, and transportation.", icon: "/assets/icons/reusability.svg" }
-    ],
-    process: [
-      { step: 1, title: "Environmental Analysis", text: "Assess installation location, weather conditions, viewing distances, and installation duration.", image: "/assets/services/flex-banners/process1.jpg" },
-      { step: 2, title: "Material Specification", text: "Select appropriate PVC weight, coating, and reinforcement for conditions and longevity requirements.", image: "/assets/services/flex-banners/process2.jpg" },
-      { step: 3, title: "Design for Durability", text: "Create designs optimized for material characteristics and environmental performance.", image: "/assets/services/flex-banners/process3.jpg" },
-      { step: 4, title: "Production & Finishing", text: "Print with UV-resistant inks, apply protective coatings, and install reinforcement features.", image: "/assets/services/flex-banners/process4.jpg" }
-    ],
-    gallery: {
-      title: "Flex Banners Portfolio",
-      images: [
-        { src: "/assets/services/flex-banners/portfolio1.jpg", alt: "Construction site banner", caption: "Construction Signage" },
-        { src: "/assets/services/flex-banners/portfolio2.jpg", alt: "Retail storefront banner", caption: "Retail Promotion" },
-        { src: "/assets/services/flex-banners/portfolio3.jpg", alt: "Event backdrop banner", caption: "Event Backdrop" },
-        { src: "/assets/services/flex-banners/portfolio4.jpg", alt: "Real estate development banner", caption: "Real Estate" }
-      ]
-    }
+    faq: [
+      { question: "What's the largest banner you can print?", answer: "We can print up to 3.2 meters wide seamlessly. For larger widths, we can seam panels together." }
+    ]
   },
 
   "roll-up-banners": {
-    title: "Roll-Up Banners",
-    heroIntro: "Portable professional displays that deploy in seconds. We produce high-quality roll-up banner systems that combine ease of transport with professional presentation for events, retail, and corporate environments.",
-    heroImage: "/assets/services/roll-up-banners/hero.jpg",
-    about: [
-      { text: "Roll-up banners balance portability with presentation quality. We focus on system reliability, graphic impact, and ease of use for frequent setup and takedown.", image: "/assets/services/roll-up-banners/about1.jpg" },
-      { text: "Our expertise includes various mechanism types, case designs, and graphic attachment methods for different usage frequencies and contexts.", image: "/assets/services/roll-up-banners/about2.jpg" },
-      { text: "We design graphics specifically for roll-up format considerations—curvature, viewing angles, and lighting conditions.", image: "/assets/services/roll-up-banners/about3.jpg" }
+    title: "Roll Up Banners",
+    category: "Large Format Printing",
+    metaDescription: "Professional roll-up banner printing for events, trade shows, and offices in Nairobi. Portable, reusable, and professional.",
+    heroImage: "/images/services/rollup/hero.jpg",
+    heroAlt: "Roll up banner display at event",
+    sections: [
+      {
+        type: "text",
+        title: "Portable Professional Displays",
+        content: "Roll-up banners (also called pull-up banners, retractable banners) are the go-to choice for trade shows, events, conferences, and office reception areas. They set up in seconds, pack into a slim carry bag, and look professional every time.",
+        image: "/images/services/rollup/display.jpg",
+        imageAlt: "Roll up banner at trade show booth",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Available Sizes",
+        items: [
+          "Standard: 80cm x 200cm (most popular)",
+          "Large: 100cm x 200cm",
+          "Mini: 60cm x 160cm",
+          "Custom sizes available"
+        ],
+        image: "/images/services/rollup/sizes.jpg",
+        imageAlt: "Roll up banner size comparison",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Hardware Quality",
+        content: "We use premium aluminum hardware with a stable base and smooth retraction mechanism. The graphic prints on high-quality satin or blockout material and attaches easily to the mechanism. Replacement graphics available for existing hardware.",
+        image: "/images/services/rollup/hardware.jpg",
+        imageAlt: "Roll up banner hardware mechanism",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "System Reliability", description: "Select mechanisms and cases proven for durability through repeated setup and transportation.", icon: "/assets/icons/reliability.svg" },
-      { title: "Setup Efficiency", description: "Design for quick, foolproof setup without tools or technical expertise.", icon: "/assets/icons/setup.svg" },
-      { title: "Portability Optimization", description: "Balance graphic size with case dimensions and weight for easy transport.", icon: "/assets/icons/portability.svg" },
-      { title: "Graphic Adaptability", description: "Design graphics that work with banner curvature and typical event lighting conditions.", icon: "/assets/icons/adaptability.svg" },
-      { title: "Professional Presentation", description: "Ensure crisp graphics, taut surfaces, and stable display for professional appearances.", icon: "/assets/icons/presentation.svg" }
-    ],
-    process: [
-      { step: 1, title: "Usage Frequency Analysis", text: "Determine setup frequency, transportation methods, and user technical expertise.", image: "/assets/services/roll-up-banners/process1.jpg" },
-      { step: 2, title: "System Selection", text: "Choose appropriate mechanism type, case design, and size for usage patterns.", image: "/assets/services/roll-up-banners/process2.jpg" },
-      { step: 3, title: "Graphic Design Adaptation", text: "Create designs optimized for roll-up format, curvature, and typical viewing distances.", image: "/assets/services/roll-up-banners/process3.jpg" },
-      { step: 4, title: "Quality Assembly", text: "Assemble systems with attention to mechanism function, graphic attachment, and case protection.", image: "/assets/services/roll-up-banners/process4.jpg" }
-    ],
-    gallery: {
-      title: "Roll-Up Banners Portfolio",
-      images: [
-        { src: "/assets/services/roll-up-banners/portfolio1.jpg", alt: "Trade show roll-up banner", caption: "Trade Show Display" },
-        { src: "/assets/services/roll-up-banners/portfolio2.jpg", alt: "Retail floor display banner", caption: "Retail Display" },
-        { src: "/assets/services/roll-up-banners/portfolio3.jpg", alt: "Conference presentation banner", caption: "Conference Display" },
-        { src: "/assets/services/roll-up-banners/portfolio4.jpg", alt: "Reception area banner", caption: "Reception Display" }
-      ]
-    }
+    faq: [
+      { question: "Can I buy just the replacement graphic?", answer: "Yes! If you already have a stand, we can provide replacement graphics." }
+    ]
   },
 
-  "pop-up-banners": {
-    title: "Pop-Up Banners",
-    heroIntro: "Rapid-deployment display systems that create instant brand presence. We design and produce pop-up banners that transform from compact packages to impressive displays in minutes, ideal for events and retail environments.",
-    heroImage: "/assets/services/pop-up-banners/hero.jpg",
-    about: [
-      { text: "Pop-up banners offer large format impact with minimal setup complexity. We focus on structural stability, graphic quality, and ease of assembly.", image: "/assets/services/pop-up-banners/about1.jpg" },
-      { text: "Our systems are designed for different space constraints, traffic patterns, and display durations.", image: "/assets/services/pop-up-banners/about2.jpg" },
-      { text: "We specialize in creating eye-catching displays that work effectively in crowded visual environments while being practical for event logistics.", image: "/assets/services/pop-up-banners/about3.jpg" }
+  "backdrop-banners": {
+    title: "Backdrop Banners",
+    category: "Large Format Printing",
+    metaDescription: "Custom backdrop banners for events, weddings, photoshoots, and press conferences in Kenya.",
+    heroImage: "/images/services/backdrop/hero.jpg",
+    heroAlt: "Backdrop banner at event stage",
+    sections: [
+      {
+        type: "text",
+        title: "Event Backdrops That Wow",
+        content: "Whether it's a wedding, corporate gala, product launch, or press conference, your backdrop is the visual centerpiece. It's in every photo, every video, and every memory. We print seamless backdrops up to 20 feet wide with vibrant, non-reflective finishes.",
+        image: "/images/services/backdrop/stage.jpg",
+        imageAlt: "Backdrop banner on event stage",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Backdrop Types",
+        items: [
+          "Step and repeat (with logos)",
+          "Wedding monogram backdrops",
+          "Press conference backdrops",
+          "Photo booth backdrops",
+          "Church altar backdrops",
+          "Product launch displays",
+          "Awards ceremony banners"
+        ],
+        image: "/images/services/backdrop/types.jpg",
+        imageAlt: "Different backdrop styles",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Materials & Finishes",
+        content: "Choose from matte vinyl (non-reflective, great for photos), fabric (lightweight, washable, no wrinkles), or blockout (no light bleed, double-sided possible). We also offer installation frames, truss systems, and pipe-and-drape setups.",
+        image: "/images/services/backdrop/material.jpg",
+        imageAlt: "Backdrop material closeup",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Rapid Deployment", description: "Systems designed for quick assembly by non-technical staff in event environments.", icon: "/assets/icons/rapid.svg" },
-      { title: "Structural Stability", description: "Engineered frames and bases that ensure stability in various floor conditions and traffic areas.", icon: "/assets/icons/stability.svg" },
-      { title: "Graphic Impact", description: "Large format graphics optimized for event lighting and viewing from multiple angles.", icon: "/assets/icons/impact.svg" },
-      { title: "Space Efficiency", description: "Design for effective use of floor space while maximizing brand visibility.", icon: "/assets/icons/space.svg" },
-      { title: "Transport Optimization", description: "Compact packaging that protects graphics and components during transportation.", icon: "/assets/icons/transport.svg" }
-    ],
-    process: [
-      { step: 1, title: "Event Context Analysis", text: "Understand typical venues, floor surfaces, traffic patterns, and setup constraints.", image: "/assets/services/pop-up-banners/process1.jpg" },
-      { step: 2, title: "System Specification", text: "Select appropriate size, frame type, and base design for stability and visual impact.", image: "/assets/services/pop-up-banners/process2.jpg" },
-      { step: 3, title: "Graphic Design for Scale", text: "Create designs that work effectively at large scale in event lighting conditions.", image: "/assets/services/pop-up-banners/process3.jpg" },
-      { step: 4, title: "Assembly Testing", text: "Verify setup simplicity, structural stability, and graphic presentation quality.", image: "/assets/services/pop-up-banners/process4.jpg" }
-    ],
-    gallery: {
-      title: "Pop-Up Banners Portfolio",
-      images: [
-        { src: "/assets/services/pop-up-banners/portfolio1.jpg", alt: "X-banner display at event", caption: "X-Banner Display" },
-        { src: "/assets/services/pop-up-banners/portfolio2.jpg", alt: "L-banner with weighted base", caption: "L-Banner Stand" },
-        { src: "/assets/services/pop-up-banners/portfolio3.jpg", alt: "Twin banner display system", caption: "Twin Display" },
-        { src: "/assets/services/pop-up-banners/portfolio4.jpg", alt: "Multi-panel pop-up display", caption: "Multi-Panel Display" }
-      ]
-    }
+    faq: [
+      { question: "Do you offer backdrop stands/frames?", answer: "Yes! We offer aluminum truss systems and pipe-and-drape frames. Contact us for a quote based on your size needs." }
+    ]
   },
 
-  "backdrops": {
-    title: "Backdrops",
-    heroIntro: "Professional stage and photography backdrops that create controlled environments for branding and storytelling. We produce custom backdrops for events, photography, video production, and retail displays.",
-    heroImage: "/assets/services/backdrops/hero.jpg",
-    about: [
-      { text: "Backdrops serve as controlled visual environments. We design for specific lighting conditions, camera requirements, and audience perspectives.", image: "/assets/services/backdrops/about1.jpg" },
-      { text: "Our expertise includes various backdrop materials—fabric, vinyl, printed panels—each with different hanging, lighting, and portability characteristics.", image: "/assets/services/backdrops/about2.jpg" },
-      { text: "We create backdrops that work with event theming, brand messaging, and practical installation constraints.", image: "/assets/services/backdrops/about3.jpg" }
+  "tear-drop-banners": {
+    title: "Tear-drop Banners",
+    category: "Large Format Printing",
+    metaDescription: "Tear-drop and feather flag banners for outdoor events, car dealerships, and retail promotions in Kenya.",
+    heroImage: "/images/services/teardrop/hero.jpg",
+    heroAlt: "Tear-drop banners outdoors",
+    sections: [
+      {
+        type: "text",
+        title: "High-Impact Outdoor Flags",
+        content: "Tear-drop (feather flag) banners are perfect for curbside attention. Their tall, curved shape catches wind without falling over and draws eyes from far away. Ideal for car dealerships, retail sidewalk sales, construction sites, and outdoor events.",
+        image: "/images/services/teardrop/outdoor.jpg",
+        imageAlt: "Tear-drop banners outside shop",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Flag Sizes",
+        items: [
+          "Small: 150cm x 40cm",
+          "Medium: 200cm x 50cm (most popular)",
+          "Large: 300cm x 60cm",
+          "Extra Large: 400cm x 80cm"
+        ],
+        image: "/images/services/teardrop/sizes.jpg",
+        imageAlt: "Tear-drop flag size comparison",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Complete Kit",
+        content: "Each flag comes with a fiberglass pole system (crossbase or spike), durable ground stake or crossbase stand, and a carrying bag. The flag material is dye-sublimated polyester that's washable, fade-resistant, and wrinkle-free.",
+        image: "/images/services/teardrop/kit.jpg",
+        imageAlt: "Complete tear-drop flag kit",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Lighting Optimization", description: "Design for specific lighting setups—studio lighting, event stage lighting, or natural light conditions.", icon: "/assets/icons/lighting.svg" },
-      { title: "Material Selection", description: "Choose appropriate fabrics or vinyls for hanging method, wrinkle resistance, and light reflection/absorption.", icon: "/assets/icons/backdrop-materials.svg" },
-      { title: "Installation Engineering", description: "Design hanging systems, tensioning methods, and structural support for safe, professional installation.", icon: "/assets/icons/hanging.svg" },
-      { title: "Photographic Quality", description: "Create graphics that reproduce well in photography and video with accurate color representation.", icon: "/assets/icons/photography.svg" },
-      { title: "Thematic Integration", description: "Design backdrops that complement event themes, product presentations, or brand storytelling.", icon: "/assets/icons/thematic.svg" }
-    ],
-    process: [
-      { step: 1, title: "Usage Context Analysis", text: "Determine primary use (photography, stage, retail), lighting conditions, and installation method.", image: "/assets/services/backdrops/process1.jpg" },
-      { step: 2, title: "Material Specification", text: "Select appropriate backdrop material for lighting characteristics, portability, and installation method.", image: "/assets/services/backdrops/process2.jpg" },
-      { step: 3, title: "Design for Media", text: "Create graphics optimized for intended media capture and audience viewing angles.", image: "/assets/services/backdrops/process3.jpg" },
-      { step: 4, title: "Production & Finishing", text: "Print with color accuracy for media reproduction and apply appropriate finishing for installation.", image: "/assets/services/backdrops/process4.jpg" }
-    ],
-    gallery: {
-      title: "Backdrops Portfolio",
-      images: [
-        { src: "/assets/services/backdrops/portfolio1.jpg", alt: "Photography studio backdrop", caption: "Studio Backdrop" },
-        { src: "/assets/services/backdrops/portfolio2.jpg", alt: "Event stage backdrop", caption: "Stage Backdrop" },
-        { src: "/assets/services/backdrops/portfolio3.jpg", alt: "Trade show booth backdrop", caption: "Trade Show Backdrop" },
-        { src: "/assets/services/backdrops/portfolio4.jpg", alt: "Retail display backdrop", caption: "Retail Display" }
-      ]
-    }
+    faq: [
+      { question: "Are they double-sided?", answer: "Yes! Standard is double-sided (mirrored or same design both sides). Single-sided is available for lower cost." }
+    ]
   },
 
   "billboards": {
     title: "Billboards",
-    heroIntro: "Large-scale outdoor advertising with maximum visibility impact. We design and produce billboard graphics that command attention at highway speeds while communicating messages with immediate clarity.",
-    heroImage: "/assets/services/billboards/hero.jpg",
-    about: [
-      { text: "Billboards must work within seconds at highway speeds. We design for maximum scannability, immediate comprehension, and memorability.", image: "/assets/services/billboards/about1.jpg" },
-      { text: "Our approach considers viewing distances, vehicle speeds, lighting conditions, and environmental contexts specific to each location.", image: "/assets/services/billboards/about2.jpg" },
-      { text: "We specialize in billboard systems that can be updated efficiently while maintaining structural integrity and visual impact.", image: "/assets/services/billboards/about3.jpg" }
+    category: "Large Format Printing",
+    metaDescription: "Large-format billboard printing for outdoor advertising in Nairobi and across Kenya. High-visibility, weather-resistant prints.",
+    heroImage: "/images/services/billboard/hero.jpg",
+    heroAlt: "Large billboard along highway",
+    sections: [
+      {
+        type: "text",
+        title: "Highway to High Street Visibility",
+        content: "Billboards are the kings of outdoor advertising. We print massive, durable graphics for standard 14ft x 48ft billboards, digital billboard skins, and custom sizes. Our UV-resistant inks and heavy-duty vinyl ensure your message stays vibrant for years.",
+        image: "/images/services/billboard/highway.jpg",
+        imageAlt: "Billboard along highway",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Billboard Services",
+        items: [
+          "Standard 14ft x 48ft billboard printing",
+          "Custom size billboards",
+          "Digital billboard skins",
+          "Bulletin and poster panel printing",
+          "Installation available",
+          "Permit assistance (where applicable)"
+        ],
+        image: "/images/services/billboard/installation.jpg",
+        imageAlt: "Billboard installation team",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Material Quality",
+        content: "We use premium 340gsm or 440gsm scrim vinyl for billboards — puncture-resistant, wind-rated, and UV-protected. Inks are outdoor-rated for long-term durability without significant fading. For high-wind areas, we recommend heavier material with reinforced hems.",
+        image: "/images/services/billboard/material.jpg",
+        imageAlt: "Billboard vinyl material closeup",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Highway Speed Design", description: "Create graphics optimized for comprehension at typical highway speeds and viewing distances.", icon: "/assets/icons/highway.svg" },
-      { title: "Environmental Context", description: "Design for specific locations, lighting conditions, and competing visual environments.", icon: "/assets/icons/environment.svg" },
-      { title: "Structural Integration", description: "Work with billboard structures to optimize graphic installation and longevity.", icon: "/assets/icons/structural.svg" },
-      { title: "Message Economy", description: "Distill complex messages into essential elements for immediate comprehension.", icon: "/assets/icons/economy.svg" },
-      { title: "Production Scale", description: "Experience in large-format printing, panel systems, and installation logistics for billboard campaigns.", icon: "/assets/icons/scale.svg" }
-    ],
-    process: [
-      { step: 1, title: "Location Analysis", text: "Study specific billboard location, traffic patterns, viewing distances, and environmental factors.", image: "/assets/services/billboards/process1.jpg" },
-      { step: 2, title: "Message Distillation", text: "Refine messaging to essential elements for high-speed comprehension.", image: "/assets/services/billboards/process2.jpg" },
-      { step: 3, title: "Visual Impact Design", text: "Create graphics optimized for scale, distance viewing, and environmental conditions.", image: "/assets/services/billboards/process3.jpg" },
-      { step: 4, title: "Large-Scale Production", text: "Manage production of large-format graphics with attention to color consistency and installation efficiency.", image: "/assets/services/billboards/process4.jpg" }
-    ],
-    gallery: {
-      title: "Billboards Portfolio",
-      images: [
-        { src: "/assets/services/billboards/portfolio1.jpg", alt: "Highway billboard advertising", caption: "Highway Billboard" },
-        { src: "/assets/services/billboards/portfolio2.jpg", alt: "Urban digital billboard", caption: "Digital Billboard" },
-        { src: "/assets/services/billboards/portfolio3.jpg", alt: "Shopping mall billboard", caption: "Mall Billboard" },
-        { src: "/assets/services/billboards/portfolio4.jpg", alt: "Transit advertising billboard", caption: "Transit Billboard" }
-      ]
-    }
+    faq: [
+      { question: "Do you install billboards?", answer: "Yes! We have experienced installation crews for Nairobi and surrounding areas. Installation cost depends on height and location." }
+    ]
   },
 
   "shop-signage": {
     title: "Shop Signage",
-    heroIntro: "Retail environment signage that guides, informs, and sells. We design and produce comprehensive shop signage systems that create cohesive customer experiences while driving sales and navigation.",
-    heroImage: "/assets/services/shop-signage/hero.jpg",
-    about: [
-      { text: "Shop signage serves multiple functions—brand identification, wayfinding, product information, and promotional messaging.", image: "/assets/services/shop-signage/about1.jpg" },
-      { text: "We design integrated systems where different sign types work together to create seamless customer journeys.", image: "/assets/services/shop-signage/about2.jpg" },
-      { text: "Our approach considers retail flow, sight lines, lighting conditions, and brand experience objectives.", image: "/assets/services/shop-signage/about3.jpg" }
+    category: "Large Format Printing",
+    metaDescription: "Custom shop signage for retail stores, offices, and businesses in Kenya. Acrylic, flex, lightbox, and 3D letter signs.",
+    heroImage: "/images/services/signage/hero.jpg",
+    heroAlt: "Professional shop front signage",
+    sections: [
+      {
+        type: "text",
+        title: "Your Store's First Handshake",
+        content: "Your shop signage is often the first impression potential customers have of your business. A clear, professional, attractive sign invites people in. We design and fabricate all types of shop signage — from simple flex faces to premium illuminated 3D letters.",
+        image: "/images/services/signage/shop-front.jpg",
+        imageAlt: "Shop front with signage",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Signage Types",
+        items: [
+          "Acrylic panel signs",
+          "PVC foam board signs",
+          "Flex face signs (illuminated)",
+          "Lightbox signs (LED backlit)",
+          "3D letter signs (acrylic/ metal)",
+          "Channel letters (illuminated)",
+          "Aluminum composite signs",
+          "Corflute (coroplast) temporary signs",
+          "Frosted window vinyl lettering"
+        ],
+        image: "/images/services/signage/types.jpg",
+        imageAlt: "Different shop signage types",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Illuminated Options",
+        content: "Make your sign work 24/7 with LED illumination. We offer front-lit (flex face), back-lit (halo effect on letters), and edge-lit acrylic signs. LEDs are energy-efficient, long-lasting, and much cooler than fluorescent or neon.",
+        image: "/images/services/signage/illuminated.jpg",
+        imageAlt: "Illuminated shop sign at night",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Customer Journey Design", description: "Create signage systems that guide customers through logical retail flows and decision points.", icon: "/assets/icons/journey.svg" },
-      { title: "Brand Environment Integration", description: "Design signs that enhance retail atmosphere while maintaining brand consistency.", icon: "/assets/icons/environment-integration.svg" },
-      { title: "Informational Hierarchy", description: "Structure information for different customer needs—browsing, comparing, purchasing decisions.", icon: "/assets/icons/info-hierarchy-shop.svg" },
-      { title: "Material Selection", description: "Choose appropriate materials for different sign types, locations, and maintenance requirements.", icon: "/assets/icons/shop-materials.svg" },
-      { title: "Regulatory Compliance", description: "Ensure signage meets local regulations for safety, accessibility, and business identification.", icon: "/assets/icons/regulatory.svg" }
-    ],
-    process: [
-      { step: 1, title: "Retail Flow Analysis", text: "Understand customer movement patterns, decision points, and informational needs throughout the shop.", image: "/assets/services/shop-signage/process1.jpg" },
-      { step: 2, title: "Signage System Architecture", text: "Design coordinated system of different sign types serving specific functions in customer journey.", image: "/assets/services/shop-signage/process2.jpg" },
-      { step: 3, title: "Environmental Integration", text: "Create designs that work with shop architecture, lighting, and brand environment.", image: "/assets/services/shop-signage/process3.jpg" },
-      { step: 4, title: "Production & Installation", text: "Produce signs with appropriate materials and install with attention to sight lines and customer flow.", image: "/assets/services/shop-signage/process4.jpg" }
-    ],
-    gallery: {
-      title: "Shop Signage Portfolio",
-      images: [
-        { src: "/assets/services/shop-signage/portfolio1.jpg", alt: "Storefront signage", caption: "Storefront Sign" },
-        { src: "/assets/services/shop-signage/portfolio2.jpg", alt: "Interior wayfinding signs", caption: "Wayfinding System" },
-        { src: "/assets/services/shop-signage/portfolio3.jpg", alt: "Product display signage", caption: "Product Displays" },
-        { src: "/assets/services/shop-signage/portfolio4.jpg", alt: "Promotional window signs", caption: "Window Promotions" }
-      ]
-    }
+    faq: [
+      { question: "Do you handle permit applications?", answer: "We can advise on Nairobi county signage permit requirements and assist with application documents." }
+    ]
   },
 
   "window-graphics": {
     title: "Window Graphics",
-    heroIntro: "Transform glass surfaces into brand opportunities. We design and install window graphics that balance visibility, light transmission, and messaging to attract attention while maintaining functional transparency.",
-    heroImage: "/assets/services/window-graphics/hero.jpg",
-    about: [
-      { text: "Window graphics must work with transparency requirements, light conditions, and viewing perspectives from both inside and outside.", image: "/assets/services/window-graphics/about1.jpg" },
-      { text: "We specialize in various window film types—perforated, translucent, opaque, frosted—each with different visibility and light transmission characteristics.", image: "/assets/services/window-graphics/about2.jpg" },
-      { text: "Our approach considers daytime and nighttime visibility, interior views, and seasonal lighting changes.", image: "/assets/services/window-graphics/about3.jpg" }
+    category: "Large Format Printing",
+    metaDescription: "Custom window graphics, frosted vinyl, and window decals for offices, shops, and glass partitions in Kenya.",
+    heroImage: "/images/services/window/hero.jpg",
+    heroAlt: "Window graphics on storefront",
+    sections: [
+      {
+        type: "text",
+        title: "Privacy with Personality",
+        content: "Window graphics offer the perfect balance: branding + privacy + light control. We print perforated window vinyl (see-through from inside, full color from outside), frosted vinyl for privacy, and opaque decals for glass partitions. All are removable without residue.",
+        image: "/images/services/window/storefront.jpg",
+        imageAlt: "Storefront window with full graphics",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Window Graphic Applications",
+        items: [
+          "Storefront branding and hours",
+          "Office glass partition branding",
+          "Frosted privacy film for meeting rooms",
+          "Perforated one-way vision for vehicles/windows",
+          "Seasonal/holiday window decals",
+          "Safety and directional window markings",
+          "Real estate window displays"
+        ],
+        image: "/images/services/window/applications.jpg",
+        imageAlt: "Various window graphic applications",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Installation & Removal",
+        content: "Our team professionally installs all window graphics bubble-free. When you're ready for a change, we remove them cleanly without residue or damage to glass. Perforated and frosted vinyls can last years indoors or in direct sun.",
+        image: "/images/services/window/installation.jpg",
+        imageAlt: "Window graphic installation process",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Visibility-Transparency Balance", description: "Design graphics that attract attention while maintaining appropriate interior views and natural light.", icon: "/assets/icons/balance.svg" },
-      { title: "Light Condition Adaptation", description: "Create graphics that work effectively in different lighting conditions—day, night, direct sun, interior lighting.", icon: "/assets/icons/light-adaptation.svg" },
-      { title: "Material Expertise", description: "Knowledge of different window film types, adhesives, and application methods for various glass types.", icon: "/assets/icons/window-materials.svg" },
-      { title: "Seasonal Considerations", description: "Design for changing light angles and intensity throughout the year.", icon: "/assets/icons/seasonal-consideration.svg" },
-      { title: "Installation Precision", description: "Expert application techniques for bubble-free installation and clean edges.", icon: "/assets/icons/precision-installation.svg" }
-    ],
-    process: [
-      { step: 1, title: "Window Analysis", text: "Assess glass type, light conditions, viewing perspectives, and transparency requirements.", image: "/assets/services/window-graphics/process1.jpg" },
-      { step: 2, title: "Film & Design Selection", text: "Choose appropriate film type and design approach for visibility-transparency balance.", image: "/assets/services/window-graphics/process2.jpg" },
-      { step: 3, title: "Light Condition Testing", text: "Test design effectiveness in different lighting conditions and viewing angles.", image: "/assets/services/window-graphics/process3.jpg" },
-      { step: 4, title: "Precision Installation", text: "Apply graphics with techniques that ensure professional finish and longevity.", image: "/assets/services/window-graphics/process4.jpg" }
-    ],
-    gallery: {
-      title: "Window Graphics Portfolio",
-      images: [
-        { src: "/assets/services/window-graphics/portfolio1.jpg", alt: "Perforated window film graphics", caption: "Perforated Film" },
-        { src: "/assets/services/window-graphics/portfolio2.jpg", alt: "Frosted window graphics", caption: "Frosted Effects" },
-        { src: "/assets/services/window-graphics/portfolio3.jpg", alt: "Full-color window decals", caption: "Full-Color Decals" },
-        { src: "/assets/services/window-graphics/portfolio4.jpg", alt: "Window lettering and logos", caption: "Window Lettering" }
-      ]
-    }
+    faq: [
+      { question: "Can I see out from inside?", answer: "Yes! Perforated window vinyl has tiny holes that let you see out clearly while showing full-color graphics to people outside." }
+    ]
   },
 
   "wall-murals": {
     title: "Wall Murals",
-    heroIntro: "Architectural-scale artwork that transforms spaces. We design and produce wall murals that create immersive environments, tell brand stories, and enhance architectural experiences through large-scale visual impact.",
-    heroImage: "/assets/services/wall-murals/hero.jpg",
-    about: [
-      { text: "Wall murals are architectural interventions that change spatial perception. We design for specific wall dimensions, lighting conditions, and viewer movement patterns.", image: "/assets/services/wall-murals/about1.jpg" },
-      { text: "Our approach considers wall surfaces, architectural features, and spatial functions to create murals that enhance rather than overwhelm spaces.", image: "/assets/services/wall-murals/about2.jpg" },
-      { text: "We specialize in mural systems that can be installed efficiently on various wall types while maintaining visual integrity at large scale.", image: "/assets/services/wall-murals/about3.jpg" }
+    category: "Large Format Printing",
+    metaDescription: "Custom wall murals and wallpaper printing for offices, restaurants, hotels, and homes in Kenya.",
+    heroImage: "/images/services/mural/hero.jpg",
+    heroAlt: "Large wall mural in office",
+    sections: [
+      {
+        type: "text",
+        title: "Transform Your Space",
+        content: "A custom wall mural turns any blank wall into a conversation piece. From office lobbies and restaurant feature walls to kids' rooms and hotel lobbies, we print seamless murals on wallpaper, fabric, or removable vinyl. Any image, any size, any surface.",
+        image: "/images/services/mural/office.jpg",
+        imageAlt: "Office wall mural installation",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Mural Materials",
+        items: [
+          "Smooth wallpaper (matte or satin finish)",
+          "Textured canvas (art gallery look)",
+          "Removable vinyl (no damage, perfect for rentals)",
+          "Fabric (wrinkle-free, washable)",
+          "Anti-graffiti laminate (for public spaces)",
+          "Fire-retardant materials (commercial required)"
+        ],
+        image: "/images/services/mural/materials.jpg",
+        imageAlt: "Different wall mural materials",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Seamless Installation",
+        content: "We panel large murals into manageable sections for perfect alignment during installation. Our installers ensure no gaps, no wrinkles, and perfect edge-to-edge coverage. For irregular walls (pillars, curved surfaces), we customize each panel individually.",
+        image: "/images/services/mural/installation.jpg",
+        imageAlt: "Wall mural panel installation",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Spatial Transformation", description: "Design murals that change spatial perception, define zones, or create immersive environments.", icon: "/assets/icons/spatial.svg" },
-      { title: "Architectural Integration", description: "Create designs that work with architectural features, lighting, and spatial functions.", icon: "/assets/icons/architectural.svg" },
-      { title: "Scale Management", description: "Expertise in designing graphics that maintain visual integrity and detail when scaled to wall dimensions.", icon: "/assets/icons/scale-management.svg" },
-      { title: "Material Adaptability", description: "Select printing and installation methods appropriate for different wall surfaces and conditions.", icon: "/assets/icons/adaptability-mural.svg" },
-      { title: "Installation Precision", description: "Expert installation techniques for seamless panel alignment and professional finish.", icon: "/assets/icons/mural-installation.svg" }
-    ],
-    process: [
-      { step: 1, title: "Spatial Analysis", text: "Study wall dimensions, architectural context, lighting conditions, and viewer movement patterns.", image: "/assets/services/wall-murals/process1.jpg" },
-      { step: 2, title: "Mural Concept Development", text: "Create designs that enhance spatial experience while serving brand or aesthetic objectives.", image: "/assets/services/wall-murals/process2.jpg" },
-      { step: 3, title: "Production Planning", text: "Plan panel systems, printing methods, and installation sequence for specific wall conditions.", image: "/assets/services/wall-murals/process3.jpg" },
-      { step: 4, title: "Professional Installation", text: "Execute installation with attention to panel alignment, seam management, and surface preparation.", image: "/assets/services/wall-murals/process4.jpg" }
-    ],
-    gallery: {
-      title: "Wall Murals Portfolio",
-      images: [
-        { src: "/assets/services/wall-murals/portfolio1.jpg", alt: "Office wall mural", caption: "Office Environment" },
-        { src: "/assets/services/wall-murals/portfolio2.jpg", alt: "Retail store mural", caption: "Retail Space" },
-        { src: "/assets/services/wall-murals/portfolio3.jpg", alt: "Hospital mural design", caption: "Healthcare Facility" },
-        { src: "/assets/services/wall-murals/portfolio4.jpg", alt: "Educational mural", caption: "Educational Space" }
-      ]
-    }
-  },
-
-  "floor-graphics": {
-    title: "Floor Graphics",
-    heroIntro: "Interactive wayfinding and promotional graphics that guide movement and capture attention at foot level. We produce durable floor graphics that withstand foot traffic while delivering messages and directions.",
-    heroImage: "/assets/services/floor-graphics/hero.jpg",
-    about: [
-      { text: "Floor graphics present unique challenges of durability, safety, and viewing angle. We design for both visual impact and practical pedestrian use.", image: "/assets/services/floor-graphics/about1.jpg" },
-      { text: "Our materials and installation methods ensure slip resistance, wear durability, and safe removal when needed.", image: "/assets/services/floor-graphics/about2.jpg" },
-      { text: "We specialize in floor graphics that work with traffic patterns, cleaning schedules, and safety requirements.", image: "/assets/services/floor-graphics/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Traffic Durability", description: "Materials and laminates tested for foot traffic, cleaning, and environmental exposure.", icon: "/assets/icons/traffic.svg" },
-      { title: "Safety Compliance", description: "Ensure slip resistance, edge security, and proper installation for pedestrian safety.", icon: "/assets/icons/floor-safety.svg" },
-      { title: "Viewing Angle Design", description: "Create graphics optimized for viewing from standing height and walking perspectives.", icon: "/assets/icons/viewing-angle.svg" },
-      { title: "Wayfinding Integration", description: "Design floor graphics that work with overall wayfinding systems and traffic patterns.", icon: "/assets/icons/wayfinding.svg" },
-      { title: "Removal Considerations", description: "Select materials and adhesives that allow clean removal without damaging floor surfaces.", icon: "/assets/icons/removal.svg" }
-    ],
-    process: [
-      { step: 1, title: "Traffic Pattern Analysis", text: "Study pedestrian flow, cleaning schedules, and safety requirements for installation areas.", image: "/assets/services/floor-graphics/process1.jpg" },
-      { step: 2, title: "Material Specification", text: "Select appropriate vinyls, laminates, and adhesives for floor type and traffic levels.", image: "/assets/services/floor-graphics/process2.jpg" },
-      { step: 3, title: "Safety-Focused Design", text: "Create designs that maintain safety while achieving visual objectives.", image: "/assets/services/floor-graphics/process3.jpg" },
-      { step: 4, title: "Professional Installation", text: "Apply with attention to edge security, slip resistance, and traffic pattern considerations.", image: "/assets/services/floor-graphics/process4.jpg" }
-    ],
-    gallery: {
-      title: "Floor Graphics Portfolio",
-      images: [
-        { src: "/assets/services/floor-graphics/portfolio1.jpg", alt: "Retail floor graphics", caption: "Retail Navigation" },
-        { src: "/assets/services/floor-graphics/portfolio2.jpg", alt: "Event floor markings", caption: "Event Direction" },
-        { src: "/assets/services/floor-graphics/portfolio3.jpg", alt: "Safety floor graphics", caption: "Safety Markings" },
-        { src: "/assets/services/floor-graphics/portfolio4.jpg", alt: "Promotional floor graphics", caption: "Promotional Graphics" }
-      ]
-    }
+    faq: [
+      { question: "Can you match my brand colors exactly?", answer: "Yes! We can match specific Pantone or CMYK brand colors for consistent corporate branding across your space." }
+    ]
   },
 
   "exhibition-stands": {
     title: "Exhibition Stands",
-    heroIntro: "Complete exhibition solutions that maximize brand impact in competitive environments. We design and produce exhibition stands that attract attention, facilitate engagement, and create memorable brand experiences.",
-    heroImage: "/assets/services/exhibition-stands/hero.jpg",
-    about: [
-      { text: "Exhibition stands must work hard in crowded, competitive environments. We design for visibility, traffic flow, and engagement opportunities.", image: "/assets/services/exhibition-stands/about1.jpg" },
-      { text: "Our approach considers exhibition hall contexts, competitor presence, target audience behaviors, and logistical constraints.", image: "/assets/services/exhibition-stands/about2.jpg" },
-      { text: "We specialize in stand systems that balance visual impact with practical considerations like storage, transportation, and reusability.", image: "/assets/services/exhibition-stands/about3.jpg" }
+    category: "Large Format Printing",
+    metaDescription: "Custom exhibition stands, trade show booths, and event displays in Nairobi. Modular and custom designs for any space.",
+    heroImage: "/images/services/exhibition/hero.jpg",
+    heroAlt: "Exhibition stand at trade show",
+    sections: [
+      {
+        type: "text",
+        title: "Stand Out in the Crowd",
+        content: "At a trade show or exhibition, your booth is your brand headquarters. It needs to attract attention, communicate your message, and provide functional space for conversations. We design and build custom and modular exhibition stands for KICC, Sarit Centre, and venues across Kenya.",
+        image: "/images/services/exhibition/booth.jpg",
+        imageAlt: "Custom exhibition booth",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Exhibition Services",
+        items: [
+          "Custom booth design and fabrication",
+          "Modular/portable display systems",
+          "Pop-up displays (fast setup)",
+          "Custom counters and reception desks",
+          "Literature racks and brochure holders",
+          "Lighting (LED, spot, backlight)",
+          "Flooring (carpet, vinyl, custom printed)",
+          "Graphics for all booth components",
+          "Installation and dismantling"
+        ],
+        image: "/images/services/exhibition/components.jpg",
+        imageAlt: "Exhibition stand components",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Rental vs. Purchase",
+        content: "We offer both options. Rent a custom stand for a single event (we install and remove), or purchase a modular system you can reuse and reconfigure for multiple shows. Rental includes design, fabrication, transport, installation, and dismantling — everything except your staff.",
+        image: "/images/services/exhibition/rental.jpg",
+        imageAlt: "Rental exhibition stand setup",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Competitive Environment Design", description: "Create stands that stand out in crowded exhibition halls while facilitating engagement.", icon: "/assets/icons/competitive.svg" },
-      { title: "Modular Systems", description: "Design reusable components that can be reconfigured for different shows and spaces.", icon: "/assets/icons/modular-systems.svg" },
-      { title: "Logistical Optimization", description: "Plan for transportation, storage, assembly efficiency, and show regulations compliance.", icon: "/assets/icons/logistics.svg" },
-      { title: "Engagement Facilitation", description: "Design spaces that encourage visitor interaction, conversation, and lead generation.", icon: "/assets/icons/engagement-stand.svg" },
-      { title: "Brand Experience Creation", description: "Develop immersive environments that communicate brand story and values effectively.", icon: "/assets/icons/brand-experience.svg" }
-    ],
-    process: [
-      { step: 1, title: "Exhibition Context Analysis", text: "Understand show objectives, target audience, competitor presence, and space constraints.", image: "/assets/services/exhibition-stands/process1.jpg" },
-      { step: 2, title: "Stand Architecture Design", text: "Create spatial designs that optimize traffic flow, engagement zones, and brand visibility.", image: "/assets/services/exhibition-stands/process2.jpg" },
-      { step: 3, title: "System Engineering", text: "Design modular components, graphics systems, and logistical solutions for efficiency.", image: "/assets/services/exhibition-stands/process3.jpg" },
-      { step: 4, title: "Production & Logistics", text: "Manage production, transportation, and assembly planning for seamless exhibition execution.", image: "/assets/services/exhibition-stands/process4.jpg" }
-    ],
-    gallery: {
-      title: "Exhibition Stands Portfolio",
-      images: [
-        { src: "/assets/services/exhibition-stands/portfolio1.jpg", alt: "Island exhibition stand", caption: "Island Stand" },
-        { src: "/assets/services/exhibition-stands/portfolio2.jpg", alt: "Peninsula exhibition stand", caption: "Peninsula Stand" },
-        { src: "/assets/services/exhibition-stands/portfolio3.jpg", alt: "Modular exhibition system", caption: "Modular System" },
-        { src: "/assets/services/exhibition-stands/portfolio4.jpg", alt: "Custom exhibition stand", caption: "Custom Design" }
-      ]
-    }
+    faq: [
+      { question: "How far in advance should I book?", answer: "For custom stands, we recommend booking several weeks before the event. For modular rental, less time is usually needed." }
+    ]
   },
 
-  // ==================== PRODUCT PACKAGING & LABELS (6 services) ====================
-  "packaging-design": {
-    title: "Packaging Design",
-    heroIntro: "Shelf-stopping packaging that drives purchase decisions. We design product packaging that combines aesthetic appeal with functional protection, creating unboxing experiences that build brand loyalty.",
-    heroImage: "/assets/services/packaging/hero.jpg",
-    about: [
-      { text: "Packaging serves multiple functions—protection, information, shelf presence, and brand experience. We design holistically for all these requirements.", image: "/assets/services/packaging/about1.jpg" },
-      { text: "Our approach considers manufacturing realities, material constraints, and retail environments specific to each product category.", image: "/assets/services/packaging/about2.jpg" },
-      { text: "We specialize in packaging systems that work across product lines while allowing for individual product differentiation.", image: "/assets/services/packaging/about3.jpg" }
+  // ==================== VEHICLE GRAPHICS ====================
+  "full-vehicle-wraps": {
+    title: "Full Vehicle Wraps",
+    category: "Vehicle Graphics",
+    metaDescription: "Complete vehicle wrap services in Nairobi. Turn your car, van, or truck into a moving billboard with premium vinyl.",
+    heroImage: "/images/services/vehicle/full-wrap-hero.jpg",
+    heroAlt: "Full vehicle wrap on car",
+    sections: [
+      {
+        type: "text",
+        title: "Turn Your Vehicle Into a Billboard",
+        content: "Every kilometer your vehicle drives is an advertising impression. A full vehicle wrap transforms your car, van, or truck into a professional, eye-catching mobile billboard. We use premium cast vinyl that lasts years and removes cleanly when you're ready for a change.",
+        image: "/images/services/vehicle/full-wrap-car.jpg",
+        imageAlt: "Full wrapped car driving",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Full Wrap Process",
+        items: [
+          "Vehicle measurement and template creation",
+          "Custom design mockup with 3D visualization",
+          "Printing on premium cast vinyl",
+          "Lamination for scratch/UV protection",
+          "Surface preparation and cleaning",
+          "Professional installation",
+          "Post-install inspection and care instructions",
+          "Removal guarantee (no paint damage)"
+        ],
+        image: "/images/services/vehicle/full-wrap-process.jpg",
+        imageAlt: "Vehicle wrap installation process",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Paint Protection Benefits",
+        content: "Beyond advertising, a full wrap protects your original paint from UV rays, minor scratches, and stone chips. When the wrap is removed, the paint underneath looks showroom-fresh — an excellent resale advantage.",
+        image: "/images/services/vehicle/paint-protection.jpg",
+        imageAlt: "Wrap protecting paint underneath",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Shelf Impact Design", description: "Create packaging that stands out in competitive retail environments while communicating product benefits.", icon: "/assets/icons/shelf.svg" },
-      { title: "Structural Engineering", description: "Design packaging forms that protect products efficiently while using materials responsibly.", icon: "/assets/icons/structural-packaging.svg" },
-      { title: "Unboxing Experience", description: "Consider the complete customer journey from shelf selection to product opening and first use.", icon: "/assets/icons/unboxing.svg" },
-      { title: "Manufacturing Integration", description: "Work with production realities, material limitations, and assembly processes.", icon: "/assets/icons/manufacturing.svg" },
-      { title: "Brand System Development", description: "Create packaging families that maintain brand consistency while differentiating product variations.", icon: "/assets/icons/packaging-system.svg" }
-    ],
-    process: [
-      { step: 1, title: "Product & Market Analysis", text: "Study product characteristics, competitive landscape, retail contexts, and target consumer behaviors.", image: "/assets/services/packaging/process1.jpg" },
-      { step: 2, title: "Structural & Graphic Design", text: "Develop packaging forms and graphics that work together for shelf impact and product protection.", image: "/assets/services/packaging/process2.jpg" },
-      { step: 3, title: "Material & Production Planning", text: "Select appropriate materials and specify production methods for quality and efficiency.", image: "/assets/services/packaging/process3.jpg" },
-      { step: 4, title: "Prototyping & Testing", text: "Create physical prototypes for testing, refinement, and production validation.", image: "/assets/services/packaging/process4.jpg" }
-    ],
-    gallery: {
-      title: "Packaging Design Portfolio",
-      images: [
-        { src: "/assets/services/packaging/portfolio1.jpg", alt: "Product box packaging", caption: "Box Packaging" },
-        { src: "/assets/services/packaging/portfolio2.jpg", alt: "Bottle label design", caption: "Bottle Labels" },
-        { src: "/assets/services/packaging/portfolio3.jpg", alt: "Pouch packaging design", caption: "Pouch Packaging" },
-        { src: "/assets/services/packaging/portfolio4.jpg", alt: "Display packaging", caption: "Display Ready" }
-      ]
-    }
+    faq: [
+      { question: "Will wrapping damage my paint?", answer: "No! Quality vinyl wraps actually protect paint. We use air-release adhesives that remove cleanly without residue when properly removed." }
+    ]
   },
 
-  "product-labels": {
-    title: "Product Labels",
-    heroIntro: "Informative and compliant labeling that builds consumer trust. We design product labels that meet regulatory requirements while communicating brand values and product benefits with clarity and appeal.",
-    heroImage: "/assets/services/product-labels/hero.jpg",
-    about: [
-      { text: "Product labels balance legal requirements with marketing communication. We design systems that organize mandatory information while creating brand appeal.", image: "/assets/services/product-labels/about1.jpg" },
-      { text: "Our approach considers label substrates, application methods, and product usage conditions specific to each product type.", image: "/assets/services/product-labels/about2.jpg" },
-      { text: "We specialize in label systems that work across product lines while accommodating regulatory variations.", image: "/assets/services/product-labels/about3.jpg" }
+  "partial-vehicle-wraps": {
+    title: "Partial Vehicle Wraps",
+    category: "Vehicle Graphics",
+    metaDescription: "Partial vehicle wraps for branding without full coverage. Perfect for company logos, contact info, and bold designs.",
+    heroImage: "/images/services/vehicle/partial-wrap-hero.jpg",
+    heroAlt: "Partial vehicle wrap on van",
+    sections: [
+      {
+        type: "text",
+        title: "Targeted Branding, Lower Cost",
+        content: "Not every vehicle needs a full wrap. Partial wraps cover specific areas — doors, hood, rear, or sides — with your branding while leaving paint exposed. It's more affordable than a full wrap and still highly effective for company logos, contact info, and bold graphics.",
+        image: "/images/services/vehicle/partial-wrap-van.jpg",
+        imageAlt: "Van with partial wrap on sides",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Partial Wrap Options",
+        items: [
+          "Side-door only branding",
+          "Rear window decals",
+          "Hood or roof graphics",
+          "Stripes and accent graphics",
+          "Rear door coverage",
+          "Quarter panel branding",
+          "Fender and bumper graphics"
+        ],
+        image: "/images/services/vehicle/partial-options.jpg",
+        imageAlt: "Different partial wrap options",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Perfect for Fleet Consistency",
+        content: "If you have multiple vehicles, partial wraps create consistent fleet branding at a fraction of full-wrap cost. All vans get identical side-door logos and contact panels. Your team looks professional without breaking the budget.",
+        image: "/images/services/vehicle/fleet-partial.jpg",
+        imageAlt: "Fleet of vehicles with consistent partial wraps",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Regulatory Compliance", description: "Ensure labels meet all legal requirements for content, hierarchy, and readability.", icon: "/assets/icons/compliance-label.svg" },
-      { title: "Material Application Expertise", description: "Select appropriate label stocks, adhesives, and finishes for product containers and usage conditions.", icon: "/assets/icons/label-materials.svg" },
-      { title: "Information Hierarchy", description: "Organize mandatory and marketing information for clarity and consumer guidance.", icon: "/assets/icons/label-hierarchy.svg" },
-      { title: "Brand Integration", description: "Create labels that extend brand identity while serving functional information needs.", icon: "/assets/icons/label-brand.svg" },
-      { title: "Production Specification", description: "Prepare files with proper registration, color management, and die specifications.", icon: "/assets/icons/label-production.svg" }
-    ],
-    process: [
-      { step: 1, title: "Regulatory & Product Analysis", text: "Research legal requirements, product characteristics, and container specifications.", image: "/assets/services/product-labels/process1.jpg" },
-      { step: 2, title: "Label System Design", text: "Create information hierarchy and visual system that balances compliance and appeal.", image: "/assets/services/product-labels/process2.jpg" },
-      { step: 3, title: "Material Specification", text: "Select appropriate label materials for container surface, product conditions, and application method.", image: "/assets/services/product-labels/process3.jpg" },
-      { step: 4, title: "Production File Preparation", text: "Prepare print-ready files with proper registration, color specifications, and die lines.", image: "/assets/services/product-labels/process4.jpg" }
-    ],
-    gallery: {
-      title: "Product Labels Portfolio",
-      images: [
-        { src: "/assets/services/product-labels/portfolio1.jpg", alt: "Food product labels", caption: "Food Labels" },
-        { src: "/assets/services/product-labels/portfolio2.jpg", alt: "Beverage bottle labels", caption: "Beverage Labels" },
-        { src: "/assets/services/product-labels/portfolio3.jpg", alt: "Cosmetics labels", caption: "Cosmetics Labels" },
-        { src: "/assets/services/product-labels/portfolio4.jpg", alt: "Chemical product labels", caption: "Chemical Labels" }
-      ]
-    }
+    faq: [
+      { question: "Can I add more later?", answer: "Yes! You can start with a partial wrap and add more coverage over time as your budget allows." }
+    ]
   },
 
-  "custom-boxes": {
-    title: "Custom Boxes",
-    heroIntro: "Branded packaging solutions that protect products and elevate perceived value. We design and produce custom boxes that create memorable unboxing experiences while ensuring product safety during shipping and storage.",
-    heroImage: "/assets/services/custom-boxes/hero.jpg",
-    about: [
-      { text: "Custom boxes serve both protective and experiential functions. We design for structural integrity, efficient packaging, and brand presentation.", image: "/assets/services/custom-boxes/about1.jpg" },
-      { text: "Our approach considers product dimensions, shipping methods, storage conditions, and unpacking experiences.", image: "/assets/services/custom-boxes/about2.jpg" },
-      { text: "We specialize in box systems that balance material efficiency with structural strength and visual impact.", image: "/assets/services/custom-boxes/about3.jpg" }
+  "delivery-van-branding": {
+    title: "Delivery Van Branding",
+    category: "Vehicle Graphics",
+    metaDescription: "Delivery van branding services in Kenya. Make your fleet recognizable and professional.",
+    heroImage: "/images/services/vehicle/van-hero.jpg",
+    heroAlt: "Branded delivery van",
+    sections: [
+      {
+        type: "text",
+        title: "Turn Your Delivery Fleet Into Brand Ambassadors",
+        content: "Every delivery van on the road is a moving advertisement. From delivery services to your own fleet, professional van branding builds trust and recognition. Your customers will spot your van from blocks away, and new potential customers will see your brand everywhere you go.",
+        image: "/images/services/vehicle/van-delivery.jpg",
+        imageAlt: "Branded delivery van on road",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Van Branding Packages",
+        items: [
+          "Full van wraps (maximum impact)",
+          "Side panel branding (most common)",
+          "Rear door logos and contact info",
+          "Roof graphics (for tall visibility)",
+          "Magnetic signs (removable, temporary)",
+          "Window perforated decals (see-out, branded)",
+          "Fleet matching (consistent across all vans)"
+        ],
+        image: "/images/services/vehicle/van-fleet.jpg",
+        imageAlt: "Fleet of branded delivery vans",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Quick Turnaround for Fleet Rollout",
+        content: "If you have multiple vans to brand, we coordinate to complete them in sequence with minimal downtime. We can do multiple vans per day in our shop, or send a mobile installer to your depot for large fleets.",
+        image: "/images/services/vehicle/van-installation.jpg",
+        imageAlt: "Van wrap installation process",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Structural Engineering", description: "Design box forms that protect products efficiently while minimizing material usage.", icon: "/assets/icons/box-structure.svg" },
-      { title: "Brand Experience Focus", description: "Create packaging that enhances product perception through thoughtful unboxing experiences.", icon: "/assets/icons/box-experience.svg" },
-      { title: "Production Efficiency", description: "Design for efficient manufacturing, flat packing, and assembly processes.", icon: "/assets/icons/box-production.svg" },
-      { title: "Material Optimization", description: "Select appropriate board grades, finishes, and structural reinforcements for product requirements.", icon: "/assets/icons/box-materials.svg" },
-      { title: "Shipping Compliance", description: "Ensure boxes meet carrier requirements and protect products through distribution channels.", icon: "/assets/icons/box-shipping.svg" }
-    ],
-    process: [
-      { step: 1, title: "Product & Distribution Analysis", text: "Study product characteristics, shipping methods, storage conditions, and handling requirements.", image: "/assets/services/custom-boxes/process1.jpg" },
-      { step: 2, title: "Structural Design", text: "Develop box forms that protect products while creating appealing presentation.", image: "/assets/services/custom-boxes/process2.jpg" },
-      { step: 3, title: "Graphic Integration", text: "Design graphics that work with box structure and create brand impact.", image: "/assets/services/custom-boxes/process3.jpg" },
-      { step: 4, title: "Prototyping & Testing", text: "Create physical prototypes for structural testing and refinement.", image: "/assets/services/custom-boxes/process4.jpg" }
-    ],
-    gallery: {
-      title: "Custom Boxes Portfolio",
-      images: [
-        { src: "/assets/services/custom-boxes/portfolio1.jpg", alt: "Luxury product boxes", caption: "Luxury Packaging" },
-        { src: "/assets/services/custom-boxes/portfolio2.jpg", alt: "Subscription box design", caption: "Subscription Boxes" },
-        { src: "/assets/services/custom-boxes/portfolio3.jpg", alt: "Eco-friendly boxes", caption: "Eco Packaging" },
-        { src: "/assets/services/custom-boxes/portfolio4.jpg", alt: "Display boxes", caption: "Display Packaging" }
-      ]
-    }
+    faq: [
+      { question: "Do you offer magnetic signs for rental vans?", answer: "Yes! Magnetic signs are perfect for rented or leased vans since they can be removed anytime without affecting the vehicle." }
+    ]
   },
 
-  "stickers-decals": {
-    title: "Stickers & Decals",
-    heroIntro: "Versatile adhesive graphics for product enhancement, promotion, and identification. We produce custom stickers and decals with precise cutting, durable materials, and adhesives matched to application surfaces.",
-    heroImage: "/assets/services/stickers/hero.jpg",
-    about: [
-      { text: "Stickers and decals serve diverse purposes—product labeling, promotional giveaways, surface decoration, and functional identification.", image: "/assets/services/stickers/about1.jpg" },
-      { text: "We specialize in various sticker types—die-cut, kiss-cut, bumper stickers, window clings—each with appropriate materials and adhesives.", image: "/assets/services/stickers/about2.jpg" },
-      { text: "Our approach considers surface compatibility, environmental conditions, and intended duration of application.", image: "/assets/services/stickers/about3.jpg" }
+  "motorcycle-branding": {
+    title: "Motorcycle Branding",
+    category: "Vehicle Graphics",
+    metaDescription: "Motorcycle and boda boda branding services in Nairobi. Perfect for delivery bikes, courier services, and brand promotion.",
+    heroImage: "/images/services/vehicle/motorcycle-hero.jpg",
+    heroAlt: "Branded motorcycle for delivery service",
+    sections: [
+      {
+        type: "text",
+        title: "Boda Boda to Brand Ambassador",
+        content: "Motorcycles (boda bodas) are everywhere in Nairobi — and every bike you brand becomes a mobile billboard reaching thousands daily. We wrap fuel tanks, side panels, top boxes, and rear fenders. Perfect for delivery services, courier companies, or product promotions.",
+        image: "/images/services/vehicle/motorcycle-delivery.jpg",
+        imageAlt: "Branded delivery motorcycle",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Motorcycle Branding Options",
+        items: [
+          "Fuel tank wrap",
+          "Side panel decals",
+          "Top box branding",
+          "Rear fender graphics",
+          "Front mudguard decals",
+          "Full bike wraps",
+          "Reflective safety decals (night visibility)",
+          "Heat-resistant tank pad logos"
+        ],
+        image: "/images/services/vehicle/motorcycle-panels.jpg",
+        imageAlt: "Motorcycle branded panels",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Durable for Kenya Roads",
+        content: "We use extra-durable vinyl that resists fuel spills, dust, mud, and daily wear. For tank wraps, we add a special overlaminate that protects against gasoline drips. Our motorcycle wraps last years under normal use.",
+        image: "/images/services/vehicle/motorcycle-durable.jpg",
+        imageAlt: "Durable motorcycle wrap closeup",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Die-Cut Precision", description: "Expertise in creating precisely cut stickers with clean edges and intricate shapes.", icon: "/assets/icons/die-cut.svg" },
-      { title: "Material-Adhesive Matching", description: "Select appropriate vinyls and adhesives for specific surfaces and environmental conditions.", icon: "/assets/icons/adhesive.svg" },
-      { title: "Application Versatility", description: "Create stickers for diverse applications—products, vehicles, windows, equipment, promotional items.", icon: "/assets/icons/versatility.svg" },
-      { title: "Durability Engineering", description: "Materials and laminates tested for intended use conditions and longevity requirements.", icon: "/assets/icons/sticker-durability.svg" },
-      { title: "Production Efficiency", description: "Optimize layouts for material usage and produce with consistent quality across runs.", icon: "/assets/icons/sticker-production.svg" }
-    ],
-    process: [
-      { step: 1, title: "Application Analysis", text: "Determine surface type, environmental conditions, duration requirements, and visual objectives.", image: "/assets/services/stickers/process1.jpg" },
-      { step: 2, title: "Material Specification", text: "Select appropriate vinyl, adhesive, and laminate for surface compatibility and durability.", image: "/assets/services/stickers/process2.jpg" },
-      { step: 3, title: "Die-Cut Design", text: "Create designs optimized for cutting precision and application effectiveness.", image: "/assets/services/stickers/process3.jpg" },
-      { step: 4, title: "Production & Finishing", text: "Print with color accuracy, apply protective laminates, and die-cut with precision.", image: "/assets/services/stickers/process4.jpg" }
-    ],
-    gallery: {
-      title: "Stickers & Decals Portfolio",
-      images: [
-        { src: "/assets/services/stickers/portfolio1.jpg", alt: "Die-cut vinyl stickers", caption: "Vinyl Stickers" },
-        { src: "/assets/services/stickers/portfolio2.jpg", alt: "Bumper stickers", caption: "Bumper Stickers" },
-        { src: "/assets/services/stickers/portfolio3.jpg", alt: "Window decals", caption: "Window Decals" },
-        { src: "/assets/services/stickers/portfolio4.jpg", alt: "Product labels", caption: "Product Labels" }
-      ]
-    }
+    faq: [
+      { question: "Will the wrap survive Nairobi rain?", answer: "Yes! Our vinyl is waterproof and UV-resistant. Rain won't affect it at all." }
+    ]
   },
 
-  "adhesive-solutions": {
-    title: "Adhesive Solutions",
-    heroIntro: "Specialized adhesive applications for unique surfaces and challenging environments. We develop custom adhesive solutions for difficult applications, unusual materials, and extreme conditions where standard adhesives fail.",
-    heroImage: "/assets/services/adhesive-solutions/hero.jpg",
-    about: [
-      { text: "Adhesive solutions require matching adhesive properties to surface characteristics and environmental conditions.", image: "/assets/services/adhesive-solutions/about1.jpg" },
-      { text: "We specialize in challenging applications—textured surfaces, curved profiles, extreme temperatures, chemical exposure, and long-term outdoor use.", image: "/assets/services/adhesive-solutions/about2.jpg" },
-      { text: "Our approach includes surface testing, adhesive selection, and application method development for reliable performance.", image: "/assets/services/adhesive-solutions/about3.jpg" }
+  "reflective-vehicle-stickers": {
+    title: "Reflective Vehicle Stickers",
+    category: "Vehicle Graphics",
+    metaDescription: "Reflective safety stickers and branding for vehicles. Improve night visibility and meet transport regulations in Kenya.",
+    heroImage: "/images/services/vehicle/reflective-hero.jpg",
+    heroAlt: "Reflective stickers on truck at night",
+    sections: [
+      {
+        type: "text",
+        title: "Safety Meets Branding",
+        content: "Reflective vehicle stickers serve two purposes: they increase night visibility for safety (often required by law for commercial vehicles) AND they show your branding in headlights. We print custom reflective decals for trucks, matatus, school buses, and emergency vehicles.",
+        image: "/images/services/vehicle/reflective-night.jpg",
+        imageAlt: "Reflective stickers glowing at night",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Reflective Applications",
+        items: [
+          "Company logos in reflective vinyl",
+          "Fleet numbers and identification",
+          "Conspicuity tape (red/yellow for trucks)",
+          "School bus lettering",
+          "Emergency vehicle markings",
+          "Matatu route branding (night visible)",
+          "Warning and caution decals",
+          "License plate frames"
+        ],
+        image: "/images/services/vehicle/reflective-truck.jpg",
+        imageAlt: "Reflective tape on truck trailer",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Diamond Grade vs Engineer Grade",
+        content: "Engineer-grade reflective (standard) reflects at night from significant distances. Diamond-grade (premium) reflects from even further and is brighter. We stock both and recommend diamond-grade for high-speed roads, dark rural areas, or maximum visibility needs.",
+        image: "/images/services/vehicle/reflective-grades.jpg",
+        imageAlt: "Comparison of reflective grades",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Surface Expertise", description: "Experience with diverse surfaces—textured, curved, porous, low-energy, and challenging materials.", icon: "/assets/icons/surface.svg" },
-      { title: "Environmental Testing", description: "Adhesives tested for specific conditions—temperature extremes, UV exposure, moisture, and chemical contact.", icon: "/assets/icons/environmental-testing.svg" },
-      { title: "Application Method Development", description: "Create solutions for difficult application scenarios and challenging installation environments.", icon: "/assets/icons/application-method.svg" },
-      { title: "Removal Considerations", description: "Select adhesives that allow clean removal when needed while maintaining holding power during use.", icon: "/assets/icons/adhesive-removal.svg" },
-      { title: "Problem-Solving Approach", description: "Specialize in developing solutions for applications where standard adhesives are inadequate.", icon: "/assets/icons/problem-solving.svg" }
-    ],
-    process: [
-      { step: 1, title: "Surface & Condition Analysis", text: "Test surface characteristics, environmental conditions, and performance requirements.", image: "/assets/services/adhesive-solutions/process1.jpg" },
-      { step: 2, title: "Adhesive Selection", text: "Research and test appropriate adhesive technologies for specific application challenges.", image: "/assets/services/adhesive-solutions/process2.jpg" },
-      { step: 3, title: "Application Development", text: "Develop methods for reliable application on challenging surfaces or in difficult conditions.", image: "/assets/services/adhesive-solutions/process3.jpg" },
-      { step: 4, title: "Performance Validation", text: "Test adhesive performance under simulated use conditions to ensure reliability.", image: "/assets/services/adhesive-solutions/process4.jpg" }
-    ],
-    gallery: {
-      title: "Adhesive Solutions Portfolio",
-      images: [
-        { src: "/assets/services/adhesive-solutions/portfolio1.jpg", alt: "Textured surface application", caption: "Textured Surfaces" },
-        { src: "/assets/services/adhesive-solutions/portfolio2.jpg", alt: "Curved surface application", caption: "Curved Surfaces" },
-        { src: "/assets/services/adhesive-solutions/portfolio3.jpg", alt: "Outdoor adhesive application", caption: "Outdoor Conditions" },
-        { src: "/assets/services/adhesive-solutions/portfolio4.jpg", alt: "High-temperature application", caption: "High Temperature" }
-      ]
-    }
+    faq: [
+      { question: "Are these NTSA approved?", answer: "Our engineer-grade and diamond-grade reflectives meet Kenya Bureau of Standards requirements for commercial vehicle conspicuity." }
+    ]
   },
 
-  "shelf-display-packaging": {
-    title: "Shelf Display Packaging",
-    heroIntro: "Retail-ready packaging that drives impulse purchases. We design shelf display packaging that works within retail constraints while maximizing product visibility and communicating benefits at the point of decision.",
-    heroImage: "/assets/services/shelf-display/hero.jpg",
-    about: [
-      { text: "Shelf display packaging must work within specific retail constraints—shelf dimensions, facing requirements, and shopper viewing angles.", image: "/assets/services/shelf-display/about1.jpg" },
-      { text: "We design for the retail environment, considering lighting conditions, competitor presence, and shopper decision processes.", image: "/assets/services/shelf-display/about2.jpg" },
-      { text: "Our approach integrates structural design with graphic communication to create packaging that sells itself.", image: "/assets/services/shelf-display/about3.jpg" }
+  // ==================== OFFICE & CORPORATE BRANDING ====================
+  "office-signage": {
+    title: "Office Signage",
+    category: "Office & Corporate Branding",
+    metaDescription: "Professional office signage including reception signs, department signs, and door plaques for corporate offices in Kenya.",
+    heroImage: "/images/services/office/office-signage-hero.jpg",
+    heroAlt: "Professional office signage at reception",
+    sections: [
+      {
+        type: "text",
+        title: "Welcome Visitors Professionally",
+        content: "Your office signage sets the tone before anyone speaks to your team. From a prestigious lobby sign to clear department directories, we design and install signage that reflects your brand's professionalism. All signage matches your corporate identity colors and fonts.",
+        image: "/images/services/office/reception-sign.jpg",
+        imageAlt: "Reception area with branded sign",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Office Signage Types",
+        items: [
+          "Reception/lobby logo signs (acrylic, metal, wood)",
+          "Department identification signs",
+          "Individual door plaques (name + title)",
+          "Floor directory signs",
+          "Frosted glass logo decals",
+          "Conference room name signs",
+          "Restroom and facility signs",
+          "Directional wayfinding signs",
+          "Parking and visitor signs"
+        ],
+        image: "/images/services/office/office-sign-types.jpg",
+        imageAlt: "Various office sign types",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Materials & Finishes",
+        content: "Choose from premium materials: brushed aluminum, frosted acrylic, solid wood, dibond (aluminum composite), PVC foam board, or glass. Finishes include matte, gloss, brushed, or custom painted to match your brand colors.",
+        image: "/images/services/office/office-materials.jpg",
+        imageAlt: "Different office sign materials",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Retail Environment Design", description: "Create packaging optimized for specific retail contexts, shelf configurations, and shopper behaviors.", icon: "/assets/icons/retail.svg" },
-      { title: "Impulse Purchase Engineering", description: "Design elements that capture attention and communicate benefits quickly to browsing shoppers.", icon: "/assets/icons/impulse.svg" },
-      { title: "Space Efficiency", description: "Optimize packaging dimensions for shelf space utilization while maintaining product protection.", icon: "/assets/icons/space-efficiency.svg" },
-      { title: "Brand Visibility", description: "Ensure packaging stands out in competitive retail environments while maintaining brand consistency.", icon: "/assets/icons/shelf-visibility.svg" },
-      { title: "Production Feasibility", description: "Design for efficient manufacturing and assembly within retail packaging constraints.", icon: "/assets/icons/shelf-production.svg" }
-    ],
-    process: [
-      { step: 1, title: "Retail Context Analysis", text: "Study specific retail environments, shelf configurations, lighting conditions, and shopper behaviors.", image: "/assets/services/shelf-display/process1.jpg" },
-      { step: 2, title: "Structural & Graphic Integration", text: "Develop packaging that combines structural visibility with graphic communication effectiveness.", image: "/assets/services/shelf-display/process2.jpg" },
-      { step: 3, title: "Prototype Testing", text: "Create prototypes for shelf testing, shopper feedback, and refinement.", image: "/assets/services/shelf-display/process3.jpg" },
-      { step: 4, title: "Production Specification", text: "Prepare designs for manufacturing with attention to retail efficiency requirements.", image: "/assets/services/shelf-display/process4.jpg" }
-    ],
-    gallery: {
-      title: "Shelf Display Portfolio",
-      images: [
-        { src: "/assets/services/shelf-display/portfolio1.jpg", alt: "Blister pack display", caption: "Blister Packs" },
-        { src: "/assets/services/shelf-display/portfolio2.jpg", alt: "Clamshell packaging", caption: "Clamshell Packaging" },
-        { src: "/assets/services/shelf-display/portfolio3.jpg", alt: "Counter display packaging", caption: "Counter Displays" },
-        { src: "/assets/services/shelf-display/portfolio4.jpg", alt: "Gondola end packaging", caption: "End Cap Displays" }
-      ]
-    }
+    faq: [
+      { question: "Do you offer braille on signs?", answer: "Yes! We can add raised braille to door plaques and signage for accessibility compliance." }
+    ]
   },
 
-  // ==================== MARKETING & PROMOTIONAL PRINT (7 services) ====================
-  "flyers-brochures": {
-    title: "Flyers & Brochures",
-    heroIntro: "Cost-effective print marketing that delivers messages with impact. We design and produce flyers and brochures that combine compelling visuals with strategic messaging to drive action and engagement.",
-    heroImage: "/assets/services/flyers/hero.jpg",
-    about: [
-      { text: "Flyers and brochures remain effective tools for targeted messaging. We design for specific distribution methods and audience contexts.", image: "/assets/services/flyers/about1.jpg" },
-      { text: "Our approach balances information density with visual appeal, ensuring messages are communicated effectively while capturing attention.", image: "/assets/services/flyers/about2.jpg" },
-      { text: "We specialize in formats and folding styles that work for different information quantities and distribution scenarios.", image: "/assets/services/flyers/about3.jpg" }
+  "staff-id-cards": {
+    title: "Staff ID Cards",
+    category: "Office & Corporate Branding",
+    metaDescription: "Custom staff ID cards with photo, name, department, and access control features. Professional PVC card printing in Kenya.",
+    heroImage: "/images/services/office/id-cards-hero.jpg",
+    heroAlt: "Professional staff ID cards",
+    sections: [
+      {
+        type: "text",
+        title: "Professional Identification for Your Team",
+        content: "Staff ID cards create a professional environment, improve security, and help employees and visitors identify each other. We print full-color PVC ID cards with your logo, employee photo, name, job title, department, and expiration date. Cards include lanyards, clips, or badge holders.",
+        image: "/images/services/office/id-cards-usage.jpg",
+        imageAlt: "Employees wearing ID cards",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "ID Card Features",
+        items: [
+          "Full-color CMYK printing both sides",
+          "Your company logo and branding",
+          "Employee photo integration",
+          "Name, title, department, ID number",
+          "Expiration date (for contract staff)",
+          "QR code or barcode (for check-in/out)",
+          "Magnetic stripe (for door access)",
+          "Holographic overlay (anti-counterfeit)",
+          "PVC material (durable, waterproof)"
+        ],
+        image: "/images/services/office/id-card-features.jpg",
+        imageAlt: "ID card with various features",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Complete System Solutions",
+        content: "Beyond just printing cards, we can set up an in-house ID card system for you: camera, software, printer, and blank cards. You'll be able to print new cards instantly whenever you hire. Or we can print cards in batches based on your employee data.",
+        image: "/images/services/office/id-card-system.jpg",
+        imageAlt: "ID card printing system",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Distribution Optimization", description: "Design for specific distribution methods—handouts, mailers, rack displays, or leave-behinds.", icon: "/assets/icons/distribution-opt.svg" },
-      { title: "Information Architecture", description: "Structure content for different reader engagement levels—quick scan vs. detailed reading.", icon: "/assets/icons/flyer-architecture.svg" },
-      { title: "Cost-Effective Production", description: "Balance design impact with production efficiency for various quantities and budgets.", icon: "/assets/icons/flyer-cost.svg" },
-      { title: "Call-to-Action Effectiveness", description: "Design layouts that guide readers toward desired actions with clarity and persuasion.", icon: "/assets/icons/flyer-cta.svg" },
-      { title: "Format Innovation", description: "Creative folding and format solutions that make standard print pieces more engaging.", icon: "/assets/icons/flyer-format.svg" }
-    ],
-    process: [
-      { step: 1, title: "Distribution & Audience Analysis", text: "Determine distribution methods, target audiences, and key messaging objectives.", image: "/assets/services/flyers/process1.jpg" },
-      { step: 2, title: "Format & Content Planning", text: "Select appropriate format, folding style, and content structure for messaging needs.", image: "/assets/services/flyers/process2.jpg" },
-      { step: 3, title: "Visual Design", text: "Create layouts that balance information density with visual appeal and readability.", image: "/assets/services/flyers/process3.jpg" },
-      { step: 4, title: "Production Optimization", text: "Prepare files for efficient printing within budget and quantity requirements.", image: "/assets/services/flyers/process4.jpg" }
-    ],
-    gallery: {
-      title: "Flyers & Brochures Portfolio",
-      images: [
-        { src: "/assets/services/flyers/portfolio1.jpg", alt: "Tri-fold brochure", caption: "Tri-Fold Brochure" },
-        { src: "/assets/services/flyers/portfolio2.jpg", alt: "Bi-fold brochure", caption: "Bi-Fold Brochure" },
-        { src: "/assets/services/flyers/portfolio3.jpg", alt: "Gate-fold brochure", caption: "Gate-Fold Brochure" },
-        { src: "/assets/services/flyers/portfolio4.jpg", alt: "Z-fold brochure", caption: "Z-Fold Brochure" }
-      ]
-    }
+    faq: [
+      { question: "Do you store our employee data?", answer: "No. We design the template, you provide the data. We print and destroy any files after a short period for security." }
+    ]
   },
 
-  "posters": {
-    title: "Posters",
-    heroIntro: "Large format visual communication that commands attention. We design and produce posters that stop viewers in their tracks, communicating messages with immediate impact and visual authority.",
-    heroImage: "/assets/services/posters/hero.jpg",
-    about: [
-      { text: "Posters work through scale and simplicity. We design for specific viewing contexts—distance, lighting, and viewer movement patterns.", image: "/assets/services/posters/about1.jpg" },
-      { text: "Our approach combines bold visual impact with clear messaging hierarchy for immediate comprehension.", image: "/assets/services/posters/about2.jpg" },
-      { text: "We specialize in poster systems for campaigns, events, and informational purposes across various environments.", image: "/assets/services/posters/about3.jpg" }
+  "company-profiles": {
+    title: "Company Profiles",
+    category: "Office & Corporate Branding",
+    metaDescription: "Professionally designed and printed company profiles, capability statements, and corporate brochures in Kenya.",
+    heroImage: "/images/services/office/company-profile-hero.jpg",
+    heroAlt: "Professional company profile booklet",
+    sections: [
+      {
+        type: "text",
+        title: "Your Corporate Introduction",
+        content: "Your company profile is often the first thing a potential client requests. It needs to present your company as credible, capable, and professional. We design and print high-quality company profiles that showcase your services, team, portfolio, and achievements.",
+        image: "/images/services/office/company-profile-mockup.jpg",
+        imageAlt: "Company profile booklet mockup",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "What's Included",
+        items: [
+          "Custom layout and design",
+          "Your logo, colors, and fonts throughout",
+          "Company overview and history",
+          "Services or products pages",
+          "Team member profiles with photos",
+          "Portfolio or project highlights",
+          "Client testimonials page",
+          "Contact information and map",
+          "Digital PDF version + printed copies"
+        ],
+        image: "/images/services/office/company-profile-spread.jpg",
+        imageAlt: "Company profile interior spread",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Printing Options",
+        content: "Choose from spiral binding (lay flat), perfect binding (softcover book), saddle stitching (stapled booklet), or loose sheets for a presentation folder. Paper options range from standard matte to premium glossy or uncoated textured paper.",
+        image: "/images/services/office/company-profile-binding.jpg",
+        imageAlt: "Different binding options",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Context-Specific Design", description: "Create posters optimized for specific locations, viewing distances, and environmental conditions.", icon: "/assets/icons/poster-context.svg" },
-      { title: "Visual Impact Engineering", description: "Design for immediate attention capture and message comprehension in competitive visual environments.", icon: "/assets/icons/poster-impact.svg" },
-      { title: "Campaign System Development", description: "Create coordinated poster families for multi-location campaigns or phased promotions.", icon: "/assets/icons/poster-campaign.svg" },
-      { title: "Production Quality", description: "Attention to color consistency, paper selection, and finishing for professional presentation.", icon: "/assets/icons/poster-quality.svg" },
-      { title: "Installation Considerations", description: "Design with consideration for common mounting methods and display contexts.", icon: "/assets/icons/poster-installation.svg" }
-    ],
-    process: [
-      { step: 1, title: "Display Context Analysis", text: "Understand posting locations, viewing distances, lighting conditions, and audience movement patterns.", image: "/assets/services/posters/process1.jpg" },
-      { step: 2, title: "Message Prioritization", text: "Distill messaging to essential elements for immediate comprehension from intended viewing distance.", image: "/assets/services/posters/process2.jpg" },
-      { step: 3, title: "Visual Impact Design", text: "Create compositions that stand out in specific environmental contexts.", image: "/assets/services/posters/process3.jpg" },
-      { step: 4, title: "Production Specification", text: "Select appropriate papers, printing methods, and sizes for intended display contexts.", image: "/assets/services/posters/process4.jpg" }
-    ],
-    gallery: {
-      title: "Posters Portfolio",
-      images: [
-        { src: "/assets/services/posters/portfolio1.jpg", alt: "Event promotion poster", caption: "Event Promotion" },
-        { src: "/assets/services/posters/portfolio2.jpg", alt: "Movie poster design", caption: "Movie Poster" },
-        { src: "/assets/services/posters/portfolio3.jpg", alt: "Music concert poster", caption: "Concert Poster" },
-        { src: "/assets/services/posters/portfolio4.jpg", alt: "Educational poster", caption: "Educational Poster" }
-      ]
-    }
-  },
-
-  "calendars": {
-    title: "Calendars",
-    heroIntro: "Year-round brand presence through functional art. We design custom calendars that combine practical utility with brand storytelling, keeping your message visible in daily use throughout the year.",
-    heroImage: "/assets/services/calendars/hero.jpg",
-    about: [
-      { text: "Calendars offer sustained brand exposure through daily interaction. We design for both aesthetic appeal and practical functionality.", image: "/assets/services/calendars/about1.jpg" },
-      { text: "Our approach considers calendar formats—wall, desk, planner—that match target audience preferences and usage contexts.", image: "/assets/services/calendars/about2.jpg" },
-      { text: "We specialize in calendar themes that align with brand values while providing visual interest month after month.", image: "/assets/services/calendars/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Year-Round Exposure", description: "Create calendars that maintain brand visibility through daily use over extended periods.", icon: "/assets/icons/year-round.svg" },
-      { title: "Functional Design", description: "Balance aesthetic appeal with practical usability—date visibility, writing space, planning features.", icon: "/assets/icons/calendar-function.svg" },
-      { title: "Theme Development", description: "Develop calendar themes that align with brand values and provide visual continuity throughout the year.", icon: "/assets/icons/calendar-theme.svg" },
-      { title: "Audience Matching", description: "Select calendar formats and styles appropriate for target audiences and usage contexts.", icon: "/assets/icons/calendar-audience.svg" },
-      { title: "Production Quality", description: "Attention to paper quality, binding methods, and finishing for premium presentation.", icon: "/assets/icons/calendar-quality.svg" }
-    ],
-    process: [
-      { step: 1, title: "Audience & Usage Analysis", text: "Determine target audience, usage context, and calendar format preferences.", image: "/assets/services/calendars/process1.jpg" },
-      { step: 2, title: "Theme & Content Planning", text: "Develop calendar theme that aligns with brand and provides visual variety throughout months.", image: "/assets/services/calendars/process2.jpg" },
-      { step: 3, title: "Functional Design", text: "Create layouts that balance aesthetic appeal with practical calendar functionality.", image: "/assets/services/calendars/process3.jpg" },
-      { step: 4, title: "Production & Assembly", text: "Manage production with attention to paper selection, printing quality, and binding methods.", image: "/assets/services/calendars/process4.jpg" }
-    ],
-    gallery: {
-      title: "Calendars Portfolio",
-      images: [
-        { src: "/assets/services/calendars/portfolio1.jpg", alt: "Wall calendar design", caption: "Wall Calendar" },
-        { src: "/assets/services/calendars/portfolio2.jpg", alt: "Desk calendar design", caption: "Desk Calendar" },
-        { src: "/assets/services/calendars/portfolio3.jpg", alt: "Planner design", caption: "Planner" },
-        { src: "/assets/services/calendars/portfolio4.jpg", alt: "Pocket calendar design", caption: "Pocket Calendar" }
-      ]
-    }
-  },
-
-  "menus": {
-    title: "Menus",
-    heroIntro: "Appetite-inspiring menu design that drives sales and enhances dining experiences. We create custom menus that guide ordering decisions, communicate brand personality, and contribute to restaurant ambiance.",
-    heroImage: "/assets/services/menus/hero.jpg",
-    about: [
-      { text: "Menus are strategic sales tools that should balance aesthetic appeal with practical restaurant operations.", image: "/assets/services/menus/about1.jpg" },
-      { text: "We design for different restaurant types—fast casual, fine dining, bars, cafes—each with specific menu requirements and customer expectations.", image: "/assets/services/menus/about2.jpg" },
-      { text: "Our approach considers menu engineering principles, readability in restaurant lighting, and practical updates/changes.", image: "/assets/services/menus/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Menu Engineering Integration", description: "Design that supports strategic menu item placement and pricing presentation.", icon: "/assets/icons/menu-engineering.svg" },
-      { title: "Restaurant Context Design", description: "Create menus appropriate for specific restaurant types, lighting conditions, and service styles.", icon: "/assets/icons/menu-context.svg" },
-      { title: "Update Practicality", description: "Design systems that allow for efficient menu updates while maintaining brand consistency.", icon: "/assets/icons/menu-updates.svg" },
-      { title: "Material Durability", description: "Select appropriate materials and finishes for restaurant handling, cleaning, and replacement cycles.", icon: "/assets/icons/menu-durability.svg" },
-      { title: "Brand Ambiance Contribution", description: "Design menus that enhance overall restaurant atmosphere and brand experience.", icon: "/assets/icons/menu-ambiance.svg" }
-    ],
-    process: [
-      { step: 1, title: "Restaurant Context Analysis", text: "Understand restaurant type, service style, lighting conditions, and menu update frequency.", image: "/assets/services/menus/process1.jpg" },
-      { step: 2, title: "Menu Structure Design", text: "Create information hierarchy that guides ordering decisions and supports menu engineering.", image: "/assets/services/menus/process2.jpg" },
-      { step: 3, title: "Material & Format Selection", text: "Choose appropriate menu format, materials, and binding for restaurant operations.", image: "/assets/services/menus/process3.jpg" },
-      { step: 4, title: "Production & Practical Testing", text: "Produce samples for practical testing in restaurant conditions and refinement.", image: "/assets/services/menus/process4.jpg" }
-    ],
-    gallery: {
-      title: "Menus Portfolio",
-      images: [
-        { src: "/assets/services/menus/portfolio1.jpg", alt: "Restaurant menu design", caption: "Restaurant Menu" },
-        { src: "/assets/services/menus/portfolio2.jpg", alt: "Cafe menu design", caption: "Cafe Menu" },
-        { src: "/assets/services/menus/portfolio3.jpg", alt: "Bar menu design", caption: "Bar Menu" },
-        { src: "/assets/services/menus/portfolio4.jpg", alt: "Takeaway menu design", caption: "Takeaway Menu" }
-      ]
-    }
-  },
-
-  "receipt-books": {
-    title: "Receipt Books",
-    heroIntro: "Professional transaction documentation with brand reinforcement. We design and produce custom receipt books that combine functional transaction recording with consistent brand presentation.",
-    heroImage: "/assets/services/receipt-books/hero.jpg",
-    about: [
-      { text: "Receipt books are functional business tools that also represent brand at point of transaction. We design for both practical use and brand consistency.", image: "/assets/services/receipt-books/about1.jpg" },
-      { text: "Our approach considers transaction types, carbon copy requirements, and practical business workflows.", image: "/assets/services/receipt-books/about2.jpg" },
-      { text: "We specialize in receipt book systems that work efficiently for different business types and transaction volumes.", image: "/assets/services/receipt-books/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Transaction Efficiency", description: "Design receipt layouts that streamline transaction recording and customer information capture.", icon: "/assets/icons/receipt-efficiency.svg" },
-      { title: "Brand Consistency", description: "Incorporate brand elements into functional transaction documents.", icon: "/assets/icons/receipt-brand.svg" },
-      { title: "Carbon System Design", description: "Create effective carbon copy systems for different business record-keeping needs.", icon: "/assets/icons/receipt-carbon.svg" },
-      { title: "Durability Features", description: "Select appropriate papers, binding methods, and covers for frequent use.", icon: "/assets/icons/receipt-durability.svg" },
-      { title: "Custom Information Fields", description: "Design custom fields for specific business information requirements.", icon: "/assets/icons/receipt-custom.svg" }
-    ],
-    process: [
-      { step: 1, title: "Business Workflow Analysis", text: "Understand transaction types, information requirements, and record-keeping needs.", image: "/assets/services/receipt-books/process1.jpg" },
-      { step: 2, title: "Receipt Layout Design", text: "Create efficient layouts for transaction recording and information organization.", image: "/assets/services/receipt-books/process2.jpg" },
-      { step: 3, title: "Brand Integration", text: "Incorporate brand elements while maintaining functional efficiency.", image: "/assets/services/receipt-books/process3.jpg" },
-      { step: 4, title: "Production Specification", text: "Specify appropriate papers, carbon systems, and binding methods for business needs.", image: "/assets/services/receipt-books/process4.jpg" }
-    ],
-    gallery: {
-      title: "Receipt Books Portfolio",
-      images: [
-        { src: "/assets/services/receipt-books/portfolio1.jpg", alt: "Carbon copy receipt book", caption: "Carbon Copy" },
-        { src: "/assets/services/receipt-books/portfolio2.jpg", alt: "NCR receipt book", caption: "NCR Books" },
-        { src: "/assets/services/receipt-books/portfolio3.jpg", alt: "Custom receipt book", caption: "Custom Receipts" },
-        { src: "/assets/services/receipt-books/portfolio4.jpg", alt: "Numbered receipt book", caption: "Numbered Receipts" }
-      ]
-    }
-  },
-
-  "notebooks-diaries": {
-    title: "Notebooks & Diaries",
-    heroIntro: "Branded writing companions that build daily connections. We produce custom notebooks and diaries that combine practical writing utility with brand presence in daily professional and personal use.",
-    heroImage: "/assets/services/notebooks/hero.jpg",
-    about: [
-      { text: "Notebooks and diaries offer sustained brand exposure through daily interaction. We design for both aesthetic appeal and writing functionality.", image: "/assets/services/notebooks/about1.jpg" },
-      { text: "Our approach considers different notebook types—meeting notebooks, planners, journals—each with specific user needs and contexts.", image: "/assets/services/notebooks/about2.jpg" },
-      { text: "We specialize in creating writing tools that people actually want to use, ensuring brand visibility through preference rather than obligation.", image: "/assets/services/notebooks/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Writing Experience Design", description: "Create notebooks with paper quality, ruling styles, and features that enhance writing experience.", icon: "/assets/icons/writing.svg" },
-      { title: "Daily Utility Focus", description: "Design for actual use patterns, portability needs, and writing contexts.", icon: "/assets/icons/notebook-utility.svg" },
-      { title: "Brand Integration Taste", description: "Incorporate branding in ways that enhance rather than detract from writing utility.", icon: "/assets/icons/notebook-brand.svg" },
-      { title: "Cover & Binding Quality", description: "Select durable covers and binding methods for frequent use and longevity.", icon: "/assets/icons/notebook-binding.svg" },
-      { title: "Gift-Worthy Presentation", description: "Create notebooks with perceived value that makes them desirable as gifts or premium giveaways.", icon: "/assets/icons/notebook-gift.svg" }
-    ],
-    process: [
-      { step: 1, title: "Usage Context Analysis", text: "Determine primary use contexts, writing needs, and user preferences.", image: "/assets/services/notebooks/process1.jpg" },
-      { step: 2, title: "Notebook Specification", text: "Select appropriate size, paper type, ruling style, and features for intended use.", image: "/assets/services/notebooks/process2.jpg" },
-      { step: 3, title: "Design Integration", text: "Create covers and interior layouts that balance brand presence with writing functionality.", image: "/assets/services/notebooks/process3.jpg" },
-      { step: 4, title: "Production Quality", text: "Manage production with attention to paper quality, binding durability, and finishing details.", image: "/assets/services/notebooks/process4.jpg" }
-    ],
-    gallery: {
-      title: "Notebooks & Diaries Portfolio",
-      images: [
-        { src: "/assets/services/notebooks/portfolio1.jpg", alt: "Executive notebook", caption: "Executive Notebook" },
-        { src: "/assets/services/notebooks/portfolio2.jpg", alt: "Planner diary", caption: "Planner Diary" },
-        { src: "/assets/services/notebooks/portfolio3.jpg", alt: "Meeting notebook", caption: "Meeting Notebook" },
-        { src: "/assets/services/notebooks/portfolio4.jpg", alt: "Journal design", caption: "Journal" }
-      ]
-    }
-  },
-
-  "promotional-booklets": {
-    title: "Promotional Booklets",
-    heroIntro: "Compact information packages that educate and persuade. We design promotional booklets that deliver detailed messages in engaging formats, guiding readers through benefits and calls-to-action.",
-    heroImage: "/assets/services/promotional-booklets/hero.jpg",
-    about: [
-      { text: "Promotional booklets allow for more detailed communication than single-page pieces. We design for reader engagement through multiple pages.", image: "/assets/services/promotional-booklets/about1.jpg" },
-      { text: "Our approach considers booklet formats, folding styles, and reading sequences that maintain interest and guide toward conversion.", image: "/assets/services/promotional-booklets/about2.jpg" },
-      { text: "We specialize in creating booklets that work as both leave-behinds and mailers, with appropriate information density for each context.", image: "/assets/services/promotional-booklets/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Information Sequencing", description: "Structure content progression to build understanding and guide readers toward desired actions.", icon: "/assets/icons/booklet-sequencing.svg" },
-      { title: "Format Innovation", description: "Creative booklet formats and folding styles that enhance engagement and memorability.", icon: "/assets/icons/booklet-format.svg" },
-      { title: "Visual-Verbal Balance", description: "Combine compelling visuals with persuasive copy for maximum impact.", icon: "/assets/icons/booklet-balance.svg" },
-      { title: "Distribution Optimization", description: "Design for specific distribution methods—direct mail, handouts, point-of-sale displays.", icon: "/assets/icons/booklet-distribution.svg" },
-      { title: "Production Efficiency", description: "Balance design impact with production practicalities for various quantities and budgets.", icon: "/assets/icons/booklet-production.svg" }
-    ],
-    process: [
-      { step: 1, title: "Communication Objective Analysis", text: "Define key messages, target audience, and desired reader actions.", image: "/assets/services/promotional-booklets/process1.jpg" },
-      { step: 2, title: "Content Architecture", text: "Structure information flow and visual-verbal balance for engagement and persuasion.", image: "/assets/services/promotional-booklets/process2.jpg" },
-      { step: 3, title: "Format & Design", text: "Select appropriate booklet format and create visual design that supports content progression.", image: "/assets/services/promotional-booklets/process3.jpg" },
-      { step: 4, title: "Production Planning", text: "Prepare for efficient production within distribution and budget parameters.", image: "/assets/services/promotional-booklets/process4.jpg" }
-    ],
-    gallery: {
-      title: "Promotional Booklets Portfolio",
-      images: [
-        { src: "/assets/services/promotional-booklets/portfolio1.jpg", alt: "Saddle-stitched booklet", caption: "Saddle-Stitched" },
-        { src: "/assets/services/promotional-booklets/portfolio2.jpg", alt: "Perfect-bound booklet", caption: "Perfect-Bound" },
-        { src: "/assets/services/promotional-booklets/portfolio3.jpg", alt: "Wire-o bound booklet", caption: "Wire-O Bound" },
-        { src: "/assets/services/promotional-booklets/portfolio4.jpg", alt: "Self-cover booklet", caption: "Self-Cover" }
-      ]
-    }
-  },
-
-  // ==================== CORPORATE BRANDING & STRATEGY (7 services) ====================
-  "brand-strategy-consulting": {
-    title: "Brand Strategy Consulting",
-    heroIntro: "Strategic brand foundation development that drives business growth. We provide comprehensive brand strategy consulting to define, position, and architect brands that connect with audiences and deliver business results.",
-    heroImage: "/assets/services/brand-strategy/hero.jpg",
-    about: [
-      { text: "Brand strategy is the foundation upon which all visual and communication elements are built. We work at the strategic level to define brand essence, positioning, and architecture.", image: "/assets/services/brand-strategy/about1.jpg" },
-      { text: "Our approach combines market research, competitive analysis, and business objectives to develop actionable brand strategies.", image: "/assets/services/brand-strategy/about2.jpg" },
-      { text: "We specialize in creating brand frameworks that guide consistent expression across all touchpoints and business functions.", image: "/assets/services/brand-strategy/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Market-Driven Strategy", description: "Develop brand strategies grounded in market realities, competitive landscapes, and audience insights.", icon: "/assets/icons/strategy-market.svg" },
-      { title: "Business Integration", description: "Align brand strategy with business objectives, organizational capabilities, and growth plans.", icon: "/assets/icons/strategy-business.svg" },
-      { title: "Actionable Frameworks", description: "Create practical brand frameworks that guide decision-making and implementation across the organization.", icon: "/assets/icons/strategy-framework.svg" },
-      { title: "Competitive Differentiation", description: "Identify and articulate unique brand positions that create meaningful competitive advantages.", icon: "/assets/icons/strategy-differentiation.svg" },
-      { title: "Measurement Systems", description: "Establish metrics and measurement approaches to track brand performance and strategy effectiveness.", icon: "/assets/icons/strategy-measurement.svg" }
-    ],
-    process: [
-      { step: 1, title: "Discovery & Analysis", text: "Conduct market research, competitive analysis, audience research, and internal stakeholder interviews.", image: "/assets/services/brand-strategy/process1.jpg" },
-      { step: 2, title: "Strategy Development", text: "Define brand essence, positioning, architecture, and voice based on research insights.", image: "/assets/services/brand-strategy/process2.jpg" },
-      { step: 3, title: "Framework Creation", text: "Develop practical brand frameworks, guidelines, and implementation tools.", image: "/assets/services/brand-strategy/process3.jpg" },
-      { step: 4, title: "Implementation Planning", text: "Create roadmaps for strategy implementation across organizational functions and touchpoints.", image: "/assets/services/brand-strategy/process4.jpg" }
-    ],
-    gallery: {
-      title: "Brand Strategy Portfolio",
-      images: [
-        { src: "/assets/services/brand-strategy/portfolio1.jpg", alt: "Brand positioning matrix", caption: "Positioning Matrix" },
-        { src: "/assets/services/brand-strategy/portfolio2.jpg", alt: "Brand architecture diagram", caption: "Architecture Diagram" },
-        { src: "/assets/services/brand-strategy/portfolio3.jpg", alt: "Customer journey map", caption: "Journey Mapping" },
-        { src: "/assets/services/brand-strategy/portfolio4.jpg", alt: "Brand personality framework", caption: "Personality Framework" }
-      ]
-    }
-  },
-
-  "corporate-identity-design": {
-    title: "Corporate Identity Design",
-    heroIntro: "Comprehensive visual identity systems for corporate brands. We design complete corporate identity packages that establish professional presence, ensure consistency, and communicate corporate values across all applications.",
-    heroImage: "/assets/services/corporate-identity/hero.jpg",
-    about: [
-      { text: "Corporate identity extends beyond logo to complete visual systems. We design comprehensive identity packages that work across diverse corporate applications.", image: "/assets/services/corporate-identity/about1.jpg" },
-      { text: "Our approach considers corporate structure, business units, and communication needs to create flexible yet consistent identity systems.", image: "/assets/services/corporate-identity/about2.jpg" },
-      { text: "We specialize in corporate identities that balance professional requirements with distinctive brand personality.", image: "/assets/services/corporate-identity/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "System Architecture", description: "Create comprehensive identity systems with clear rules for all visual applications and contexts.", icon: "/assets/icons/corporate-system.svg" },
-      { title: "Corporate Structure Adaptation", description: "Design systems that work across business units, subsidiaries, and organizational hierarchies.", icon: "/assets/icons/corporate-structure.svg" },
-      { title: "Professional Context Design", description: "Create identities appropriate for corporate environments, B2B communications, and investor relations.", icon: "/assets/icons/corporate-context.svg" },
-      { title: "Implementation Tools", description: "Develop practical guidelines, templates, and assets for consistent application across the organization.", icon: "/assets/icons/corporate-tools.svg" },
-      { title: "Future-Proof Systems", description: "Design with flexibility for business growth, diversification, and evolving market contexts.", icon: "/assets/icons/corporate-future.svg" }
-    ],
-    process: [
-      { step: 1, title: "Corporate Analysis", text: "Understand corporate structure, business units, communication needs, and industry context.", image: "/assets/services/corporate-identity/process1.jpg" },
-      { step: 2, title: "Identity System Design", text: "Develop comprehensive visual identity system including logo, typography, color, and graphic elements.", image: "/assets/services/corporate-identity/process2.jpg" },
-      { step: 3, title: "Application Prototyping", text: "Test identity across core corporate applications—stationery, presentations, reports, digital platforms.", image: "/assets/services/corporate-identity/process3.jpg" },
-      { step: 4, title: "Guidelines & Tools Development", text: "Create detailed brand guidelines and implementation tools for organizational adoption.", image: "/assets/services/corporate-identity/process4.jpg" }
-    ],
-    gallery: {
-      title: "Corporate Identity Portfolio",
-      images: [
-        { src: "/assets/services/corporate-identity/portfolio1.jpg", alt: "Corporate identity system", caption: "Complete System" },
-        { src: "/assets/services/corporate-identity/portfolio2.jpg", alt: "Brand guidelines document", caption: "Brand Guidelines" },
-        { src: "/assets/services/corporate-identity/portfolio3.jpg", alt: "Corporate templates", caption: "Template System" },
-        { src: "/assets/services/corporate-identity/portfolio4.jpg", alt: "Corporate applications", caption: "Application Examples" }
-      ]
-    }
-  },
-
-  "brand-guidelines": {
-    title: "Brand Guidelines",
-    heroIntro: "Comprehensive brand governance systems that ensure consistency and quality. We develop detailed brand guidelines that serve as single sources of truth for brand expression across all applications and stakeholders.",
-    heroImage: "/assets/services/brand-guidelines/hero.jpg",
-    about: [
-      { text: "Brand guidelines are essential tools for maintaining brand consistency. We create comprehensive documents that cover all aspects of brand expression.", image: "/assets/services/brand-guidelines/about1.jpg" },
-      { text: "Our approach considers different user needs—designers, marketers, executives, external partners—and creates guidelines accessible to all.", image: "/assets/services/brand-guidelines/about2.jpg" },
-      { text: "We specialize in creating living guideline systems that can be updated efficiently as brands evolve.", image: "/assets/services/brand-guidelines/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Comprehensive Coverage", description: "Develop guidelines covering all brand elements—logo, typography, color, imagery, voice, applications.", icon: "/assets/icons/guidelines-coverage.svg" },
-      { title: "User-Centric Design", description: "Create guidelines accessible to different user types with varying technical expertise.", icon: "/assets/icons/guidelines-user.svg" },
-      { title: "Practical Implementation", description: "Include practical examples, templates, and implementation instructions for real-world use.", icon: "/assets/icons/guidelines-practical.svg" },
-      { title: "Digital Accessibility", description: "Develop guidelines in formats suitable for digital distribution and reference.", icon: "/assets/icons/guidelines-digital.svg" },
-      { title: "Update Systems", description: "Create structures that allow efficient updates as brands evolve and expand.", icon: "/assets/icons/guidelines-update.svg" }
-    ],
-    process: [
-      { step: 1, title: "Audience & Usage Analysis", text: "Identify primary guideline users, their needs, and typical reference scenarios.", image: "/assets/services/brand-guidelines/process1.jpg" },
-      { step: 2, title: "Content Architecture", text: "Structure guideline content for logical navigation and practical reference.", image: "/assets/services/brand-guidelines/process2.jpg" },
-      { step: 3, title: "Visual Presentation", text: "Design guideline documents that exemplify brand standards while being functional references.", image: "/assets/services/brand-guidelines/process3.jpg" },
-      { step: 4, title: "Distribution Planning", text: "Create distribution and update systems for guideline maintenance and organizational adoption.", image: "/assets/services/brand-guidelines/process4.jpg" }
-    ],
-    gallery: {
-      title: "Brand Guidelines Portfolio",
-      images: [
-        { src: "/assets/services/brand-guidelines/portfolio1.jpg", alt: "Brand guidelines document", caption: "Guidelines Document" },
-        { src: "/assets/services/brand-guidelines/portfolio2.jpg", alt: "Digital brand guidelines", caption: "Digital Version" },
-        { src: "/assets/services/brand-guidelines/portfolio3.jpg", alt: "Brand asset library", caption: "Asset Library" },
-        { src: "/assets/services/brand-guidelines/portfolio4.jpg", alt: "Implementation examples", caption: "Examples Guide" }
-      ]
-    }
-  },
-
-  "wayfinding-signage": {
-    title: "Wayfinding Signage",
-    heroIntro: "Intuitive navigation systems that guide people through spaces with clarity and confidence. We design comprehensive wayfinding systems that reduce confusion, improve experiences, and reflect brand identity in built environments.",
-    heroImage: "/assets/services/wayfinding/hero.jpg",
-    about: [
-      { text: "Wayfinding is environmental communication that guides movement and decision-making. We design systems that work intuitively across complex spaces.", image: "/assets/services/wayfinding/about1.jpg" },
-      { text: "Our approach considers user journeys, decision points, and spatial relationships to create logical navigation systems.", image: "/assets/services/wayfinding/about2.jpg" },
-      { text: "We specialize in wayfinding that balances functional clarity with brand integration and aesthetic quality.", image: "/assets/services/wayfinding/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "User Journey Mapping", description: "Analyze typical user movements, decision points, and information needs throughout spaces.", icon: "/assets/icons/wayfinding-journey.svg" },
-      { title: "Information Hierarchy", description: "Create clear hierarchies for different information types—orientation, direction, identification, regulation.", icon: "/assets/icons/wayfinding-hierarchy.svg" },
-      { title: "Environmental Integration", description: "Design signage that works with architecture, lighting, and spatial characteristics.", icon: "/assets/icons/wayfinding-environment.svg" },
-      { title: "Universal Design", description: "Ensure wayfinding systems are accessible to people with diverse abilities and language backgrounds.", icon: "/assets/icons/wayfinding-universal.svg" },
-      { title: "Implementation Coordination", description: "Coordinate with architects, contractors, and facility managers for proper installation and maintenance.", icon: "/assets/icons/wayfinding-coordination.svg" }
-    ],
-    process: [
-      { step: 1, title: "Space & User Analysis", text: "Study spatial layouts, user journeys, decision points, and existing circulation patterns.", image: "/assets/services/wayfinding/process1.jpg" },
-      { step: 2, title: "Wayfinding Strategy", text: "Develop information hierarchy and sign type system for comprehensive navigation.", image: "/assets/services/wayfinding/process2.jpg" },
-      { step: 3, title: "Signage System Design", text: "Create coordinated family of sign types with clear visual relationships.", image: "/assets/services/wayfinding/process3.jpg" },
-      { step: 4, title: "Implementation Documentation", text: "Produce detailed specifications, location plans, and installation instructions.", image: "/assets/services/wayfinding/process4.jpg" }
-    ],
-    gallery: {
-      title: "Wayfinding Portfolio",
-      images: [
-        { src: "/assets/services/wayfinding/portfolio1.jpg", alt: "Directional signage system", caption: "Directional Signs" },
-        { src: "/assets/services/wayfinding/portfolio2.jpg", alt: "Identification signage", caption: "Identification Signs" },
-        { src: "/assets/services/wayfinding/portfolio3.jpg", alt: "Informational signage", caption: "Informational Signs" },
-        { src: "/assets/services/wayfinding/portfolio4.jpg", alt: "Regulatory signage", caption: "Regulatory Signs" }
-      ]
-    }
-  },
-
-  "office-branding": {
-    title: "Office Branding",
-    heroIntro: "Transform workplaces into brand experiences that inspire employees and impress visitors. We design comprehensive office branding that communicates corporate culture, values, and identity throughout physical workspaces.",
-    heroImage: "/assets/services/office-branding/hero.jpg",
-    about: [
-      { text: "Office environments are three-dimensional brand expressions. We design branding that works across architectural elements, interior design, and workplace graphics.", image: "/assets/services/office-branding/about1.jpg" },
-      { text: "Our approach considers employee experience, visitor impressions, and functional workplace requirements.", image: "/assets/services/office-branding/about2.jpg" },
-      { text: "We specialize in office branding that balances inspiration with professionalism across different workspace zones.", image: "/assets/services/office-branding/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Employee Experience Focus", description: "Design branding that reinforces culture, values, and identity for daily employee engagement.", icon: "/assets/icons/office-employee.svg" },
-      { title: "Visitor Journey Design", description: "Create brand experiences that communicate appropriate messages to visitors throughout their office journey.", icon: "/assets/icons/office-visitor.svg" },
-      { title: "Architectural Integration", description: "Work with existing architecture and interior design to create cohesive brand environments.", icon: "/assets/icons/office-architectural.svg" },
-      { title: "Zone-Specific Application", description: "Tailor branding approach to different workspace zones—reception, collaboration areas, private offices, amenities.", icon: "/assets/icons/office-zones.svg" },
-      { title: "Implementation Coordination", description: "Coordinate with facilities teams, contractors, and internal stakeholders for seamless execution.", icon: "/assets/icons/office-implementation.svg" }
-    ],
-    process: [
-      { step: 1, title: "Workplace Analysis", text: "Study office layout, employee workflows, visitor journeys, and existing architectural features.", image: "/assets/services/office-branding/process1.jpg" },
-      { step: 2, title: "Brand Environment Strategy", text: "Develop approach for brand expression across different workplace zones and functions.", image: "/assets/services/office-branding/process2.jpg" },
-      { step: 3, title: "Design Development", text: "Create comprehensive branding applications for architectural elements, graphics, and environmental features.", image: "/assets/services/office-branding/process3.jpg" },
-      { step: 4, title: "Implementation Management", text: "Coordinate production, installation, and quality control for office-wide branding execution.", image: "/assets/services/office-branding/process4.jpg" }
-    ],
-    gallery: {
-      title: "Office Branding Portfolio",
-      images: [
-        { src: "/assets/services/office-branding/portfolio1.jpg", alt: "Reception area branding", caption: "Reception Branding" },
-        { src: "/assets/services/office-branding/portfolio2.jpg", alt: "Collaboration space branding", caption: "Collaboration Areas" },
-        { src: "/assets/services/office-branding/portfolio3.jpg", alt: "Meeting room branding", caption: "Meeting Rooms" },
-        { src: "/assets/services/office-branding/portfolio4.jpg", alt: "Common area branding", caption: "Common Areas" }
-      ]
-    }
-  },
-
-  "safety-signage": {
-    title: "Safety Signage",
-    heroIntro: "Clear, compliant safety communication that protects people and meets regulatory requirements. We design and produce safety signage that communicates essential information with immediate comprehension and regulatory compliance.",
-    heroImage: "/assets/services/safety-signage/hero.jpg",
-    about: [
-      { text: "Safety signage serves critical protective functions. We design for maximum clarity, compliance, and effectiveness in conveying safety information.", image: "/assets/services/safety-signage/about1.jpg" },
-      { text: "Our approach considers regulatory requirements, viewing conditions, and user comprehension under stress or emergency conditions.", image: "/assets/services/safety-signage/about2.jpg" },
-      { text: "We specialize in safety signage systems that work comprehensively across facilities while meeting specific industry standards.", image: "/assets/services/safety-signage/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Regulatory Compliance", description: "Ensure all signage meets relevant safety regulations, standards, and industry requirements.", icon: "/assets/icons/safety-compliance.svg" },
-      { title: "Emergency Comprehension", description: "Design for immediate understanding under stress, low-light conditions, or emergency situations.", icon: "/assets/icons/safety-emergency.svg" },
-      { title: "Comprehensive System Design", description: "Create coordinated safety signage systems covering all required information types and locations.", icon: "/assets/icons/safety-system.svg" },
-      { title: "Durability & Visibility", description: "Select materials and finishes for long-term visibility and durability in specific environmental conditions.", icon: "/assets/icons/safety-durability.svg" },
-      { title: "Installation Specification", description: "Provide detailed installation instructions for proper placement and effectiveness.", icon: "/assets/icons/safety-installation.svg" }
-    ],
-    process: [
-      { step: 1, title: "Regulatory & Risk Analysis", text: "Research applicable regulations, identify safety risks, and determine required signage types.", image: "/assets/services/safety-signage/process1.jpg" },
-      { step: 2, title: "Signage System Design", text: "Create comprehensive system covering all required safety information with consistent visual language.", image: "/assets/services/safety-signage/process2.jpg" },
-      { step: 3, title: "Material Specification", text: "Select appropriate materials for durability, visibility, and specific environmental conditions.", image: "/assets/services/safety-signage/process3.jpg" },
-      { step: 4, title: "Compliance Documentation", text: "Provide documentation demonstrating regulatory compliance and installation specifications.", image: "/assets/services/safety-signage/process4.jpg" }
-    ],
-    gallery: {
-      title: "Safety Signage Portfolio",
-      images: [
-        { src: "/assets/services/safety-signage/portfolio1.jpg", alt: "Emergency exit signage", caption: "Emergency Signs" },
-        { src: "/assets/services/safety-signage/portfolio2.jpg", alt: "Hazard warning signage", caption: "Warning Signs" },
-        { src: "/assets/services/safety-signage/portfolio3.jpg", alt: "Fire safety signage", caption: "Fire Safety" },
-        { src: "/assets/services/safety-signage/portfolio4.jpg", alt: "Construction safety signage", caption: "Construction Safety" }
-      ]
-    }
+    faq: [
+      { question: "Can I update my profile later?", answer: "Yes! We keep your source files and can update pages as needed (new team members, new projects, etc.)." }
+    ]
   },
 
   "corporate-communication-materials": {
     title: "Corporate Communication Materials",
-    heroIntro: "Professional communication tools that reinforce corporate messaging and brand identity. We design comprehensive corporate communication materials that ensure consistency and quality across all internal and external communications.",
-    heroImage: "/assets/services/corporate-comms/hero.jpg",
-    about: [
-      { text: "Corporate communications require consistent brand expression across diverse formats and audiences. We design systems that maintain integrity while adapting to different communication needs.", image: "/assets/services/corporate-comms/about1.jpg" },
-      { text: "Our approach considers communication objectives, audience segments, and distribution channels to create appropriate material designs.", image: "/assets/services/corporate-comms/about2.jpg" },
-      { text: "We specialize in creating template systems that empower internal teams to produce consistent communications efficiently.", image: "/assets/services/corporate-comms/about3.jpg" }
+    category: "Office & Corporate Branding",
+    metaDescription: "Professional corporate communication materials including letterheads, envelopes, presentation folders, and report templates.",
+    heroImage: "/images/services/office/corporate-comm-hero.jpg",
+    heroAlt: "Corporate communication stationery set",
+    sections: [
+      {
+        type: "text",
+        title: "Consistent Corporate Communication",
+        content: "Every piece of paper leaving your office should reinforce your brand. From letters and proposals to internal reports and presentations, we create professionally designed templates that make your company look polished and organized.",
+        image: "/images/services/office/stationery-set.jpg",
+        imageAlt: "Complete stationery set",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Communication Materials We Design",
+        items: [
+          "Letterheads (printed or digital template)",
+          "Envelopes (C4, C5, DL, window)",
+          "Presentation folders (with business card slots)",
+          "Report and proposal templates (Word/InDesign)",
+          "Certificate and award templates",
+          "Notepad and memo pad designs",
+          "Invoice and receipt templates",
+          "Internal memo templates",
+          "Email signature templates"
+        ],
+        image: "/images/services/office/presentation-folder.jpg",
+        imageAlt: "Presentation folder with inserts",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Printed + Digital Delivery",
+        content: "We provide both professionally printed versions (letterheads, envelopes, folders) AND editable digital templates (Microsoft Word, Google Docs, InDesign) so your team can create new documents that match exactly.",
+        image: "/images/services/office/digital-templates.jpg",
+        imageAlt: "Digital templates on laptop",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Communication System Design", description: "Create coordinated systems for different communication types—internal, external, formal, informal.", icon: "/assets/icons/comms-system.svg" },
-      { title: "Template Development", description: "Design practical templates that maintain brand consistency while allowing content flexibility.", icon: "/assets/icons/comms-template.svg" },
-      { title: "Audience-Specific Adaptation", description: "Tailor design approaches for different audience segments—employees, investors, customers, media.", icon: "/assets/icons/comms-audience.svg" },
-      { title: "Production Efficiency", description: "Create systems that balance quality with efficient production across communication volumes.", icon: "/assets/icons/comms-efficiency.svg" },
-      { title: "Digital-Print Integration", description: "Design for seamless integration between digital and print communication channels.", icon: "/assets/icons/comms-integration.svg" }
-    ],
-    process: [
-      { step: 1, title: "Communication Analysis", text: "Identify communication types, audiences, distribution channels, and production volumes.", image: "/assets/services/corporate-comms/process1.jpg" },
-      { step: 2, title: "System Architecture", text: "Design coordinated system of templates and guidelines for different communication needs.", image: "/assets/services/corporate-comms/process2.jpg" },
-      { step: 3, title: "Template Design", text: "Create practical templates that balance brand consistency with content flexibility.", image: "/assets/services/corporate-comms/process3.jpg" },
-      { step: 4, title: "Implementation Training", text: "Develop training and support materials for internal team adoption and consistent use.", image: "/assets/services/corporate-comms/process4.jpg" }
-    ],
-    gallery: {
-      title: "Corporate Communications Portfolio",
-      images: [
-        { src: "/assets/services/corporate-comms/portfolio1.jpg", alt: "Internal newsletter design", caption: "Internal Newsletter" },
-        { src: "/assets/services/corporate-comms/portfolio2.jpg", alt: "Corporate report design", caption: "Corporate Report" },
-        { src: "/assets/services/corporate-comms/portfolio3.jpg", alt: "Presentation template design", caption: "Presentation Templates" },
-        { src: "/assets/services/corporate-comms/portfolio4.jpg", alt: "Email template design", caption: "Email Templates" }
-      ]
-    }
+    faq: [
+      { question: "Can I reorder printed materials later?", answer: "Yes! We keep your files on file. Just email us quantity and we'll print and deliver quickly." }
+    ]
   },
 
-  // ==================== WEB DESIGN & SOFTWARE ENGINEERING (7 services) ====================
+  // ==================== PROMOTIONAL ITEMS ====================
+  "branded-umbrellas": {
+    title: "Branded Umbrellas",
+    category: "Promotional Items",
+    metaDescription: "Custom branded umbrellas for corporate gifts, promotions, and events in Kenya. Printed with your logo.",
+    heroImage: "/images/services/promo/umbrella-hero.jpg",
+    heroAlt: "Branded umbrellas",
+    sections: [
+      {
+        type: "text",
+        title: "Useful Gifts That Get Seen",
+        content: "Everyone needs an umbrella in Nairobi's rainy seasons. Branded umbrellas are practical, appreciated, and highly visible. Every time your client uses it in the rain, dozens of people see your logo. Perfect for corporate gifts, promotional events, and staff appreciation.",
+        image: "/images/services/promo/umbrellas-rain.jpg",
+        imageAlt: "Branded umbrellas in use during rain",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Umbrella Options",
+        items: [
+          "Golf umbrellas (large, 130cm+ canopy)",
+          "Compact folding umbrellas (travel size)",
+          "Transparent bubble umbrellas (logo on panel)",
+          "Kids umbrellas",
+          "Beach/patio umbrellas (for hospitality)",
+          "Automatic open/close mechanisms",
+          "Custom pantone color matching",
+          "Full canopy print or single panel"
+        ],
+        image: "/images/services/promo/umbrella-types.jpg",
+        imageAlt: "Various umbrella types",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Printing Methods",
+        content: "We offer screen printing (best for simple logos, very durable) or digital full-color transfer (best for complex images/photos). We can also create custom umbrella bags with your logo.",
+        image: "/images/services/promo/umbrella-printing.jpg",
+        imageAlt: "Logo printing on umbrella panel",
+        imagePosition: "right"
+      }
+    ],
+    faq: [
+      { question: "What's the minimum order?", answer: "Minimum order varies by item. Contact us for details and samples." }
+    ]
+  },
+
+  "t-shirts-printing": {
+    title: "T-Shirts Printing",
+    category: "Promotional Items",
+    metaDescription: "Custom t-shirt printing in Nairobi for events, corporate teams, and merchandise. Screen print, DTG, or heat transfer.",
+    heroImage: "/images/services/promo/tshirt-hero.jpg",
+    heroAlt: "Custom printed t-shirts",
+    sections: [
+      {
+        type: "text",
+        title: "Wear Your Brand",
+        content: "Custom t-shirts turn your team, event staff, or customers into brand ambassadors. We offer multiple printing methods to match your budget, quantity, and design complexity. From simple one-color logos to full-color photo prints, we deliver quality that lasts wash after wash.",
+        image: "/images/services/promo/tshirts-team.jpg",
+        imageAlt: "Team wearing branded t-shirts",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Printing Methods",
+        items: [
+          "Screen printing (best for bulk, solid colors)",
+          "Direct-to-garment (DTG) (best for small batches, full color, photos)",
+          "Heat transfer vinyl (HTV) (best for names/numbers, sports jerseys)",
+          "Sublimation (best for all-over prints, polyester shirts)",
+          "Embroidery (caps, polos, jackets)"
+        ],
+        image: "/images/services/promo/tshirt-methods.jpg",
+        imageAlt: "Different t-shirt printing methods",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Garment Quality",
+        content: "We use premium blank shirts from quality brands. Choose from cotton, poly-cotton blend, or performance fabrics (for sports/outdoor). All shirts are pre-shrunk and available in multiple colors.",
+        image: "/images/services/promo/tshirt-garments.jpg",
+        imageAlt: "Various t-shirt colors and styles",
+        imagePosition: "right"
+      }
+    ],
+    faq: [
+      { question: "What's the minimum order?", answer: "Minimum orders vary by printing method. Contact us for details." }
+    ]
+  },
+
+  "hoodies-printing": {
+    title: "Hoodies Printing",
+    category: "Promotional Items",
+    metaDescription: "Custom printed hoodies for corporate wear, events, and merchandise in Kenya. Screen print or embroidery.",
+    heroImage: "/images/services/promo/hoodie-hero.jpg",
+    heroAlt: "Custom printed hoodies",
+    sections: [
+      {
+        type: "text",
+        title: "Comfortable Branding for Cooler Days",
+        content: "Hoodies make excellent corporate gifts, team wear, and retail merchandise. They're comfortable, practical, and get worn repeatedly — meaning repeated brand impressions. We offer zip-up and pullover styles in multiple weights.",
+        image: "/images/services/promo/hoodies-worn.jpg",
+        imageAlt: "People wearing branded hoodies",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Hoodie Features",
+        items: [
+          "Pullover or full-zip styles",
+          "With or without hood strings",
+          "Kangaroo pocket (pullover) or side pockets (zip)",
+          "Cotton or poly-cotton blend",
+          "Screen print, embroidery, or DTG",
+          "Custom label/tag with your logo (bulk orders)",
+          "Wide size range available"
+        ],
+        image: "/images/services/promo/hoodie-styles.jpg",
+        imageAlt: "Different hoodie styles",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Embroidery for Premium Look",
+        content: "For corporate hoodies, embroidery looks more professional and lasts longer than print. We can embroider your logo on the chest, sleeve, or hood. Embroidery works best for logos with limited colors and detail.",
+        image: "/images/services/promo/hoodie-embroidery.jpg",
+        imageAlt: "Embroidered logo on hoodie",
+        imagePosition: "right"
+      }
+    ],
+    faq: [
+      { question: "Can I mix hoodies and t-shirts in one order?", answer: "Yes! Combined quantities for bulk discounts across different garment types." }
+    ]
+  },
+
+  "caps-branding": {
+    title: "Caps Branding",
+    category: "Promotional Items",
+    metaDescription: "Custom branded caps, hats, and baseball caps for corporate gifts, events, and staff wear in Kenya.",
+    heroImage: "/images/services/promo/cap-hero.jpg",
+    heroAlt: "Custom embroidered caps",
+    sections: [
+      {
+        type: "text",
+        title: "Head-Turning Headwear",
+        content: "A branded cap is one of the most cost-effective promotional items. People wear caps repeatedly — at work, on weekends, at the gym — giving you ongoing brand exposure. We offer structured and unstructured styles, mesh back, trucker caps, and dad hats.",
+        image: "/images/services/promo/caps-worn.jpg",
+        imageAlt: "People wearing branded caps",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Cap Styles",
+        items: [
+          "6-panel structured baseball cap (classic)",
+          "5-panel unstructured cap (modern)",
+          "Trucker cap (foam front, mesh back)",
+          "Dad hat (low profile, curved brim)",
+          "Snapback or strapback closure",
+          "Performance/moisture-wicking (sports)",
+          "Beanie caps (cold weather)"
+        ],
+        image: "/images/services/promo/cap-styles.jpg",
+        imageAlt: "Different cap styles",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Embroidery vs. Print",
+        content: "Embroidery is the premium choice for caps — it looks professional and lasts forever. Print (screen or transfer) works for budget projects but may crack over time. We recommend embroidery for most corporate cap projects.",
+        image: "/images/services/promo/cap-embroidery.jpg",
+        imageAlt: "Embroidered logo on cap",
+        imagePosition: "right"
+      }
+    ],
+    faq: [
+      { question: "Can you match my brand colors exactly?", answer: "We have many thread colors and can match most brand colors. For exact matching, we can custom-dye threads for large orders." }
+    ]
+  },
+
+  "corporate-gifts": {
+    title: "Corporate Gifts",
+    category: "Promotional Items",
+    metaDescription: "Custom corporate gift solutions in Nairobi. Branded pens, mugs, power banks, notebooks, and premium gifts for clients.",
+    heroImage: "/images/services/promo/gifts-hero.jpg",
+    heroAlt: "Assorted corporate gifts",
+    sections: [
+      {
+        type: "text",
+        title: "Gifts That Impress",
+        content: "Corporate gifts build relationships. Whether it's client appreciation, employee recognition, or conference swag, the right gift leaves a lasting impression. We source and brand a wide range of quality items at every price point.",
+        image: "/images/services/promo/gifts-gift-box.jpg",
+        imageAlt: "Corporate gift box",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Popular Corporate Gifts",
+        items: [
+          "Branded pens (ballpoint, gel, metal)",
+          "Notebooks and journals (leather, hardcover)",
+          "Power banks (custom printed)",
+          "USB flash drives (preloaded with your content)",
+          "Water bottles (stainless steel, insulated)",
+          "Mugs (ceramic, travel, color-changing)",
+          "Desk accessories (mouse pads, pen holders)",
+          "Lanyards and badge holders",
+          "Umbrellas (see separate listing)",
+          "Tote bags and backpacks",
+          "Wireless chargers and tech accessories",
+          "Custom calendars and planners"
+        ],
+        image: "/images/services/promo/gifts-selection.jpg",
+        imageAlt: "Selection of corporate gifts",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Gift Wrapping & Delivery",
+        content: "We offer custom gift boxes with tissue paper, ribbons, and your logo on the box. Perfect for client gifts or holiday hampers. We can also deliver directly to multiple addresses.",
+        image: "/images/services/promo/gifts-wrapped.jpg",
+        imageAlt: "Wrapped corporate gifts",
+        imagePosition: "right"
+      }
+    ],
+    faq: [
+      { question: "Do you have a catalog?", answer: "Yes! Request our corporate gifts catalog with a wide range of items at various price points." }
+    ]
+  },
+
+  "promotional-products": {
+    title: "Promotional Products",
+    category: "Promotional Items",
+    metaDescription: "Custom promotional products for events, trade shows, and marketing campaigns in Kenya. Wide range of branded giveaways.",
+    heroImage: "/images/services/promo/promo-hero.jpg",
+    heroAlt: "Assorted promotional products",
+    sections: [
+      {
+        type: "text",
+        title: "Giveaways That Get Noticed",
+        content: "Promotional products (swag) are the foundation of many marketing campaigns. The right item, given to the right person, creates a positive brand association that lasts months. We offer everything from budget-friendly giveaways to premium keepsakes.",
+        image: "/images/services/promo/promo-event.jpg",
+        imageAlt: "Promotional products at event booth",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Promotional Product Categories",
+        items: [
+          "Writing instruments (pens, pencils, highlighters)",
+          "Drinkware (mugs, cups, bottles, thermoses)",
+          "Bags (totes, backpacks, drawstring, coolers)",
+          "Tech (USB drives, power banks, phone stands)",
+          "Apparel (t-shirts, caps, hoodies, vests)",
+          "Desk items (mouse pads, sticky notes, clips)",
+          "Outdoor (umbrellas, coolers, picnic mats)",
+          "Health & wellness (hand sanitizer, masks, gym bags)",
+          "Seasonal (Christmas gifts, calendars)"
+        ],
+        image: "/images/services/promo/promo-categories.jpg",
+        imageAlt: "Various promotional product categories",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Flexible Orders",
+        content: "Many promotional items have flexible minimum orders. We can also warehouse items for you and fulfill on demand (perfect for ongoing campaigns).",
+        image: "/images/services/promo/promo-warehouse.jpg",
+        imageAlt: "Warehouse of promotional products",
+        imagePosition: "right"
+      }
+    ],
+    faq: [
+      { question: "Can you help me choose the right item?", answer: "Yes! Tell us your budget, audience, and campaign goal. We'll recommend items that fit." }
+    ]
+  },
+
+  "tote-bags-printing": {
+    title: "Tote Bags Printing",
+    category: "Promotional Items",
+    metaDescription: "Custom printed tote bags for shopping, conferences, and giveaways. Eco-friendly and reusable branding in Kenya.",
+    heroImage: "/images/services/promo/tote-hero.jpg",
+    heroAlt: "Custom printed tote bags",
+    sections: [
+      {
+        type: "text",
+        title: "Eco-Friendly, Practical, Visible",
+        content: "With Kenya's plastic bag ban, tote bags are more popular than ever. They're reusable, eco-friendly, and fantastic mobile billboards. Every time someone shops with your tote, your brand gets seen by everyone.",
+        image: "/images/services/promo/tote-shopping.jpg",
+        imageAlt: "Shopping with branded tote bag",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Tote Bag Options",
+        items: [
+          "Cotton tote (natural, eco-friendly)",
+          "Non-woven polypropylene (budget-friendly)",
+          "Canvas tote (heavy duty, premium)",
+          "Jute/burlap (natural, rustic)",
+          "Insulated cooler totes (for food/drinks)",
+          "Drawstring backpacks (events)",
+          "Wine bags (single bottle size)"
+        ],
+        image: "/images/services/promo/tote-materials.jpg",
+        imageAlt: "Different tote bag materials",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Printing Quality",
+        content: "We screen print tote bags for vibrant, durable results that withstand washing and heavy use. Full-color heat transfer available for complex designs. Print on one side or both sides.",
+        image: "/images/services/promo/tote-printing.jpg",
+        imageAlt: "Screen printing on tote bag",
+        imagePosition: "right"
+      }
+    ],
+    faq: [
+      { question: "What's the most popular tote bag?", answer: "Non-woven polypropylene offers the best value for bulk orders." }
+    ]
+  },
+
+  "mugs-water-bottles-printing": {
+    title: "Mugs & Water Bottles Printing",
+    category: "Promotional Items",
+    metaDescription: "Custom printed mugs and water bottles for corporate gifts, office use, and promotions in Kenya.",
+    heroImage: "/images/services/promo/mugs-hero.jpg",
+    heroAlt: "Custom printed mugs and water bottles",
+    sections: [
+      {
+        type: "text",
+        title: "Drinkware That Gets Used Daily",
+        content: "Coffee mugs sit on desks where clients and coworkers see them daily. Water bottles go to the gym, office, and on trips. Both are practical items that keep your brand top-of-mind. We offer ceramic mugs, travel mugs, and various water bottles.",
+        image: "/images/services/promo/mugs-desk.jpg",
+        imageAlt: "Branded mug on office desk",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Drinkware Options",
+        items: [
+          "Ceramic mugs (various sizes)",
+          "Color-changing mugs (reveal design with heat)",
+          "Travel mugs with lids (stainless steel)",
+          "Stainless steel water bottles (insulated)",
+          "Plastic sports bottles (clear or colored)",
+          "Glass bottles with silicone sleeve",
+          "Wine glasses and pint glasses",
+          "Can coolers and koozies"
+        ],
+        image: "/images/services/promo/mugs-options.jpg",
+        imageAlt: "Various drinkware options",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Printing Methods",
+        content: "Mugs: sublimation printing (full-color, permanent, dishwasher-safe). Water bottles: screen print (most durable) or UV print (full-color). For stainless steel, we can laser engrave for a premium, permanent finish.",
+        image: "/images/services/promo/mugs-printing.jpg",
+        imageAlt: "Sublimation printing on mug",
+        imagePosition: "right"
+      }
+    ],
+    faq: [
+      { question: "Are printed mugs dishwasher safe?", answer: "Sublimation printed mugs are top-rack dishwasher safe. Screen printed mugs should be hand-washed for longest life." }
+    ]
+  },
+
+  "notebooks-diaries": {
+    title: "Notebooks & Diaries",
+    category: "Promotional Items",
+    metaDescription: "Custom branded notebooks, diaries, and journals for corporate gifts and office use in Kenya.",
+    heroImage: "/images/services/promo/notebook-hero.jpg",
+    heroAlt: "Custom branded notebooks",
+    sections: [
+      {
+        type: "text",
+        title: "Practical, Professional, Kept",
+        content: "Notebooks and diaries are among the most kept promotional items. People use them daily for months. Unlike a pen or mug, a notebook carries your brand into meetings, conferences, and work sessions — places where decisions get made.",
+        image: "/images/services/promo/notebook-use.jpg",
+        imageAlt: "Using branded notebook in meeting",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Notebook Options",
+        items: [
+          "A5 spiral notebooks (lay flat)",
+          "A5 hardcover journals (premium)",
+          "Pocket notebooks (Moleskine style)",
+          "Custom printed covers (full color)",
+          "Embossed/foiled logo on cover",
+          "Ruled, dotted, grid, or blank pages",
+          "Custom page count",
+          "Yearly planners and diaries"
+        ],
+        image: "/images/services/promo/notebook-styles.jpg",
+        imageAlt: "Different notebook styles",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Custom Interior Pages",
+        content: "Beyond your logo on the cover, we can print custom inside pages: your company calendar, mission statement, team directory, note pages, or even branded divider tabs. Perfect for client gift sets or employee handbooks.",
+        image: "/images/services/promo/notebook-interior.jpg",
+        imageAlt: "Custom interior notebook pages",
+        imagePosition: "right"
+      }
+    ],
+    faq: [
+      { question: "Can I see a sample before bulk order?", answer: "Yes! For larger orders, we can produce a sample notebook for approval." }
+    ]
+  },
+
+  // ==================== WEB SERVICES ====================
   "website-design-development": {
     title: "Website Design & Development",
-    heroIntro: "Digital experiences engineered for results. We build websites that combine strategic design with robust engineering to drive engagement, conversions, and business growth.",
-    heroImage: "/assets/services/web-design/hero.jpg",
-    about: [
-      { text: "Websites are complex systems requiring integration of design, content strategy, user experience, and technical architecture.", image: "/assets/services/web-design/about1.jpg" },
-      { text: "We approach web projects holistically—considering business objectives, user needs, content strategy, and technical requirements from the start.", image: "/assets/services/web-design/about2.jpg" },
-      { text: "Our development follows modern practices for performance, accessibility, security, and maintainability while delivering engaging user experiences.", image: "/assets/services/web-design/about3.jpg" }
+    category: "Web Services",
+    metaDescription: "Professional website design and development services in Kenya. Custom, responsive websites that drive results.",
+    heroImage: "/images/services/web/website-hero.jpg",
+    heroAlt: "Website design on multiple devices",
+    sections: [
+      {
+        type: "text",
+        title: "Your 24/7 Digital Storefront",
+        content: "Your website never closes. It's the first place potential customers go to learn about you. We build professional, fast, mobile-friendly websites that look great on any device and convert visitors into customers. Every site is custom designed — no templates or cookie-cutter solutions.",
+        image: "/images/services/web/responsive.jpg",
+        imageAlt: "Website on desktop, tablet, and phone",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "What We Build",
+        items: [
+          "Corporate/business websites",
+          "E-commerce stores (sell products online)",
+          "Portfolio websites (creatives, photographers)",
+          "Restaurant websites (menus, reservations)",
+          "Real estate websites (property listings)",
+          "Educational/school websites",
+          "Non-profit and church websites",
+          "Landing pages (campaign specific)",
+          "Membership/subscription sites"
+        ],
+        image: "/images/services/web/types.jpg",
+        imageAlt: "Different website types",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Tech Stack Options",
+        content: "We build on platforms that match your needs: WordPress (most flexible, easy to manage), Webflow (designer-friendly, modern), Shopify (best for e-commerce), or custom React/Next.js (maximum performance, full control). We'll recommend the best fit for your budget and requirements.",
+        image: "/images/services/web/platforms.jpg",
+        imageAlt: "Website platform logos",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Strategic Integration", description: "Align design, content, UX, and technology with business objectives and user needs.", icon: "/assets/icons/web-strategy.svg" },
-      { title: "Performance Engineering", description: "Build fast-loading sites optimized for Core Web Vitals and user experience metrics.", icon: "/assets/icons/web-performance.svg" },
-      { title: "Responsive Systems", description: "Create fluid experiences that work seamlessly across all devices and screen sizes.", icon: "/assets/icons/web-responsive.svg" },
-      { title: "Accessibility Commitment", description: "Develop to WCAG standards ensuring usability for people with disabilities.", icon: "/assets/icons/web-accessibility.svg" },
-      { title: "Scalable Architecture", description: "Build on solid foundations that support growth, features additions, and traffic increases.", icon: "/assets/icons/web-scalable.svg" }
-    ],
-    process: [
-      { step: 1, title: "Discovery & Strategy", text: "Define business goals, user needs, content requirements, and technical specifications.", image: "/assets/services/web-design/process1.jpg" },
-      { step: 2, title: "Information Architecture", text: "Structure content, navigation, and user flows based on strategic objectives.", image: "/assets/services/web-design/process2.jpg" },
-      { step: 3, title: "Design & Development", text: "Create visual designs and implement with modern frameworks, following best practices.", image: "/assets/services/web-design/process3.jpg" },
-      { step: 4, title: "Testing & Launch", text: "Rigorous testing across devices, browsers, and scenarios before professional deployment.", image: "/assets/services/web-design/process4.jpg" }
-    ],
-    gallery: {
-      title: "Website Design Portfolio",
-      images: [
-        { src: "/assets/services/web-design/portfolio1.jpg", alt: "Corporate website design", caption: "Corporate Website" },
-        { src: "/assets/services/web-design/portfolio2.jpg", alt: "E-commerce website design", caption: "E-Commerce Site" },
-        { src: "/assets/services/web-design/portfolio3.jpg", alt: "Portfolio website design", caption: "Portfolio Site" },
-        { src: "/assets/services/web-design/portfolio4.jpg", alt: "Landing page design", caption: "Landing Page" }
-      ]
-    }
-  },
-
-  "website-ui-layout": {
-    title: "Website UI Layout",
-    heroIntro: "User interface design that balances aesthetic appeal with functional clarity. We create website UI layouts that guide users intuitively through digital experiences while reinforcing brand identity and driving conversions.",
-    heroImage: "/assets/services/ui-layout/hero.jpg",
-    about: [
-      { text: "UI layout is the foundation of user experience. We design interfaces that balance visual hierarchy, information density, and interactive clarity.", image: "/assets/services/ui-layout/about1.jpg" },
-      { text: "Our approach considers user tasks, content relationships, and visual rhythm to create layouts that feel intuitive and efficient.", image: "/assets/services/ui-layout/about2.jpg" },
-      { text: "We specialize in creating design systems that maintain consistency while allowing flexibility for different content types and user scenarios.", image: "/assets/services/ui-layout/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "User-Centric Layout", description: "Design interfaces based on user tasks, mental models, and interaction patterns.", icon: "/assets/icons/ui-user.svg" },
-      { title: "Visual Hierarchy Engineering", description: "Create clear information prioritization through layout, spacing, typography, and color.", icon: "/assets/icons/ui-hierarchy.svg" },
-      { title: "Responsive Design Systems", description: "Develop layout systems that work fluidly across all screen sizes and devices.", icon: "/assets/icons/ui-responsive.svg" },
-      { title: "Interaction Design Integration", description: "Consider interactive elements, states, and transitions as integral parts of layout design.", icon: "/assets/icons/ui-interaction.svg" },
-      { title: "Design System Development", description: "Create reusable component libraries and layout patterns for consistent UI implementation.", icon: "/assets/icons/ui-system.svg" }
-    ],
-    process: [
-      { step: 1, title: "User Task Analysis", text: "Identify primary user tasks, content priorities, and interaction requirements.", image: "/assets/services/ui-layout/process1.jpg" },
-      { step: 2, title: "Layout System Design", text: "Develop grid systems, spacing scales, and layout patterns for interface consistency.", image: "/assets/services/ui-layout/process2.jpg" },
-      { step: 3, title: "Component Development", text: "Create reusable UI components with defined behaviors and visual treatments.", image: "/assets/services/ui-layout/process3.jpg" },
-      { step: 4, title: "Responsive Implementation", text: "Design and specify responsive behaviors for all layout components and patterns.", image: "/assets/services/ui-layout/process4.jpg" }
-    ],
-    gallery: {
-      title: "UI Layout Portfolio",
-      images: [
-        { src: "/assets/services/ui-layout/portfolio1.jpg", alt: "Dashboard UI layout", caption: "Dashboard Design" },
-        { src: "/assets/services/ui-layout/portfolio2.jpg", alt: "Mobile app UI layout", caption: "Mobile App UI" },
-        { src: "/assets/services/ui-layout/portfolio3.jpg", alt: "Web application layout", caption: "Web Application" },
-        { src: "/assets/services/ui-layout/portfolio4.jpg", alt: "E-commerce UI layout", caption: "E-Commerce UI" }
-      ]
-    }
-  },
-
-  "website-maintenance": {
-    title: "Website Maintenance",
-    heroIntro: "Proactive website care that ensures performance, security, and relevance. We provide comprehensive website maintenance services that keep digital properties running smoothly, securely, and effectively over time.",
-    heroImage: "/assets/services/website-maintenance/hero.jpg",
-    about: [
-      { text: "Websites require ongoing care to maintain performance, security, and relevance. We provide systematic maintenance covering technical, content, and strategic aspects.", image: "/assets/services/website-maintenance/about1.jpg" },
-      { text: "Our approach includes regular updates, performance monitoring, security hardening, and content refreshing to keep websites effective.", image: "/assets/services/website-maintenance/about2.jpg" },
-      { text: "We specialize in maintenance plans tailored to specific website technologies, traffic levels, and business dependencies.", image: "/assets/services/website-maintenance/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Proactive Monitoring", description: "Regular monitoring of performance metrics, security status, and functionality to catch issues early.", icon: "/assets/icons/maintenance-monitoring.svg" },
-      { title: "Security Management", description: "Keep software updated, implement security best practices, and provide rapid response to threats.", icon: "/assets/icons/maintenance-security.svg" },
-      { title: "Performance Optimization", description: "Continuous improvement of loading speeds, Core Web Vitals, and user experience metrics.", icon: "/assets/icons/maintenance-performance.svg" },
-      { title: "Content & SEO Maintenance", description: "Regular content updates, SEO optimization, and search performance monitoring.", icon: "/assets/icons/maintenance-seo.svg" },
-      { title: "Strategic Updates", description: "Implement design and feature updates to keep websites current with trends and business needs.", icon: "/assets/icons/maintenance-updates.svg" }
-    ],
-    process: [
-      { step: 1, title: "Website Audit", text: "Comprehensive assessment of current website status, performance, security, and maintenance needs.", image: "/assets/services/website-maintenance/process1.jpg" },
-      { step: 2, title: "Maintenance Plan Development", text: "Create customized maintenance plan addressing technical, content, and strategic requirements.", image: "/assets/services/website-maintenance/process2.jpg" },
-      { step: 3, title: "Regular Execution", text: "Systematic execution of maintenance tasks according to agreed schedule and priorities.", image: "/assets/services/website-maintenance/process3.jpg" },
-      { step: 4, title: "Reporting & Improvement", text: "Regular reporting on website status and recommendations for continuous improvement.", image: "/assets/services/website-maintenance/process4.jpg" }
-    ],
-    gallery: {
-      title: "Website Maintenance Portfolio",
-      images: [
-        { src: "/assets/services/website-maintenance/portfolio1.jpg", alt: "Website performance dashboard", caption: "Performance Monitoring" },
-        { src: "/assets/services/website-maintenance/portfolio2.jpg", alt: "Security audit report", caption: "Security Audit" },
-        { src: "/assets/services/website-maintenance/portfolio3.jpg", alt: "Content update process", caption: "Content Updates" },
-        { src: "/assets/services/website-maintenance/portfolio4.jpg", alt: "Backup system interface", caption: "Backup Systems" }
-      ]
-    }
-  },
-
-  "search-engine-optimization": {
-    title: "Search Engine Optimization",
-    heroIntro: "Strategic SEO that drives qualified organic traffic and improves online visibility. We implement comprehensive SEO strategies that align with search engine algorithms while meeting user needs and business objectives.",
-    heroImage: "/assets/services/seo/hero.jpg",
-    about: [
-      { text: "SEO requires holistic approach covering technical, content, and authority-building aspects. We develop strategies that address all ranking factors systematically.", image: "/assets/services/seo/about1.jpg" },
-      { text: "Our approach combines technical optimization, content strategy, and link building to improve search visibility across target keywords.", image: "/assets/services/seo/about2.jpg" },
-      { text: "We specialize in SEO that delivers sustainable results through white-hat techniques and user-focused optimization.", image: "/assets/services/seo/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Technical SEO Excellence", description: "Optimize website structure, speed, mobile-friendliness, and technical factors for search engine crawling and indexing.", icon: "/assets/icons/seo-technical.svg" },
-      { title: "Content Strategy", description: "Develop content that addresses user intent, matches search queries, and establishes topical authority.", icon: "/assets/icons/seo-content.svg" },
-      { title: "Keyword Research & Targeting", description: "Identify valuable keyword opportunities aligned with business objectives and user search behavior.", icon: "/assets/icons/seo-keyword.svg" },
-      { title: "Analytics & Measurement", description: "Implement tracking, establish KPIs, and provide regular performance reporting with actionable insights.", icon: "/assets/icons/seo-analytics.svg" },
-      { title: "Sustainable Growth", description: "Focus on techniques that build lasting search visibility rather than short-term tactics that risk penalties.", icon: "/assets/icons/seo-sustainable.svg" }
-    ],
-    process: [
-      { step: 1, title: "SEO Audit & Research", text: "Comprehensive website audit, competitive analysis, and keyword research to identify opportunities.", image: "/assets/services/seo/process1.jpg" },
-      { step: 2, title: "Strategy Development", text: "Create holistic SEO strategy addressing technical, content, and authority-building requirements.", image: "/assets/services/seo/process2.jpg" },
-      { step: 3, title: "Implementation", text: "Execute optimization across website structure, content, technical elements, and external factors.", image: "/assets/services/seo/process3.jpg" },
-      { step: 4, title: "Monitoring & Optimization", text: "Continuous performance monitoring, algorithm tracking, and strategy refinement based on results.", image: "/assets/services/seo/process4.jpg" }
-    ],
-    gallery: {
-      title: "SEO Portfolio",
-      images: [
-        { src: "/assets/services/seo/portfolio1.jpg", alt: "Keyword ranking report", caption: "Ranking Reports" },
-        { src: "/assets/services/seo/portfolio2.jpg", alt: "Technical audit findings", caption: "Technical Audits" },
-        { src: "/assets/services/seo/portfolio3.jpg", alt: "Content optimization examples", caption: "Content Optimization" },
-        { src: "/assets/services/seo/portfolio4.jpg", alt: "Backlink analysis dashboard", caption: "Backlink Analysis" }
-      ]
-    }
-  },
-
-  "digital-marketing-collateral": {
-    title: "Digital Marketing Collateral",
-    heroIntro: "Digital assets engineered for marketing performance. We design and develop digital marketing collateral that drives engagement, conversions, and brand consistency across online channels and campaigns.",
-    heroImage: "/assets/services/digital-collateral/hero.jpg",
-    about: [
-      { text: "Digital marketing collateral includes diverse assets for different channels and campaign objectives. We design systems that maintain brand consistency while optimizing for each channel's requirements.", image: "/assets/services/digital-collateral/about1.jpg" },
-      { text: "Our approach considers specific platform constraints, user behaviors, and campaign objectives for each digital asset type.", image: "/assets/services/digital-collateral/about2.jpg" },
-      { text: "We specialize in creating digital collateral that works seamlessly across channels while delivering measurable marketing results.", image: "/assets/services/digital-collateral/about3.jpg" }
-    ],
-    whyChoose: [
-      { title: "Channel-Specific Optimization", description: "Design assets optimized for specific digital channels—social media, email, display advertising, landing pages.", icon: "/assets/icons/digital-channel.svg" },
-      { title: "Performance-Focused Design", description: "Create assets with clear CTAs, persuasive layouts, and elements proven to drive conversions.", icon: "/assets/icons/digital-performance.svg" },
-      { title: "Brand Consistency", description: "Maintain visual and messaging consistency across diverse digital collateral and campaigns.", icon: "/assets/icons/digital-consistency.svg" },
-      { title: "Interactive Elements", description: "Incorporate interactive features, animations, and engagement elements appropriate for digital contexts.", icon: "/assets/icons/digital-interactive.svg" },
-      { title: "Analytics Integration", description: "Design with tracking and measurement capabilities to assess performance and optimize results.", icon: "/assets/icons/digital-analytics.svg" }
-    ],
-    process: [
-      { step: 1, title: "Channel & Campaign Analysis", text: "Understand specific channel requirements, campaign objectives, and target audience behaviors.", image: "/assets/services/digital-collateral/process1.jpg" },
-      { step: 2, title: "Asset Strategy", text: "Develop approach for different asset types based on channel constraints and campaign goals.", image: "/assets/services/digital-collateral/process2.jpg" },
-      { step: 3, title: "Design & Development", text: "Create digital assets with appropriate formats, features, and technical specifications.", image: "/assets/services/digital-collateral/process3.jpg" },
-      { step: 4, title: "Performance Optimization", text: "Test variations, analyze results, and refine designs based on performance data.", image: "/assets/services/digital-collateral/process4.jpg" }
-    ],
-    gallery: {
-      title: "Digital Collateral Portfolio",
-      images: [
-        { src: "/assets/services/digital-collateral/portfolio1.jpg", alt: "Social media ad designs", caption: "Social Media Ads" },
-        { src: "/assets/services/digital-collateral/portfolio2.jpg", alt: "Email newsletter design", caption: "Email Newsletters" },
-        { src: "/assets/services/digital-collateral/portfolio3.jpg", alt: "Landing page design", caption: "Landing Pages" },
-        { src: "/assets/services/digital-collateral/portfolio4.jpg", alt: "Digital brochure design", caption: "Digital Brochures" }
-      ]
-    }
+    faq: [
+      { question: "Will I be able to update the site myself?", answer: "Yes! We build on user-friendly CMS platforms. We'll train you (or your team) on adding pages, updating text, and changing images." }
+    ]
   },
 
   "web-applications": {
     title: "Web Applications",
-    heroIntro: "Custom web applications that solve business problems and streamline operations. We design and develop robust web applications that combine intuitive interfaces with powerful functionality for specific business needs.",
-    heroImage: "/assets/services/web-apps/hero.jpg",
-    about: [
-      { text: "Web applications require specialized approach balancing user experience with complex functionality. We design applications that feel simple while handling sophisticated operations.", image: "/assets/services/web-apps/about1.jpg" },
-      { text: "Our approach considers user workflows, data relationships, and system integrations to create applications that solve real business problems.", image: "/assets/services/web-apps/about2.jpg" },
-      { text: "We specialize in applications that scale with business growth while maintaining performance and usability.", image: "/assets/services/web-apps/about3.jpg" }
+    category: "Web Services",
+    metaDescription: "Custom web application development for businesses. Dashboards, portals, booking systems, and internal tools.",
+    heroImage: "/images/services/web/webapp-hero.jpg",
+    heroAlt: "Web application dashboard",
+    sections: [
+      {
+        type: "text",
+        title: "Software for Your Business",
+        content: "Beyond simple websites, we build custom web applications — private dashboards, client portals, booking systems, inventory management, and internal tools. If your business runs on spreadsheets and manual processes, a custom web app could save hours every week.",
+        image: "/images/services/web/dashboard.jpg",
+        imageAlt: "Admin dashboard interface",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Web App Examples We've Built",
+        items: [
+          "Client/customer portals (login, view data)",
+          "Booking and appointment systems",
+          "Inventory and stock management",
+          "Staff task management dashboards",
+          "Report generation tools",
+          "School management systems (student/parent portals)",
+          "Property management systems (rent, maintenance)",
+          "CRM (customer relationship management)",
+          "Application forms with admin panels"
+        ],
+        image: "/images/services/web/app-examples.jpg",
+        imageAlt: "Various web app interfaces",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Technology Stack",
+        content: "We build modern, scalable web apps using React, Node.js, Python/Django, or Laravel. Databases include PostgreSQL, MySQL, or MongoDB. All apps are secure (SSL, authentication, role-based access) and hosted on reliable cloud servers.",
+        image: "/images/services/web/tech-stack.jpg",
+        imageAlt: "Web development technology stack",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "User Workflow Design", description: "Design interfaces based on actual user tasks, mental models, and efficiency requirements.", icon: "/assets/icons/webapp-workflow.svg" },
-      { title: "System Architecture", description: "Develop robust back-end architecture that supports application functionality, data management, and scalability.", icon: "/assets/icons/webapp-architecture.svg" },
-      { title: "Integration Capabilities", description: "Build applications that integrate with existing systems, APIs, and data sources.", icon: "/assets/icons/webapp-integration.svg" },
-      { title: "Security & Compliance", description: "Implement enterprise-grade security, data protection, and regulatory compliance features.", icon: "/assets/icons/webapp-security.svg" },
-      { title: "Performance Optimization", description: "Ensure applications remain fast and responsive as data volumes and user numbers grow.", icon: "/assets/icons/webapp-performance.svg" }
-    ],
-    process: [
-      { step: 1, title: "Requirements & Workflow Analysis", text: "Understand business problems, user needs, data requirements, and system integrations.", image: "/assets/services/web-apps/process1.jpg" },
-      { step: 2, title: "Application Architecture", text: "Design technical architecture, data models, and interface structure for the complete solution.", image: "/assets/services/web-apps/process2.jpg" },
-      { step: 3, title: "Development & Testing", text: "Build application with iterative development, thorough testing, and user feedback incorporation.", image: "/assets/services/web-apps/process3.jpg" },
-      { step: 4, title: "Deployment & Support", text: "Professional deployment, user training, and ongoing support/maintenance planning.", image: "/assets/services/web-apps/process4.jpg" }
-    ],
-    gallery: {
-      title: "Web Applications Portfolio",
-      images: [
-        { src: "/assets/services/web-apps/portfolio1.jpg", alt: "CRM web application", caption: "CRM System" },
-        { src: "/assets/services/web-apps/portfolio2.jpg", alt: "Project management app", caption: "Project Management" },
-        { src: "/assets/services/web-apps/portfolio3.jpg", alt: "Inventory management system", caption: "Inventory Management" },
-        { src: "/assets/services/web-apps/portfolio4.jpg", alt: "Customer portal", caption: "Customer Portal" }
-      ]
-    }
+    faq: [
+      { question: "Do I need a web app or just a website?", answer: "If users need to log in, manage data, or perform actions unique to their account — you need a web app. We'll help you decide." }
+    ]
   },
 
   "responsive-website-design": {
     title: "Responsive Website Design",
-    heroIntro: "Fluid web experiences that work beautifully across all devices. We design and develop responsive websites that adapt seamlessly to any screen size, ensuring optimal user experience on desktops, tablets, and smartphones.",
-    heroImage: "/assets/services/responsive-design/hero.jpg",
-    about: [
-      { text: "Responsive design is fundamental to modern web experiences. We design fluid systems that work across the complete spectrum of devices and screen sizes.", image: "/assets/services/responsive-design/about1.jpg" },
-      { text: "Our approach considers different interaction patterns, content priorities, and performance requirements for various device contexts.", image: "/assets/services/responsive-design/about2.jpg" },
-      { text: "We specialize in creating truly responsive experiences rather than separate mobile sites, ensuring consistency and maintainability.", image: "/assets/services/responsive-design/about3.jpg" }
+    category: "Web Services",
+    metaDescription: "Mobile-friendly responsive web design. Your website will look perfect on phones, tablets, and desktops.",
+    heroImage: "/images/services/web/responsive-hero.jpg",
+    heroAlt: "Responsive design across devices",
+    sections: [
+      {
+        type: "text",
+        title: "One Site, All Devices",
+        content: "Over 60% of web traffic in Kenya comes from mobile phones. If your site isn't mobile-friendly, you're losing customers. Responsive design means your website automatically adjusts layout, images, and navigation to look perfect on any screen size.",
+        image: "/images/services/web/mobile-test.jpg",
+        imageAlt: "Testing website on mobile",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "What Responsive Design Includes",
+        items: [
+          "Fluid grids (layouts that flex)",
+          "Flexible images (scale without breaking)",
+          "CSS media queries (different styles per device)",
+          "Touch-friendly buttons and navigation",
+          "Readable font sizes on small screens",
+          "Optimized mobile menu (hamburger)",
+          "Tested on iOS and Android devices",
+          "Tested on Chrome, Safari, Firefox"
+        ],
+        image: "/images/services/web/responsive-breakpoints.jpg",
+        imageAlt: "Responsive design breakpoints",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "SEO Benefit",
+        content: "Google prioritizes mobile-friendly websites in search results. A responsive site also means one URL for all devices (no separate mobile site), which helps your SEO. We ensure your responsive site passes Google's mobile-friendly test.",
+        image: "/images/services/web/mobile-seo.jpg",
+        imageAlt: "Google mobile-friendly test result",
+        imagePosition: "right"
+      }
     ],
-    whyChoose: [
-      { title: "Fluid Design Systems", description: "Create design systems that work continuously across all screen sizes rather than fixed breakpoints.", icon: "/assets/icons/responsive-fluid.svg" },
-      { title: "Device Context Consideration", description: "Design for different interaction patterns, viewing distances, and usage contexts across devices.", icon: "/assets/icons/responsive-context.svg" },
-      { title: "Performance Optimization", description: "Ensure fast loading and smooth performance on mobile networks and lower-powered devices.", icon: "/assets/icons/responsive-performance.svg" },
-      { title: "Touch Interaction Design", description: "Optimize interfaces for touch interaction with appropriate target sizes, gestures, and feedback.", icon: "/assets/icons/responsive-touch.svg" },
-      { title: "Future-Proof Approach", description: "Design systems that accommodate new devices and screen sizes as technology evolves.", icon: "/assets/icons/responsive-future.svg" }
+    faq: [
+      { question: "Do I need a separate mobile site?", answer: "No! Responsive design means one site works everywhere. Separate mobile sites are outdated." }
+    ]
+  },
+
+  "website-maintenance": {
+    title: "Website Maintenance",
+    category: "Web Services",
+    metaDescription: "Website maintenance plans in Kenya. Security updates, backups, bug fixes, and content updates.",
+    heroImage: "/images/services/web/maintenance-hero.jpg",
+    heroAlt: "Website maintenance dashboard",
+    sections: [
+      {
+        type: "text",
+        title: "Keep Your Site Secure & Updated",
+        content: "Websites need ongoing care. Software updates, security patches, backups, and bug fixes are essential to keep your site running smoothly and safely. Our maintenance plans give you peace of mind so you can focus on your business.",
+        image: "/images/services/web/security-updates.jpg",
+        imageAlt: "Software update notification",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Maintenance Services",
+        items: [
+          "Weekly WordPress/plugin/core updates",
+          "Daily automated backups (offsite storage)",
+          "Security monitoring and malware scanning",
+          "Uptime monitoring (alert if site goes down)",
+          "Broken link checking",
+          "Performance optimization (speed)",
+          "Database optimization",
+          "Form testing and spam protection",
+          "Emergency restore (if site breaks)",
+          "Monthly analytics report (traffic)"
+        ],
+        image: "/images/services/web/backup.jpg",
+        imageAlt: "Website backup illustration",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Content Updates Available",
+        content: "Need text changes, new images, or a blog post published? Our plans include content updates. You send the request, we make the change quickly.",
+        image: "/images/services/web/content-update.jpg",
+        imageAlt: "Updating website content",
+        imagePosition: "right"
+      }
     ],
-    process: [
-      { step: 1, title: "Device & Usage Analysis", text: "Analyze target audience device usage, interaction patterns, and performance requirements.", image: "/assets/services/responsive-design/process1.jpg" },
-      { step: 2, title: "Responsive Strategy", text: "Develop approach for content prioritization, navigation adaptation, and interaction design across devices.", image: "/assets/services/responsive-design/process2.jpg" },
-      { step: 3, title: "Fluid Design System", text: "Create design system with fluid grids, flexible components, and responsive behaviors.", image: "/assets/services/responsive-design/process3.jpg" },
-      { step: 4, title: "Testing & Optimization", text: "Test across real devices, network conditions, and usage scenarios to ensure optimal experience.", image: "/assets/services/responsive-design/process4.jpg" }
+    faq: [
+      { question: "Do I really need a maintenance plan?", answer: "If your site runs on WordPress (most do), unupdated plugins are the #1 cause of hacked sites. Yes — you need regular updates." }
+    ]
+  },
+
+  "ui-ux-design": {
+    title: "UI/UX Design",
+    category: "Web Services",
+    metaDescription: "User interface and user experience design for websites and applications. Research, wireframing, prototyping.",
+    heroImage: "/images/services/web/uiux-hero.jpg",
+    heroAlt: "UI/UX design wireframes to prototype",
+    sections: [
+      {
+        type: "text",
+        title: "Design That Users Love",
+        content: "Beautiful design is worthless if users can't figure out how to use it. UX (User Experience) ensures your site or app is intuitive and efficient. UI (User Interface) makes it visually appealing. Together, they create experiences that users enjoy.",
+        image: "/images/services/web/user-testing.jpg",
+        imageAlt: "User testing session",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Our UI/UX Process",
+        items: [
+          "User research (interviews, surveys)",
+          "Competitor analysis",
+          "User flows and journey mapping",
+          "Wireframing (low-fidelity layouts)",
+          "Clickable prototypes (test before coding)",
+          "User testing and feedback",
+          "High-fidelity UI design",
+          "Design system/components creation",
+          "Handoff to developers with specs"
+        ],
+        image: "/images/services/web/wireframe.jpg",
+        imageAlt: "Wireframe sketches",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Tools We Use",
+        content: "We design using Figma (industry standard, collaborative, free for clients to view). You'll get a shareable link to see your designs, leave comments, and approve before any development begins.",
+        image: "/images/services/web/figma.jpg",
+        imageAlt: "Figma design interface",
+        imagePosition: "right"
+      }
     ],
-    gallery: {
-      title: "Responsive Design Portfolio",
-      images: [
-        { src: "/assets/services/responsive-design/portfolio1.jpg", alt: "Desktop website view", caption: "Desktop View" },
-        { src: "/assets/services/responsive-design/portfolio2.jpg", alt: "Tablet website view", caption: "Tablet View" },
-        { src: "/assets/services/responsive-design/portfolio3.jpg", alt: "Mobile website view", caption: "Mobile View" },
-        { src: "/assets/services/responsive-design/portfolio4.jpg", alt: "Responsive design system", caption: "Design System" }
-      ]
-    }
+    faq: [
+      { question: "Do I need UI/UX design or just 'web design'?", answer: "For simple brochure sites, standard web design is fine. For apps, e-commerce, or complex sites — UI/UX first prevents costly mistakes." }
+    ]
+  },
+
+  "seo-search-engine-optimization": {
+    title: "Search Engine Optimization (SEO)",
+    category: "Web Services",
+    metaDescription: "SEO services to help your website rank on Google. On-page optimization, keyword research, and local SEO for Kenyan businesses.",
+    heroImage: "/images/services/web/seo-hero.jpg",
+    heroAlt: "Google search results with ranking",
+    sections: [
+      {
+        type: "text",
+        title: "Get Found on Google",
+        content: "Having a great website doesn't matter if no one can find it. SEO (Search Engine Optimization) helps your site rank higher in Google search results. When someone searches for your services, we help you show up at the top.",
+        image: "/images/services/web/google-search.jpg",
+        imageAlt: "Google search results",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "SEO Services We Offer",
+        items: [
+          "Keyword research (what your customers search for)",
+          "On-page optimization (titles, descriptions, headings)",
+          "Content strategy (blog posts, service pages)",
+          "Technical SEO (site speed, mobile, structured data)",
+          "Local SEO (Google Business Profile optimization)",
+          "Backlink analysis and building",
+          "SEO audit and recommendations",
+          "Monthly ranking reports"
+        ],
+        image: "/images/services/web/seo-keywords.jpg",
+        imageAlt: "Keyword research tool",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Realistic Expectations",
+        content: "SEO is not instant. It typically takes time to see significant results, depending on competition. We set realistic expectations, track progress monthly, and focus on sustainable, white-hat strategies that won't get penalized by Google.",
+        image: "/images/services/web/seo-growth.jpg",
+        imageAlt: "SEO growth chart",
+        imagePosition: "right"
+      }
+    ],
+    faq: [
+      { question: "Can you guarantee #1 on Google?", answer: "No ethical SEO provider can guarantee #1. Anyone who does is lying or using black-hat tactics that will eventually get you banned." }
+    ]
+  },
+
+  "custom-software-development": {
+    title: "Custom Software Development",
+    category: "Web Services",
+    metaDescription: "Custom software development for businesses in Kenya. Internal tools, automation, and business process optimization.",
+    heroImage: "/images/services/web/custom-software-hero.jpg",
+    heroAlt: "Custom software development",
+    sections: [
+      {
+        type: "text",
+        title: "Software Built for Your Exact Needs",
+        content: "Off-the-shelf software often doesn't fit your unique workflows. You end up changing how you work to fit the software. Custom software does the opposite — it adapts to how YOU work. We build internal tools, automation systems, and business applications that save time, reduce errors, and give you competitive advantage.",
+        image: "/images/services/web/custom-dashboard.jpg",
+        imageAlt: "Custom software dashboard",
+        imagePosition: "right"
+      },
+      {
+        type: "list",
+        title: "Custom Software Examples",
+        items: [
+          "Inventory management systems",
+          "Sales and order tracking",
+          "Invoice and payment systems",
+          "HR and payroll portals",
+          "Fleet management software",
+          "School/student management",
+          "Healthcare appointment systems",
+          "Manufacturing production tracking",
+          "Data reporting dashboards",
+          "Legacy system modernization"
+        ],
+        image: "/images/services/web/custom-examples.jpg",
+        imageAlt: "Various custom software examples",
+        imagePosition: "left"
+      },
+      {
+        type: "text",
+        title: "Our Development Process",
+        content: "We follow agile methodology: Discovery & requirements gathering, Architecture planning, Sprint-based development, Regular demos and feedback, Testing & QA, Deployment, Training & handover, Ongoing support. You'll never be surprised — you see progress regularly.",
+        image: "/images/services/web/agile-process.jpg",
+        imageAlt: "Agile development process diagram",
+        imagePosition: "right"
+      }
+    ],
+    faq: [
+      { question: "What's the difference between a web app and custom software?", answer: "Often the same thing. 'Custom software' can also include desktop or mobile apps. We focus on web-based software unless you specifically need native desktop/mobile." }
+    ]
   }
 };
-
-// Helper function to get all services for navigation
-export const getAllServices = () => {
-  return Object.entries(ServicesContent).map(([slug, service]) => ({
-    slug,
-    title: service.title,
-    category: getCategoryFromSlug(slug)
-  }));
-};
-
-// Helper function to determine category from slug
-const getCategoryFromSlug = (slug) => {
-  const categoryMap = {
-    // Creative Graphic Design
-    'logo-design': 'Creative Graphic Design',
-    'brand-identity-design': 'Creative Graphic Design',
-    'marketing-materials-design': 'Creative Graphic Design',
-    'social-media-graphics': 'Creative Graphic Design',
-    'infographics-design': 'Creative Graphic Design',
-    'event-posters': 'Creative Graphic Design',
-    'product-mockups': 'Creative Graphic Design',
-    
-    // Vehicle & Fleet Branding
-    'full-vehicle-wraps': 'Vehicle & Fleet Branding',
-    'partial-vehicle-wraps': 'Vehicle & Fleet Branding',
-    'roadshow-trucks-branding': 'Vehicle & Fleet Branding',
-    'delivery-van-branding': 'Vehicle & Fleet Branding',
-    'motorcycle-branding': 'Vehicle & Fleet Branding',
-    'racing-safari-rally-cars': 'Vehicle & Fleet Branding',
-    'reflective-vehicle-stickers': 'Vehicle & Fleet Branding',
-    
-    // Custom Merchandise & Apparel
-    't-shirts-printing': 'Custom Merchandise & Apparel',
-    'hoodies-printing': 'Custom Merchandise & Apparel',
-    'caps-branding': 'Custom Merchandise & Apparel',
-    'corporate-gifts': 'Custom Merchandise & Apparel',
-    'promotional-products': 'Custom Merchandise & Apparel',
-    'tote-bags-printing': 'Custom Merchandise & Apparel',
-    'mugs-water-bottles-printing': 'Custom Merchandise & Apparel',
-    
-    // Business Identity & Stationery
-    'business-cards': 'Business Identity & Stationery',
-    'letterheads': 'Business Identity & Stationery',
-    'envelopes': 'Business Identity & Stationery',
-    'presentation-folders': 'Business Identity & Stationery',
-    'company-profiles': 'Business Identity & Stationery',
-    'staff-id-cards': 'Business Identity & Stationery',
-    'business-stationery-sets': 'Business Identity & Stationery',
-    
-    // Signage & Large Format Displays
-    'pvc-flex-banners': 'Signage & Large Format Displays',
-    'roll-up-banners': 'Signage & Large Format Displays',
-    'pop-up-banners': 'Signage & Large Format Displays',
-    'backdrops': 'Signage & Large Format Displays',
-    'billboards': 'Signage & Large Format Displays',
-    'shop-signage': 'Signage & Large Format Displays',
-    'window-graphics': 'Signage & Large Format Displays',
-    'wall-murals': 'Signage & Large Format Displays',
-    'floor-graphics': 'Signage & Large Format Displays',
-    'exhibition-stands': 'Signage & Large Format Displays',
-    
-    // Product Packaging & Labels
-    'packaging-design': 'Product Packaging & Labels',
-    'product-labels': 'Product Packaging & Labels',
-    'custom-boxes': 'Product Packaging & Labels',
-    'stickers-decals': 'Product Packaging & Labels',
-    'adhesive-solutions': 'Product Packaging & Labels',
-    'shelf-display-packaging': 'Product Packaging & Labels',
-    
-    // Marketing & Promotional Print
-    'flyers-brochures': 'Marketing & Promotional Print',
-    'posters': 'Marketing & Promotional Print',
-    'calendars': 'Marketing & Promotional Print',
-    'menus': 'Marketing & Promotional Print',
-    'receipt-books': 'Marketing & Promotional Print',
-    'notebooks-diaries': 'Marketing & Promotional Print',
-    'promotional-booklets': 'Marketing & Promotional Print',
-    
-    // Corporate Branding & Strategy
-    'brand-strategy-consulting': 'Corporate Branding & Strategy',
-    'corporate-identity-design': 'Corporate Branding & Strategy',
-    'brand-guidelines': 'Corporate Branding & Strategy',
-    'wayfinding-signage': 'Corporate Branding & Strategy',
-    'office-branding': 'Corporate Branding & Strategy',
-    'safety-signage': 'Corporate Branding & Strategy',
-    'corporate-communication-materials': 'Corporate Branding & Strategy',
-    
-    // Web Design & Software Engineering
-    'website-design-development': 'Web Design & Software Engineering',
-    'website-ui-layout': 'Web Design & Software Engineering',
-    'website-maintenance': 'Web Design & Software Engineering',
-    'search-engine-optimization': 'Web Design & Software Engineering',
-    'digital-marketing-collateral': 'Web Design & Software Engineering',
-    'web-applications': 'Web Design & Software Engineering',
-    'responsive-website-design': 'Web Design & Software Engineering'
-  };
-  
-  return categoryMap[slug] || 'General Services';
-};
-
