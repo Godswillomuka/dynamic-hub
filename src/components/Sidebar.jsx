@@ -1,18 +1,6 @@
-// import react from "react";
 
-// function Sidebar() {
-//     return (
-//         <div>
-//             <h1>Sidebar content</h1>
-//             <h2>Links</h2>
-//         </div>
-//     )
 
-// }
-
-// export default Sidebar;
-
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./Sidebar.css";
 

@@ -14,7 +14,7 @@ import packagingImg from '../assets/service-packaging.png';
 import promoImg from '../assets/service-promo.png';
 import businessCard from '../assets/bussinescard.png';
 import flyer from '../assets/flyer.png';
-import tshirts from '../assets/t-shirts.png';
+// import tshirts from '../assets/t-shirts.png';
 import customMugs from '../assets/mug.png';
 import capImg from '../assets/product-cap.png';
 import penImg from '../assets/product-pen.png';

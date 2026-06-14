@@ -8,7 +8,8 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
-import Sidebar from "./components/Sidebar";
+
+import Service from "./pages/Service";
 
 
 function App() {
@@ -17,7 +18,6 @@ function App() {
       <ContactNav />
       <Header />
       <WhatsApp />
-      <Sidebar />
       <main>
         {/* Main content goes here */}
         <Routes>
@@ -27,6 +27,8 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/Services" element={<Service />} />
+          <Route path="/services/:slug" element={<Service />} />
         </Routes>
       </main>
       <Footer />
