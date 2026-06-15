@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Blog.css';
 
+// Import hero image
+import heroBlogImg from '../assets/service-largeformat.png';
+
 const categories = [
   { id: 'all', label: 'All Posts' },
   { id: 'design', label: 'Design' },
@@ -123,19 +126,32 @@ const Blog = () => {
 
   return (
     <div className="blog-page">
-      {/* Dark Navy Hero */}
+      {/* Hero Section - Text Left, Image Right */}
       <section className="blog-hero">
-        <div className="blog-hero-overlay"></div>
         <div className="container">
-          <div className="blog-hero-content">
-            {/* <span className="blog-eyebrow">Our Blog</span> */}
-            <h1 className="blog-hero-title">
-              Insights & Ideas
-            </h1>
-            <p className="blog-hero-subtitle">
-              Expert insights on design, branding, printing, and growing your business. 
-              Stay informed with our latest articles and industry trends.
-            </p>
+          <div className="blog-hero-grid">
+            {/* Left Side - Text Content */}
+            <div className="blog-hero-content">
+              <span className="blog-eyebrow">Our Blog</span>
+              <h1 className="blog-hero-title">
+                Insights & Ideas
+              </h1>
+              <p className="blog-hero-subtitle">
+                Expert insights on design, branding, printing, and growing your business. 
+                Stay informed with our latest articles and industry trends.
+              </p>
+              
+              <div className="blog-hero-buttons">
+                <Link to="/contact" className="blog-btn-primary">Contact Us</Link>
+                <Link to="/services" className="blog-btn-secondary">Our Services</Link>
+              </div>
+            </div>
+
+            {/* Right Side - Image */}
+            <div className="blog-hero-image">
+              <img src={heroBlogImg} alt="Blog and insights" />
+              <div className="blog-hero-image-glow"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -223,7 +239,7 @@ const Blog = () => {
       </section>
 
       {/* Newsletter Section */}
-      <section className="blog-newsletter">
+      {/* <section className="blog-newsletter">
         <div className="container">
           <div className="newsletter-content">
             <h2 className="newsletter-title">Stay Updated</h2>
@@ -245,7 +261,7 @@ const Blog = () => {
             <p className="newsletter-note">No spam, unsubscribe at any time.</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

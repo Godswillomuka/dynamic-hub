@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import './About.css';
 
+// Import hero image
+import heroAboutImg from '../assets/service-largeformat.png';
+
 const values = [
   {
     title: 'Uncompromising Quality',
@@ -77,18 +80,31 @@ const processSteps = [
 const About = () => {
   return (
     <div className="about-page">
-      {/* Dark Navy Hero */}
+      {/* Hero Section - Text Left, Image Right */}
       <section className="about-hero">
-        <div className="about-hero-overlay"></div>
         <div className="container">
-          <div className="about-hero-content">
-            {/* <span className="about-eyebrow">About Us</span> */}
-            <h1 className="about-hero-title">
-              Crafting Brands,<br />Building Legacies
-            </h1>
-            <p className="about-hero-subtitle">
-              We are a passionate team of designers, printers, and branding experts dedicated to helping businesses stand out and succeed.
-            </p>
+          <div className="about-hero-grid">
+            {/* Left Side - Text Content */}
+            <div className="about-hero-content">
+              <span className="about-eyebrow">About Us</span>
+              <h1 className="about-hero-title">
+                Crafting Brands,<br />Building Legacies
+              </h1>
+              <p className="about-hero-subtitle">
+                We are a passionate team of designers, printers, and branding experts dedicated to helping businesses stand out and succeed.
+              </p>
+              
+              <div className="about-hero-buttons">
+                <Link to="/contact" className="about-btn-primary">Work With Us</Link>
+                <Link to="/services" className="about-btn-secondary">Our Services</Link>
+              </div>
+            </div>
+
+            {/* Right Side - Image */}
+            <div className="about-hero-image">
+              <img src={heroAboutImg} alt="About Dynamic Freelance Hub" />
+              <div className="about-hero-image-glow"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -105,7 +121,7 @@ const About = () => {
               />
             </div>
             <div className="story-content">
-              {/* <span className="section-eyebrow">Our Story</span> */}
+              <span className="section-eyebrow">Our Story</span>
               <h2 className="section-title">Who We Are</h2>
               <p className="section-text">
                 Dynamic Freelance Hub was founded with a simple mission: to provide businesses with accessible, high-quality printing and branding solutions. 
