@@ -86,7 +86,7 @@ const About = () => {
           <div className="about-hero-grid">
             {/* Left Side - Text Content */}
             <div className="about-hero-content">
-              <span className="about-eyebrow">About Us</span>
+              {/* <span className="about-eyebrow">About Us</span> */}
               <h1 className="about-hero-title">
                 Crafting Brands,<br />Building Legacies
               </h1>
@@ -121,7 +121,7 @@ const About = () => {
               />
             </div>
             <div className="story-content">
-              <span className="section-eyebrow">Our Story</span>
+              {/* <span className="section-eyebrow">Our Story</span> */}
               <h2 className="section-title">Who We Are</h2>
               <p className="section-text">
                 Dynamic Freelance Hub was founded with a simple mission: to provide businesses with accessible, high-quality printing and branding solutions. 
@@ -171,7 +171,7 @@ const About = () => {
       <section className="about-values">
         <div className="container">
           <div className="values-header">
-            <span className="section-eyebrow">What Drives Us</span>
+            {/* <span className="section-eyebrow">What Drives Us</span> */}
             <h2 className="section-title">Our Core Values</h2>
             <p className="section-subtitle">The principles that guide our work and define our relationship with every client.</p>
           </div>
@@ -208,7 +208,7 @@ const About = () => {
       <section className="about-process">
         <div className="container">
           <div className="process-header">
-            <span className="section-eyebrow">How We Work</span>
+            {/* <span className="section-eyebrow">How We Work</span> */}
             <h2 className="section-title">Our Process</h2>
             <p className="section-subtitle">A streamlined approach to delivering exceptional results, from concept to completion.</p>
           </div>

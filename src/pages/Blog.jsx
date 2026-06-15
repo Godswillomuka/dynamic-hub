@@ -116,13 +116,13 @@ const Blog = () => {
   const featuredPost = blogPosts.find(post => post.featured);
   const regularPosts = filteredPosts.filter(post => !post.featured || activeCategory !== 'all');
 
-  const handleNewsletterSubmit = (e) => {
-    e.preventDefault();
-    if (email) {
-      alert('Thank you for subscribing!');
-      setEmail('');
-    }
-  };
+//   const handleNewsletterSubmit = (e) => {
+//     e.preventDefault();
+//     if (email) {
+//       alert('Thank you for subscribing!');
+//       setEmail('');
+//     }
+//   };
 
   return (
     <div className="blog-page">
@@ -132,7 +132,7 @@ const Blog = () => {
           <div className="blog-hero-grid">
             {/* Left Side - Text Content */}
             <div className="blog-hero-content">
-              <span className="blog-eyebrow">Our Blog</span>
+              {/* <span className="blog-eyebrow">Our Blog</span> */}
               <h1 className="blog-hero-title">
                 Insights & Ideas
               </h1>
