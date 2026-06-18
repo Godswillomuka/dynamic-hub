@@ -2,30 +2,30 @@ import { useState } from 'react';
 import './Portfolio.css';
 
 // Import your images
-import designImg from '../assets/service-design.png';
-import vehicleImg from '../assets/service-vehicle.png';
-import apparelImg from '../assets/service-apparel.png';
+import designImg from '../assets/GraphicDesign/graphic-design.png';
+import vehicleImg from '../assets/VehicleGrapics/vehicle-graphics.png';
+import apparelImg from '../assets/PromotionalItems/apparel.png';
 import identityImg from '../assets/OfficeBranding/officeBranding.png';
 import codingImg from '../assets/WebServices/service-coding.png';
-import brandingImg from '../assets/service-branding.png';
-import largeFormatImg from '../assets/service-largeformat.png';
-import packagingImg from '../assets/service-packaging.png';
-import promoImg from '../assets/PromotionalItems/service-promo.png'; 
-import businessCard from '../assets/bussinescard.png';
-import flyer from '../assets/flyer.png';
-import customMugs from '../assets/mug.png';
-import capImg from '../assets/product-cap.png';
-import penImg from '../assets/product-pen.png';
-import bagImg from '../assets/product-bag.png';
-import stickerImg from '../assets/product-sticker.png';
-import notebookImg from '../assets/product-notebook.png';
-import lanyardImg from '../assets/product-lanyard.png';
-import deskcalender from '../assets/deskcalender.png';
-import giftvoucher from '../assets/giftvoucher.png';
-import tshirts from '../assets/t-shirts.png';
+import brandingImg from '../assets/OfficeBranding/officeBranding.png';
+import largeFormatImg from '../assets/LargeFormat/large-format.png';
+import packagingImg from '../assets/PromotionalItems/packaging.png';
+import promoImg from '../assets/PromotionalItems/promo.png'; 
+import businessCard from '../assets/PromotionalItems/bussinessCard.png';
+import flyer from '../assets/PromotionalItems/flyer.png';
+import customMugs from '../assets/PromotionalItems/mug.png';
+import capImg from '../assets/PromotionalItems/cap.png';
+import penImg from '../assets/PromotionalItems/pen.png';
+import bagImg from '../assets/PromotionalItems/bag.png';
+import stickerImg from '../assets/PromotionalItems/sticker.png';
+import notebookImg from '../assets/PromotionalItems/notebook.png';
+import lanyardImg from '../assets/PromotionalItems/lanyard.png';
+import deskcalender from '../assets/PromotionalItems/deskcalender.png';
+import giftvoucher from '../assets/PromotionalItems/giftvoucher.png';
+import tshirts from '../assets/PromotionalItems/t-shirts.png';
 
 // Hero image (right side)
-import heroPortfolioImg from '../assets/service-largeformat.png';
+import heroPortfolioImg from '../assets/PromotionalItems/promo.png';
 
 const categories = [
   { id: 'all', label: 'All Work' },

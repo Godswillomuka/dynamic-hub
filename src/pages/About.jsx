@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './About.css';
 
 // Import hero image
-import heroAboutImg from '../assets/service-largeformat.png';
+import heroAboutImg from '../assets/home/about-team.png';
 
 const values = [
   {
@@ -95,7 +95,7 @@ const About = () => {
               </p>
               
               <div className="about-hero-buttons">
-                <Link to="/contact" className="about-btn-primary">Work With Us</Link>
+                <Link to="/contact" className="about-btn-primary">Contact Us</Link>
                 <Link to="/services" className="about-btn-secondary">Our Services</Link>
               </div>
             </div>

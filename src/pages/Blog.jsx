@@ -2,8 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Blog.css';
 
-// Import hero image
-import heroBlogImg from '../assets/service-largeformat.png';
+import heroBlogImg from '../assets/home/whyUs.png';
 
 const categories = [
   { id: 'all', label: 'All Posts' },
@@ -107,7 +106,7 @@ const blogPosts = [
 
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState('all');
-  const [email, setEmail] = useState('');
+
 
   const filteredPosts = activeCategory === 'all'
     ? blogPosts
@@ -115,14 +114,6 @@ const Blog = () => {
 
   const featuredPost = blogPosts.find(post => post.featured);
   const regularPosts = filteredPosts.filter(post => !post.featured || activeCategory !== 'all');
-
-//   const handleNewsletterSubmit = (e) => {
-//     e.preventDefault();
-//     if (email) {
-//       alert('Thank you for subscribing!');
-//       setEmail('');
-//     }
-//   };
 
   return (
     <div className="blog-page">
