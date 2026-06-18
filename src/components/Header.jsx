@@ -56,6 +56,7 @@ function Header() {
     { label: "Services", path: "/services" },
     { label: "Portfolio", path: "/portfolio" },
     { label: "About Us", path: "/about" },
+    { label: "Blog", path: "/blog" },
   ];
 
   return (
@@ -106,28 +107,13 @@ function Header() {
                 </NavLink>
               </li>
             ))}
-
-            {/* Divider before Contact */}
-            <li className="header__nav-divider" aria-hidden="true" />
-
-            <li className="header__nav-item">
-              <NavLink
-                to="/blog"
-                className={({ isActive }) =>
-                  `header__nav-link${isActive ? " header__nav-link--active" : ""}`
-                }
-                onClick={closeMenu}
-              >
-                Blog
-              </NavLink>
-            </li>
           </ul>
 
           {/* CTA Button */}
           <div className="header__cta">
             <Link to="/contact" className="header__cta-link" onClick={closeMenu}>
               <button className="header__cta-btn" type="button">
-                Contuct Us
+                Contact Us
               </button>
             </Link>
           </div>
