@@ -194,7 +194,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="home-btn home-btn-secondary-alt"
-                download="dynamic_company_profile.pdf"
+                download="public/dynamic company profile.pdf"
               >
                 Download Company Profile
               </a>
