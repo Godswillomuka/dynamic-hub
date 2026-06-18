@@ -4,35 +4,27 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 
 // Images
-import aboutTeam from '../assets/about-team.png';
-import businessCard from '../assets/bussinescard.png';
-import designImg from '../assets/GraphicDesign/graphic-design.png';
-// import vehicleImg from '../assets/service-vehicle.png';
-import vehicleImg from '../assets/VehicleGrapics/vehicle-graphics.png'; // Updated path for vehicle graphics image
-import apparelImg from '../assets/service-apparel.png';
-import identityImg from '../assets/service-identity.png';
-import codingImg from '../assets/service-coding.png';
-import brandingImg from '../assets/service-branding.png';
-// import largeFormatImg from '../assets/service-largeformat.png';
-import largeFormatImg from '../assets/LargeFormat/large-format.png'; // Updated path for large format image
-import packagingImg from '../assets/service-packaging.png';
-import promoImg from '../assets/service-promo.png';
-import flyer from '../assets/flyer.png';
-import tshirts from '../assets/t-shirts.png';
-import customMugs from '../assets/mug.png';
-import capImg from '../assets/product-cap.png';
-import penImg from '../assets/product-pen.png';
-import bagImg from '../assets/product-bag.png';
-import stickerImg from '../assets/product-sticker.png';
-import notebookImg from '../assets/product-notebook.png';
-import lanyardImg from '../assets/product-lanyard.png';
-import deskcalender from '../assets/deskcalender.png';
-import giftvoucher from '../assets/giftvoucher.png';
+import aboutTeam from '../assets/home/about-team.png';
+import whyChoose from '../assets/home/whyChoose.jpeg';
 
-// Import missing images for services
-import officeBrandingImg from '../assets/service-identity.png'; // Using existing identity image for office branding
-import promoItemsImg from '../assets/service-promo.png'; // Using promo image
-import webServicesImg from '../assets/service-coding.png'; // Using coding image for web services
+// services images
+import designImg from '../assets/GraphicDesign/graphic-design.png';
+import largeFormatImg from '../assets/LargeFormat/large-format.png';
+import vehicleImg from '../assets/VehicleGrapics/vehicle-graphics.png';
+import officeBrandingImg from '../assets/OfficeBranding/officeBranding.png'; 
+import promoItemsImg from '../assets/PromotionalItems/promo.png'; 
+import webServicesImg from '../assets/WebServices/service-coding.png'; 
+
+// best sells images
+import businessCard from '../assets/PromotionalItems/bussinessCard.png';
+import flyer from '../assets/PromotionalItems/flyer.png';
+import tshirts from '../assets/PromotionalItems/t-shirts.png';
+import customMugs from '../assets/PromotionalItems/mug.png';
+import capImg from '../assets/PromotionalItems/cap.png';
+import penImg from '../assets/PromotionalItems/pen.png';
+import bagImg from '../assets/PromotionalItems/bag.png';
+import stickerImg from '../assets/PromotionalItems/sticker.png';
+
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -414,7 +406,7 @@ const Home = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <img src={aboutTeam} alt="Quality work" />
+              <img src={whyChoose} alt="Quality work" />
             </motion.div>
           </div>
         </div>
