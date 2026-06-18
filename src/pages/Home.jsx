@@ -5,7 +5,7 @@ import './Home.css';
 
 // Images
 import aboutTeam from '../assets/home/about-team.png';
-import whyChoose from '../assets/home/whyChoose.jpeg';
+import whyChoose from '../assets/home/whyUs.png';
 
 // services images
 import designImg from '../assets/GraphicDesign/graphic-design.png';
