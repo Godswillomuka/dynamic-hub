@@ -6,8 +6,7 @@ import './Home.css';
 // Images
 import aboutTeam from '../assets/about-team.png';
 import businessCard from '../assets/bussinescard.png';
-// import designImg from '../assets/service-design.png';
-import designImg from '../assets/GraphicDesign/graphic-design.png'; // Updated path for graphic design image
+import designImg from '../assets/GraphicDesign/graphic-design.png';
 // import vehicleImg from '../assets/service-vehicle.png';
 import vehicleImg from '../assets/VehicleGrapics/vehicle-graphics.png'; // Updated path for vehicle graphics image
 import apparelImg from '../assets/service-apparel.png';
