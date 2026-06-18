@@ -56,11 +56,12 @@ export default function Footer() {
             <div className="footer-col">
               <h4>OUR SERVICES</h4>
               <ul className="footer-links">
-                <li><Link to="/services#graphic-design">Graphic Design</Link></li>
-                <li><Link to="/services#branding">Branding Solutions</Link></li>
-                <li><Link to="/services#printing">Printing Services</Link></li>
-                <li><Link to="/services#signage">Signage & Displays</Link></li>
-                <li><Link to="/services#merchandise">Custom Merchandise</Link></li>
+                <li><Link to="/services/logo-design">Graphic Design</Link></li>
+                <li><Link to="/services/pvc-flex-banners">Large Format Printing</Link></li>
+                <li><Link to="/services/full-vehicle-wraps">Vehicle Graphics</Link></li>
+                <li><Link to="/services/office-signage">Office & Corporate Branding</Link></li>
+                <li><Link to="/services/branded-umbrellas">Promotional Items</Link></li>
+                <li><Link to="/services/web-applications">Web Services</Link></li>
               </ul>
             </div>
 
