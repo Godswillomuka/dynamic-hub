@@ -6,13 +6,16 @@ import './Home.css';
 // Images
 import aboutTeam from '../assets/about-team.png';
 import businessCard from '../assets/bussinescard.png';
-import designImg from '../assets/service-design.png';
-import vehicleImg from '../assets/service-vehicle.png';
+// import designImg from '../assets/service-design.png';
+import designImg from '../assets/GraphicDesign/graphic-design.png'; // Updated path for graphic design image
+// import vehicleImg from '../assets/service-vehicle.png';
+import vehicleImg from '../assets/VehicleGrapics/vehicle-graphics.png'; // Updated path for vehicle graphics image
 import apparelImg from '../assets/service-apparel.png';
 import identityImg from '../assets/service-identity.png';
 import codingImg from '../assets/service-coding.png';
 import brandingImg from '../assets/service-branding.png';
-import largeFormatImg from '../assets/service-largeformat.png';
+// import largeFormatImg from '../assets/service-largeformat.png';
+import largeFormatImg from '../assets/LargeFormat/large-format.png'; // Updated path for large format image
 import packagingImg from '../assets/service-packaging.png';
 import promoImg from '../assets/service-promo.png';
 import flyer from '../assets/flyer.png';
