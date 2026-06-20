@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { serviceContent } from './ServicesContent';
 import Sidebar from '../components/Sidebar';
@@ -123,14 +123,13 @@ const Service = () => {
       {/* Hero Section */}
       <section className="service-hero">
         <div className="hero-content">
-          {/* <span className="service-category">{service.category}</span> */}
           <h1 className="hero-title">{service.title}</h1>
           <p className="hero-description">{service.metaDescription}</p>
           <button 
             className="cta-button"
             onClick={() => navigate('/contact')}
           >
-            Get a Quote
+            Contact Us
           </button>
         </div>
         {service.heroImage && (

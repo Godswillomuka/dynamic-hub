@@ -143,7 +143,6 @@ export default function Sidebar() {
 
       {!sidebarOpen && (
         <button className="sidebar-toggle" onClick={() => setSidebarOpen(true)}>
-          <span style={{ fontSize: '1.2rem' }}>☰</span>
           <span>Our Services</span>
         </button>
       )}

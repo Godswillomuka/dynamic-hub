@@ -1,209 +1,343 @@
-/* Base Sidebar */
+/* ===================================
+   SIDEBAR
+=================================== */
+
 .sidebar {
   position: fixed;
-  background: linear-gradient(135deg, rgb(5, 21, 39) 0%, rgb(7, 25, 69) 100%);
-  color: white;
   z-index: 2000;
-  display: flex;
-  flex-direction: column;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+
+  background: #ffffff;
+  color: #051a30;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
   overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255,255,255,0.2) transparent;
+
+  transition: opacity .25s ease,
+              visibility .25s ease,
+              transform .25s ease;
 }
 
-/* Desktop Layout */
+/* ===================================
+   DESKTOP
+=================================== */
+
 @media (min-width: 993px) {
+
   .sidebar {
-    top: 110px;
-    right: calc((100vw - 1400px) / 2 + 20px);
-    width: 320px;
-    height: calc(100vh - 150px);
-    border-radius: 20px;
-    padding: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    top: 220px;
+
+    right: calc((100vw - 1200px) / 2 + 40px);
+
+    width: 260px;
+
+    max-height: 65vh;
+
+    padding: 16px;
+
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-10px) scale(0.98);
+
+    transform: translateY(-10px);
   }
 
   .sidebar.open {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
+  }
+
+  .close-sidebar {
+    display: none;
   }
 
   .sidebar-toggle {
-    top: 110px;
-    right: calc((100vw - 1400px) / 2 + 20px);
-    bottom: auto;
+    top: 180px;
+    right: calc((100vw - 1200px) / 2 + 40px);
   }
 }
 
-/* Mobile Layout */
+/* ===================================
+   TABLET
+=================================== */
+
 @media (max-width: 992px) {
+
   .sidebar {
     top: 0;
     right: 0;
-    width: 280px;
+
+    width: 320px;
+    max-width: 90vw;
+
     height: 100dvh;
-    padding: 70px 20px 30px;
+
+    padding: 60px 18px 24px;
+
     border-radius: 0;
+
     transform: translateX(100%);
   }
-  
+
   .sidebar.open {
     transform: translateX(0);
   }
-  
+
   .sidebar-toggle {
-    top: 120px;
+    top: 140px;
     right: 20px;
-    bottom: auto;
   }
 }
 
-/* Content Styling */
-.sidebar-title {
-  font-size: 1.4rem;
-  font-weight: 800;
-  margin-bottom: 25px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-shrink: 0;
+/* ===================================
+   MOBILE
+=================================== */
+
+@media (max-width: 480px) {
+
+  .sidebar {
+    width: 100%;
+    max-width: 100%;
+
+    padding: 60px 14px 20px;
+  }
+
+  .sidebar-toggle {
+    top: 130px;
+    right: 15px;
+
+    font-size: 12px;
+
+    padding: 7px 14px;
+  }
 }
 
-.sidebar-title::before {
-  content: "";
-  width: 4px;
-  height: 24px;
-  background: #009f6f;
-  border-radius: 2px;
+/* ===================================
+   TITLE
+=================================== */
+
+.sidebar-title {
+  font-size: 1rem;
+  font-weight: 700;
+
+  color: #051a30;
+
+  margin-bottom: 18px;
 }
+
+.sidebar-title::after {
+  content: "";
+
+  display: block;
+
+  width: 40px;
+  height: 3px;
+
+  margin-top: 8px;
+
+  background: #009f6f;
+
+  border-radius: 999px;
+}
+
+/* ===================================
+   NAVIGATION
+=================================== */
+
+.sidebar-nav-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ===================================
+   MAIN MENU
+=================================== */
 
 .menu-item {
-  padding: 14px 18px;
-  margin-bottom: 8px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  cursor: pointer;
-  font-weight: 600;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  transition: 0.3s;
+  justify-content: space-between;
+
+  padding: 11px 12px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+
+  color: #051a30;
+
+  font-size: .88rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all .2s ease;
 }
 
 .menu-item:hover {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(0,159,111,.04);
+  border-color: rgba(0,159,111,.18);
 }
 
 .menu-item.active {
-  background: #009f6f;
+  background: rgba(0,159,111,.08);
+  border-color: rgba(0,159,111,.22);
+
+  color: #009f6f;
 }
+
+/* ===================================
+   SUBMENU
+=================================== */
 
 .submenu {
   max-height: 0;
+
   overflow: hidden;
-  transition: max-height 0.4s ease-out;
-  display: flex;
-  flex-direction: column;
+
+  transition: max-height .3s ease;
 }
 
 .submenu.open {
-  max-height: 1000px;
-  margin-bottom: 15px;
-  margin-top: 5px;
+  max-height: 700px;
+
+  margin-top: 6px;
+  margin-bottom: 10px;
 }
 
 .submenu a {
-  padding: 10px 15px;
-  color: #cbd5e0;
-  text-decoration: none;
-  font-size: 0.85rem;
-  border-left: 2px solid rgba(255,255,255,0.1);
   display: block;
-  transition: all 0.2s ease;
+
+  padding: 8px 12px;
+
+  margin-left: 8px;
+
+  text-decoration: none;
+
+  color: #4a5568;
+
+  font-size: .82rem;
+
+  border-left: 2px solid transparent;
+
+  transition: all .2s ease;
 }
 
 .submenu a:hover {
   color: #009f6f;
+
   border-left-color: #009f6f;
-  padding-left: 20px;
+
+  background: rgba(0,159,111,.03);
 }
 
 .submenu a.active {
   color: #009f6f;
+
   border-left-color: #009f6f;
+
   font-weight: 600;
 }
 
-/* Controls */
+/* ===================================
+   TOGGLE BUTTON
+=================================== */
+
 .sidebar-toggle {
   position: fixed;
-  background: #009f6f;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 50px;
-  font-weight: 700;
-  box-shadow: 0 8px 20px rgba(0, 159, 111, 0.4);
-  z-index: 999;
+
+  z-index: 1999;
+
+  background: transparent;
+  color: #009f6f;
+
+  border: 1.5px solid #009f6f;
+  border-radius: 8px;
+
+  padding: 8px 18px;
+
+  font-size: 13px;
+  font-weight: 600;
+
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.3s ease;
+
+  box-shadow: none;
+
+  transition: all .25s ease;
 }
 
 .sidebar-toggle:hover {
-  background: #007a55;
-  transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(0, 159, 111, 0.5);
+  background: #009f6f;
+  color: white;
 }
+
+.sidebar-toggle:focus-visible {
+  outline: 2px solid #009f6f;
+  outline-offset: 2px;
+}
+
+/* Remove any generated icons */
+
+.sidebar-toggle::before,
+.sidebar-toggle::after {
+  content: none !important;
+}
+
+/* ===================================
+   CLOSE BUTTON
+=================================== */
+
+.close-sidebar {
+  position: absolute;
+
+  top: 14px;
+  right: 14px;
+
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #f1f5f9;
+
+  color: #051a30;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-sidebar:hover {
+  background: #e2e8f0;
+}
+
+/* ===================================
+   OVERLAY
+=================================== */
 
 .sidebar-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,.28);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   z-index: 1900;
 }
 
-.close-sidebar {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  color: white;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-}
+/* ===================================
+   SCROLLBAR
+=================================== */
 
-.close-sidebar:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: rotate(90deg);
-}
-
-/* Hide toggle when sidebar is open or nav is open */
-body.sidebar-open .sidebar-toggle,
-body.nav-open .sidebar-toggle {
-  display: none !important;
-}
-
-/* Custom Scrollbar */
 .sidebar::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 
 .sidebar::-webkit-scrollbar-track {
@@ -211,10 +345,10 @@ body.nav-open .sidebar-toggle {
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-  background: rgba(255,255,255,0.2);
-  border-radius: 3px;
+  background: #cbd5e0;
+  border-radius: 999px;
 }
 
 .sidebar::-webkit-scrollbar-thumb:hover {
-  background: rgba(255,255,255,0.3);
+  background: #94a3b8;
 }

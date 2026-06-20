@@ -1,4 +1,8 @@
 // serviceContent.js
+import logoImg from "../assets/GraphicDesign/logo.png";
+import logoImg2 from "../assets/GraphicDesign/logoDesign.jpeg";
+import logoImg3 from "../assets/GraphicDesign/senditLogo.png";
+import logoImg4 from "../assets/GraphicDesign/jobmateLogo.jpeg";
 
 export const serviceContent = {
   // ==================== GRAPHIC DESIGN ====================
@@ -6,14 +10,14 @@ export const serviceContent = {
     title: "Logo Design",
     category: "Graphic Design",
     metaDescription: "Professional logo design services in Kenya. We create memorable, versatile logos that capture your brand's essence.",
-    heroImage: "/images/services/logo-design/hero.jpg",
+    heroImage: logoImg,
     heroAlt: "Professional logo design samples",
     sections: [
       {
         type: "text",
         title: "What Makes a Great Logo?",
         content: "A great logo is simple, memorable, timeless, versatile, and appropriate. It works across all mediums — from a tiny favicon on a website to a massive billboard. At Azuri, we don't just design pretty icons; we create visual marks that communicate your brand's values, resonate with your target audience, and stand the test of time. Every logo we deliver is strategic, not just artistic.",
-        image: "/images/services/logo-design/process.jpg",
+        image: logoImg2,
         imageAlt: "Logo design process sketch",
         imagePosition: "right"
       },
@@ -29,7 +33,7 @@ export const serviceContent = {
           "Brand guidelines page for logo usage rules",
           "Source files delivered for future edits"
         ],
-        image: "/images/services/logo-design/deliverables.jpg",
+        image: logoImg3,
         imageAlt: "Logo design deliverables package",
         imagePosition: "left"
       },
@@ -37,7 +41,7 @@ export const serviceContent = {
         type: "text",
         title: "Our Design Process",
         content: "We begin with a deep dive into your brand — your values, target audience, competitors, and vision. Our designers then sketch multiple concepts before moving to digital execution. After presenting initial concepts, we refine your chosen direction through collaborative revisions. The result is a logo you'll love for years to come.",
-        image: "/images/services/logo-design/sketches.jpg",
+        image: logoImg4,
         imageAlt: "Logo design sketch variations",
         imagePosition: "right"
       }
