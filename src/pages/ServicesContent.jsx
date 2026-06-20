@@ -1,11 +1,17 @@
-// serviceContent.js
-import logoImg from "../assets/GraphicDesign/logo.png";
-import logoImg2 from "../assets/GraphicDesign/logoDesign.jpeg";
-import logoImg3 from "../assets/GraphicDesign/senditLogo.png";
-import logoImg4 from "../assets/GraphicDesign/jobmateLogo.jpeg";
+// graphic-design images
+import logoImg from "../assets/GraphicDesign/logo/logo.png";
+import logoImg2 from "../assets/GraphicDesign/logo/logoDesign.jpeg";
+import logoImg3 from "../assets/GraphicDesign/logo/senditLogo.png";
+import logoImg4 from "../assets/GraphicDesign/logo/jobmateLogo.jpeg";
+
+import flyerImg from "../assets/GraphicDesign/flyer/eventFlyer.jpeg";
+import flyerImg2 from "../assets/GraphicDesign/flyer/bussinessFlyer.png";
+import flyerImg3 from "../assets/GraphicDesign/flyer/bronchureFlyer.png";
+import flyerImg4 from "../assets/GraphicDesign/flyer/foodFlyer.png";
+
 
 export const serviceContent = {
-  // ==================== GRAPHIC DESIGN ====================
+  //GRAPHIC DESIGN
   "logo-design": {
     title: "Logo Design",
     category: "Graphic Design",
@@ -45,11 +51,6 @@ export const serviceContent = {
         imageAlt: "Logo design sketch variations",
         imagePosition: "right"
       }
-    ],
-    faq: [
-      { question: "Do you offer logo redesigns?", answer: "Yes! We can refresh your existing logo while maintaining brand equity. The process is similar but starts with an audit of your current logo." },
-      { question: "Will I own the copyright?", answer: "Absolutely. Full ownership rights are transferred to you upon final payment. We keep no rights to your logo." },
-      { question: "What if I don't like any concepts?", answer: "We work closely with you throughout. If none of the initial concepts work, we'll create additional options until we find the perfect fit." }
     ]
   },
 
@@ -104,14 +105,14 @@ export const serviceContent = {
     title: "Flyer Design",
     category: "Graphic Design",
     metaDescription: "Eye-catching flyer design services for events, promotions, and businesses in Kenya. Fast turnaround, print-ready files.",
-    heroImage: "/images/services/flyer/hero.jpg",
+    heroImage: flyerImg,
     heroAlt: "Professional flyer design examples",
     sections: [
       {
         type: "text",
         title: "Flyers That Get Noticed",
         content: "In a world of digital noise, a well-designed physical flyer still gets attention. Whether you're promoting a club night, a church event, a real estate open house, or a retail sale, our flyers are designed to stop people in their tracks and deliver your message instantly.",
-        image: "/images/services/flyer/stack.jpg",
+        image: flyerImg2,
         imageAlt: "Stack of printed flyers",
         imagePosition: "right"
       },
@@ -126,7 +127,7 @@ export const serviceContent = {
           "Square Flyers (210 x 210mm) - Modern look",
           "Custom sizes available"
         ],
-        image: "/images/services/flyer/sizes.jpg",
+        image: flyerImg3,
         imageAlt: "Different flyer size comparisons",
         imagePosition: "left"
       },
@@ -134,7 +135,7 @@ export const serviceContent = {
         type: "text",
         title: "Digital vs. Print-Ready",
         content: "We deliver both versions: print-ready CMYK PDFs with bleeds for physical printing, and RGB optimized JPG/PNG files for social media, email marketing, or WhatsApp sharing. Your flyer works everywhere.",
-        image: "/images/services/flyer/digital-print.jpg",
+        image: flyerImg4,
         imageAlt: "Flyer shown on phone and as physical print",
         imagePosition: "right"
       }
