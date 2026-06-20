@@ -139,9 +139,6 @@ export const serviceContent = {
         imageAlt: "Flyer shown on phone and as physical print",
         imagePosition: "right"
       }
-    ],
-    faq: [
-      { question: "Can I provide my own design?", answer: "Yes, but we recommend letting us design it. If you have an existing design, we can prepare it for print or enhance it." }
     ]
   },
 

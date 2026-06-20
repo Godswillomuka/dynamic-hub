@@ -45,7 +45,7 @@
 }
 
 /* =========================
-   HERO IMAGE
+   HERO IMAGE (NO FRAME + SIZE CONTROL)
 ========================= */
 
 .hero-image {
@@ -53,24 +53,26 @@
   justify-content: center;
   align-items: center;
 
-  min-height: 400px;
-  padding: 20px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
 
-  border-radius: 16px;
-  background: #fff;
-
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  max-height: 400px;
+  overflow: hidden;
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 100%;
+  height: 100%;
 
   max-height: 400px;
-  height: auto;
 
   object-fit: contain;
   display: block;
+
+  border-radius: 12px; /* optional soft look */
 }
 
 /* =========================
@@ -117,7 +119,7 @@
 }
 
 /* =========================
-   SECTION IMAGE
+   SECTION IMAGE (NO FRAME + SIZE CONTROL)
 ========================= */
 
 .section-image {
@@ -125,25 +127,26 @@
   justify-content: center;
   align-items: center;
 
-  min-height: 350px;
-  padding: 20px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
 
-  border-radius: 12px;
-  background: #fff;
-
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  max-height: 350px;
+  overflow: hidden;
 }
 
 .section-image img {
   width: 100%;
-  max-width: 100%;
+  height: 100%;
 
   max-height: 350px;
-  height: auto;
 
   object-fit: contain;
-
   display: block;
+
+  border-radius: 12px;
   transition: transform 0.3s ease;
 }
 
@@ -200,14 +203,6 @@
     font-size: 2.3rem;
   }
 
-  .hero-image {
-    min-height: auto;
-  }
-
-  .section-image {
-    min-height: auto;
-  }
-
   .hero-image img {
     max-height: 350px;
   }
@@ -251,11 +246,6 @@
     font-size: 1rem;
   }
 
-  .hero-image,
-  .section-image {
-    padding: 15px;
-  }
-
   .hero-image img {
     max-height: 280px;
   }
@@ -266,7 +256,6 @@
 
   .cta-button {
     width: 100%;
-    justify-content: center;
     text-align: center;
   }
 }
@@ -288,10 +277,7 @@
     font-size: 1.35rem;
   }
 
-  .hero-image img {
-    max-height: 220px;
-  }
-
+  .hero-image img,
   .section-image img {
     max-height: 220px;
   }
